@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.pyc
+.env
+logs/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+.claude/
