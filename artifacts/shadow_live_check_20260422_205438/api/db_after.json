@@ -1,0 +1,439 @@
+{
+  "live_orders": 0,
+  "shadow_orders": 6,
+  "shadow_positions": 6,
+  "latest_shadow_orders": [
+    {
+      "market_id": "1517835",
+      "status": "WOULD_SUBMIT",
+      "raw_intent_json": {
+        "side": "BUY",
+        "size": 5.0,
+        "price": 0.21,
+        "action": "BUY_YES",
+        "bucket": "whale",
+        "neg_risk": false,
+        "question": "Trump announces end of military operations against Iran by April 30th?",
+        "token_id": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+        "market_id": "1517835",
+        "tick_size": "0.01",
+        "balance_info": {
+          "collateral": {
+            "balance": "0",
+            "allowances": {
+              "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+              "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+              "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+            },
+            "balance_usd": 0.0
+          },
+          "conditional": {
+            "balance": "0",
+            "allowances": {
+              "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+              "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+              "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195398462578067141184799968521174335529155754622898352762650625"
+            }
+          }
+        },
+        "notional_usd": 1.05,
+        "min_order_size": 5.0,
+        "execution_contract": {
+          "side": "BUY",
+          "size": 5.0,
+          "intent_id": "89c26712-4b19-4662-bb81-4d363b66a19a",
+          "market_id": "1517835",
+          "created_at": "2026-04-22T18:06:24.551867+00:00",
+          "order_type": "LIMIT",
+          "price_limit": 0.21,
+          "reason_code": "would_submit",
+          "reason_text": "candidate passed the live path through the submit boundary",
+          "risk_metadata": {
+            "bucket": "whale",
+            "neg_risk": false,
+            "tick_size": "0.01",
+            "balance_info": {
+              "collateral": {
+                "balance": "0",
+                "allowances": {
+                  "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                  "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                  "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+                },
+                "balance_usd": 0.0
+              },
+              "conditional": {
+                "balance": "0",
+                "allowances": {
+                  "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+                  "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+                  "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195398462578067141184799968521174335529155754622898352762650625"
+                }
+              }
+            },
+            "notional_usd": 1.05,
+            "min_order_size": 5.0
+          },
+          "backend_target": "shadow_live",
+          "correlation_id": "9f13af87-86e9-44d7-a05b-be297785a58c",
+          "execution_mode": "shadow_live",
+          "source_context": {
+            "action": "BUY_YES",
+            "question": "Trump announces end of military operations against Iran by April 30th?",
+            "token_id": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+            "market_id": "1517835",
+            "decision_stage": "ready_to_submit"
+          }
+        }
+      },
+      "raw_policy_json": {
+        "stage": "ready_to_submit",
+        "allowed": true,
+        "reasons": [],
+        "execution_result": {
+          "accepted": true,
+          "intent_id": "89c26712-4b19-4662-bb81-4d363b66a19a",
+          "error_code": null,
+          "error_text": null,
+          "filled_size": 0.0,
+          "processed_at": "2026-04-22T18:06:24.829026+00:00",
+          "result_status": "WOULD_SUBMIT",
+          "avg_fill_price": null,
+          "correlation_id": "9f13af87-86e9-44d7-a05b-be297785a58c",
+          "remaining_size": 5.0,
+          "raw_result_json": {
+            "adapter": "live",
+            "shadow_mode": true,
+            "auth_context": {
+              "host": "https://clob.polymarket.com",
+              "chain_id": 137,
+              "funder_address": "0x04FBD38B0d9B4Bf7aDDC68ec5DF5DfE9Ba0b2D7D",
+              "signature_type": 2,
+              "signer_address": "0x7D631aF4CE17Adb6fB50e77D4A240Ae39e01811A",
+              "credential_source": "env"
+            },
+            "order_summary": {
+              "side": "BUY",
+              "size": 5.0,
+              "price": 0.21,
+              "action": "BUY_YES",
+              "bucket": "whale",
+              "neg_risk": false,
+              "question": "Trump announces end of military operations against Iran by April 30th?",
+              "token_id": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+              "market_id": "1517835",
+              "tick_size": "0.01",
+              "notional_usd": 1.05,
+              "min_order_size": 5.0
+            },
+            "live_request_payload": {
+              "salt": 194744063,
+              "side": "BUY",
+              "maker": "0x04FBD38B0d9B4Bf7aDDC68ec5DF5DfE9Ba0b2D7D",
+              "nonce": "0",
+              "taker": "0x0000000000000000000000000000000000000000",
+              "signer": "0x7D631aF4CE17Adb6fB50e77D4A240Ae39e01811A",
+              "tokenId": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+              "signature": "0x47e5892ad01edfd4f3f43c8a68f5317e48638682a6e38d6fd9dcdb047141ca9361ceb1dd343b9b98554ed025b186ba94410a3180193728f38b89c5fa26ede76e1c",
+              "expiration": "0",
+              "feeRateBps": "0",
+              "makerAmount": "1050000",
+              "takerAmount": "5000000",
+              "signatureType": 2
+            },
+            "execution_contract_version": "v1"
+          },
+          "external_order_id": null
+        }
+      }
+    },
+    {
+      "market_id": "1517835",
+      "status": "WOULD_SUBMIT",
+      "raw_intent_json": {
+        "side": "BUY",
+        "size": 5.0,
+        "price": 0.21,
+        "action": "BUY_YES",
+        "bucket": "whale",
+        "neg_risk": false,
+        "question": "Trump announces end of military operations against Iran by April 30th?",
+        "token_id": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+        "market_id": "1517835",
+        "tick_size": "0.01",
+        "balance_info": {
+          "collateral": {
+            "balance": "0",
+            "allowances": {
+              "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+              "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+              "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+            },
+            "balance_usd": 0.0
+          },
+          "conditional": {
+            "balance": "0",
+            "allowances": {
+              "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+              "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+              "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195398462578067141184799968521174335529155754622898352762650625"
+            }
+          }
+        },
+        "notional_usd": 1.05,
+        "min_order_size": 5.0,
+        "execution_contract": {
+          "side": "BUY",
+          "size": 5.0,
+          "intent_id": "ad0ef49e-77b7-496c-a02b-bc838a424431",
+          "market_id": "1517835",
+          "created_at": "2026-04-22T18:05:05.968901+00:00",
+          "order_type": "LIMIT",
+          "price_limit": 0.21,
+          "reason_code": "would_submit",
+          "reason_text": "candidate passed the live path through the submit boundary",
+          "risk_metadata": {
+            "bucket": "whale",
+            "neg_risk": false,
+            "tick_size": "0.01",
+            "balance_info": {
+              "collateral": {
+                "balance": "0",
+                "allowances": {
+                  "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                  "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                  "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+                },
+                "balance_usd": 0.0
+              },
+              "conditional": {
+                "balance": "0",
+                "allowances": {
+                  "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+                  "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+                  "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195398462578067141184799968521174335529155754622898352762650625"
+                }
+              }
+            },
+            "notional_usd": 1.05,
+            "min_order_size": 5.0
+          },
+          "backend_target": "shadow_live",
+          "correlation_id": "660ab4f9-ae77-427c-a063-2b818d733213",
+          "execution_mode": "shadow_live",
+          "source_context": {
+            "action": "BUY_YES",
+            "question": "Trump announces end of military operations against Iran by April 30th?",
+            "token_id": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+            "market_id": "1517835",
+            "decision_stage": "ready_to_submit"
+          }
+        }
+      },
+      "raw_policy_json": {
+        "stage": "ready_to_submit",
+        "allowed": true,
+        "reasons": [],
+        "execution_result": {
+          "accepted": true,
+          "intent_id": "ad0ef49e-77b7-496c-a02b-bc838a424431",
+          "error_code": null,
+          "error_text": null,
+          "filled_size": 0.0,
+          "processed_at": "2026-04-22T18:05:06.219919+00:00",
+          "result_status": "WOULD_SUBMIT",
+          "avg_fill_price": null,
+          "correlation_id": "660ab4f9-ae77-427c-a063-2b818d733213",
+          "remaining_size": 5.0,
+          "raw_result_json": {
+            "adapter": "live",
+            "shadow_mode": true,
+            "auth_context": {
+              "host": "https://clob.polymarket.com",
+              "chain_id": 137,
+              "funder_address": "0x04FBD38B0d9B4Bf7aDDC68ec5DF5DfE9Ba0b2D7D",
+              "signature_type": 2,
+              "signer_address": "0x7D631aF4CE17Adb6fB50e77D4A240Ae39e01811A",
+              "credential_source": "env"
+            },
+            "order_summary": {
+              "side": "BUY",
+              "size": 5.0,
+              "price": 0.21,
+              "action": "BUY_YES",
+              "bucket": "whale",
+              "neg_risk": false,
+              "question": "Trump announces end of military operations against Iran by April 30th?",
+              "token_id": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+              "market_id": "1517835",
+              "tick_size": "0.01",
+              "notional_usd": 1.05,
+              "min_order_size": 5.0
+            },
+            "live_request_payload": {
+              "salt": 1179482797,
+              "side": "BUY",
+              "maker": "0x04FBD38B0d9B4Bf7aDDC68ec5DF5DfE9Ba0b2D7D",
+              "nonce": "0",
+              "taker": "0x0000000000000000000000000000000000000000",
+              "signer": "0x7D631aF4CE17Adb6fB50e77D4A240Ae39e01811A",
+              "tokenId": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+              "signature": "0xe82c146e5fb1f2d5a5796d718ee5e08fa1b99fdaea04f1f0c4a03bda2cb4cfba78d63458d55c5dabf04b58be25c7baaff4b7bfd8bd9a12456624c9b47ab45f0f1b",
+              "expiration": "0",
+              "feeRateBps": "0",
+              "makerAmount": "1050000",
+              "takerAmount": "5000000",
+              "signatureType": 2
+            },
+            "execution_contract_version": "v1"
+          },
+          "external_order_id": null
+        }
+      }
+    },
+    {
+      "market_id": "1517835",
+      "status": "WOULD_SUBMIT",
+      "raw_intent_json": {
+        "side": "BUY",
+        "size": 5.0,
+        "price": 0.21,
+        "action": "BUY_YES",
+        "bucket": "whale",
+        "neg_risk": false,
+        "question": "Trump announces end of military operations against Iran by April 30th?",
+        "token_id": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+        "market_id": "1517835",
+        "tick_size": "0.01",
+        "balance_info": {
+          "collateral": {
+            "balance": "0",
+            "allowances": {
+              "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+              "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+              "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+            },
+            "balance_usd": 0.0
+          },
+          "conditional": {
+            "balance": "0",
+            "allowances": {
+              "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+              "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+              "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195398462578067141184799968521174335529155754622898352762650625"
+            }
+          }
+        },
+        "notional_usd": 1.05,
+        "min_order_size": 5.0,
+        "execution_contract": {
+          "side": "BUY",
+          "size": 5.0,
+          "intent_id": "ef704f4b-32d2-4ed3-9475-91afd158744d",
+          "market_id": "1517835",
+          "created_at": "2026-04-22T18:03:52.661033+00:00",
+          "order_type": "LIMIT",
+          "price_limit": 0.21,
+          "reason_code": "would_submit",
+          "reason_text": "candidate passed the live path through the submit boundary",
+          "risk_metadata": {
+            "bucket": "whale",
+            "neg_risk": false,
+            "tick_size": "0.01",
+            "balance_info": {
+              "collateral": {
+                "balance": "0",
+                "allowances": {
+                  "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                  "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                  "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+                },
+                "balance_usd": 0.0
+              },
+              "conditional": {
+                "balance": "0",
+                "allowances": {
+                  "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+                  "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+                  "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195398462578067141184799968521174335529155754622898352762650625"
+                }
+              }
+            },
+            "notional_usd": 1.05,
+            "min_order_size": 5.0
+          },
+          "backend_target": "shadow_live",
+          "correlation_id": "e90a7e49-acec-434d-a17d-a11dc2b7b195",
+          "execution_mode": "shadow_live",
+          "source_context": {
+            "action": "BUY_YES",
+            "question": "Trump announces end of military operations against Iran by April 30th?",
+            "token_id": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+            "market_id": "1517835",
+            "decision_stage": "ready_to_submit"
+          }
+        }
+      },
+      "raw_policy_json": {
+        "stage": "ready_to_submit",
+        "allowed": true,
+        "reasons": [],
+        "execution_result": {
+          "accepted": true,
+          "intent_id": "ef704f4b-32d2-4ed3-9475-91afd158744d",
+          "error_code": null,
+          "error_text": null,
+          "filled_size": 0.0,
+          "processed_at": "2026-04-22T18:03:53.104955+00:00",
+          "result_status": "WOULD_SUBMIT",
+          "avg_fill_price": null,
+          "correlation_id": "e90a7e49-acec-434d-a17d-a11dc2b7b195",
+          "remaining_size": 5.0,
+          "raw_result_json": {
+            "adapter": "live",
+            "shadow_mode": true,
+            "auth_context": {
+              "host": "https://clob.polymarket.com",
+              "chain_id": 137,
+              "funder_address": "0x04FBD38B0d9B4Bf7aDDC68ec5DF5DfE9Ba0b2D7D",
+              "signature_type": 2,
+              "signer_address": "0x7D631aF4CE17Adb6fB50e77D4A240Ae39e01811A",
+              "credential_source": "env"
+            },
+            "order_summary": {
+              "side": "BUY",
+              "size": 5.0,
+              "price": 0.21,
+              "action": "BUY_YES",
+              "bucket": "whale",
+              "neg_risk": false,
+              "question": "Trump announces end of military operations against Iran by April 30th?",
+              "token_id": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+              "market_id": "1517835",
+              "tick_size": "0.01",
+              "notional_usd": 1.05,
+              "min_order_size": 5.0
+            },
+            "live_request_payload": {
+              "salt": 445673205,
+              "side": "BUY",
+              "maker": "0x04FBD38B0d9B4Bf7aDDC68ec5DF5DfE9Ba0b2D7D",
+              "nonce": "0",
+              "taker": "0x0000000000000000000000000000000000000000",
+              "signer": "0x7D631aF4CE17Adb6fB50e77D4A240Ae39e01811A",
+              "tokenId": "112434828665041337854033745240098052999773438249964130665844574663228374653496",
+              "signature": "0xa62b3d070c450947d713fdea358797b7e5acbcb18f1c887d9135b5d76dc83a29057fda8a90df319b04764f745739e928d05a089dd9af990a1fc764a0788af3401b",
+              "expiration": "0",
+              "feeRateBps": "0",
+              "makerAmount": "1050000",
+              "takerAmount": "5000000",
+              "signatureType": 2
+            },
+            "execution_contract_version": "v1"
+          },
+          "external_order_id": null
+        }
+      }
+    }
+  ]
+}

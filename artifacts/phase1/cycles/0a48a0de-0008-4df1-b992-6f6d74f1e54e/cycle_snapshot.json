@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "566136"
+  ],
+  "cycle_id": "0a48a0de-0008-4df1-b992-6f6d74f1e54e",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "566136",
+      "reason": "missing_no_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

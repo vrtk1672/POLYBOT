@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "sports-psg-whale-97745b"
+  ],
+  "cycle_id": "bc2429bd-d772-4fd6-888f-d0866cee4d49",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "sports-psg-whale-97745b",
+      "reason": "missing_yes_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

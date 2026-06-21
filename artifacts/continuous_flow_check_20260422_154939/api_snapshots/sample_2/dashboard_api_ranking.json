@@ -1,0 +1,180 @@
+{
+    "latest_ranking_policy_run":  {
+                                      "id":  "cac6edd8-b6ec-435e-9abd-47a9e5173d1d",
+                                      "status":  "COMPLETED",
+                                      "started_at":  "2026-04-22T12:51:24.151942+00:00",
+                                      "ended_at":  "2026-04-22T12:51:24.205412+00:00"
+                                  },
+    "top_ranked":  [
+                       {
+                           "market_id":  "1929170",
+                           "total_rank_score":  73.55,
+                           "rank_position":  1,
+                           "rank_tier_class":  "TOP",
+                           "gate_decision_class":  "SELECTABLE",
+                           "gate_priority_class":  "PRIMARY",
+                           "selection_reason_text":  "tradable price band, solid liquidity/volume, active market flow",
+                           "created_at":  "2026-04-22T12:51:24.091275+00:00"
+                       },
+                       {
+                           "market_id":  "947289",
+                           "total_rank_score":  73.24,
+                           "rank_position":  2,
+                           "rank_tier_class":  "WATCH",
+                           "gate_decision_class":  "SELECTABLE",
+                           "gate_priority_class":  "RUNTIME",
+                           "selection_reason_text":  "tradable price band, solid liquidity/volume, active market flow",
+                           "created_at":  "2026-04-22T12:51:23.796151+00:00"
+                       },
+                       {
+                           "market_id":  "558934",
+                           "total_rank_score":  72.8,
+                           "rank_position":  3,
+                           "rank_tier_class":  "WATCH",
+                           "gate_decision_class":  "SELECTABLE",
+                           "gate_priority_class":  "RUNTIME",
+                           "selection_reason_text":  "tradable price band, solid liquidity/volume, active market flow",
+                           "created_at":  "2026-04-22T12:51:23.721655+00:00"
+                       },
+                       {
+                           "market_id":  "566136",
+                           "total_rank_score":  72.55,
+                           "rank_position":  4,
+                           "rank_tier_class":  "WATCH",
+                           "gate_decision_class":  "SELECTABLE",
+                           "gate_priority_class":  "RUNTIME",
+                           "selection_reason_text":  "tradable price band, solid liquidity/volume, active market flow",
+                           "created_at":  "2026-04-22T12:51:23.725251+00:00"
+                       },
+                       {
+                           "market_id":  "558936",
+                           "total_rank_score":  72.4,
+                           "rank_position":  5,
+                           "rank_tier_class":  "WATCH",
+                           "gate_decision_class":  "SELECTABLE",
+                           "gate_priority_class":  "RUNTIME",
+                           "selection_reason_text":  "tradable price band, solid liquidity/volume, active market flow",
+                           "created_at":  "2026-04-22T12:51:23.721655+00:00"
+                       },
+                       {
+                           "market_id":  "1517835",
+                           "total_rank_score":  72.29,
+                           "rank_position":  6,
+                           "rank_tier_class":  "MONITOR",
+                           "gate_decision_class":  "SELECTABLE",
+                           "gate_priority_class":  "RUNTIME",
+                           "selection_reason_text":  "solid liquidity/volume, active market flow, yes=0.120",
+                           "created_at":  "2026-04-22T12:51:23.886065+00:00"
+                       }
+                   ],
+    "recent_candidates":  [
+                              {
+                                  "market_id":  "1929170",
+                                  "total_rank_score":  73.55,
+                                  "rank_position":  1,
+                                  "rank_tier_class":  "TOP",
+                                  "gate_decision_class":  "SELECTABLE",
+                                  "gate_priority_class":  "PRIMARY",
+                                  "selection_reason_text":  "tradable price band, solid liquidity/volume, active market flow",
+                                  "created_at":  "2026-04-22T12:51:24.091275+00:00"
+                              },
+                              {
+                                  "market_id":  "947289",
+                                  "total_rank_score":  73.24,
+                                  "rank_position":  2,
+                                  "rank_tier_class":  "WATCH",
+                                  "gate_decision_class":  "SELECTABLE",
+                                  "gate_priority_class":  "RUNTIME",
+                                  "selection_reason_text":  "tradable price band, solid liquidity/volume, active market flow",
+                                  "created_at":  "2026-04-22T12:51:23.796151+00:00"
+                              },
+                              {
+                                  "market_id":  "558934",
+                                  "total_rank_score":  72.8,
+                                  "rank_position":  3,
+                                  "rank_tier_class":  "WATCH",
+                                  "gate_decision_class":  "SELECTABLE",
+                                  "gate_priority_class":  "RUNTIME",
+                                  "selection_reason_text":  "tradable price band, solid liquidity/volume, active market flow",
+                                  "created_at":  "2026-04-22T12:51:23.721655+00:00"
+                              },
+                              {
+                                  "market_id":  "566136",
+                                  "total_rank_score":  72.55,
+                                  "rank_position":  4,
+                                  "rank_tier_class":  "WATCH",
+                                  "gate_decision_class":  "SELECTABLE",
+                                  "gate_priority_class":  "RUNTIME",
+                                  "selection_reason_text":  "tradable price band, solid liquidity/volume, active market flow",
+                                  "created_at":  "2026-04-22T12:51:23.725251+00:00"
+                              },
+                              {
+                                  "market_id":  "558936",
+                                  "total_rank_score":  72.4,
+                                  "rank_position":  5,
+                                  "rank_tier_class":  "WATCH",
+                                  "gate_decision_class":  "SELECTABLE",
+                                  "gate_priority_class":  "RUNTIME",
+                                  "selection_reason_text":  "tradable price band, solid liquidity/volume, active market flow",
+                                  "created_at":  "2026-04-22T12:51:23.721655+00:00"
+                              },
+                              {
+                                  "market_id":  "1517835",
+                                  "total_rank_score":  72.29,
+                                  "rank_position":  6,
+                                  "rank_tier_class":  "MONITOR",
+                                  "gate_decision_class":  "SELECTABLE",
+                                  "gate_priority_class":  "RUNTIME",
+                                  "selection_reason_text":  "solid liquidity/volume, active market flow, yes=0.120",
+                                  "created_at":  "2026-04-22T12:51:23.886065+00:00"
+                              }
+                          ],
+    "selected_candidate_count":  10,
+    "rejected_candidates":  [
+
+                            ],
+    "rejection_ledger":  [
+                             {
+                                 "market_id":  "isolated-policy-a273213a",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:20.850272+00:00"
+                             },
+                             {
+                                 "market_id":  "query-policy-942281a1",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:18.856635+00:00"
+                             },
+                             {
+                                 "market_id":  "rank-block-af971ffa",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:16.804014+00:00"
+                             },
+                             {
+                                 "market_id":  "real-enum-4c0cc5ec",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:14.923738+00:00"
+                             },
+                             {
+                                 "market_id":  "sparse-policy-a0919705",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:14.511602+00:00"
+                             },
+                             {
+                                 "market_id":  "exit-rec-3127427a",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:11.289985+00:00"
+                             }
+                         ]
+}

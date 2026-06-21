@@ -1,0 +1,24 @@
+      column_name      |        data_type         
+-----------------------+--------------------------
+ id                    | uuid
+ paper_run_id          | uuid
+ paper_signal_id       | uuid
+ cycle_id              | uuid
+ market_id             | text
+ intended_outcome      | text
+ action                | text
+ intended_price        | numeric
+ intended_size         | numeric
+ notional              | numeric
+ status                | text
+ fill_ratio            | numeric
+ filled_size           | numeric
+ remaining_size        | numeric
+ avg_fill_price        | numeric
+ min_size_check_passed | boolean
+ stale_at              | timestamp with time zone
+ payload_json          | jsonb
+ created_at            | timestamp with time zone
+ updated_at            | timestamp with time zone
+(20 rows)
+

@@ -1,0 +1,7 @@
+{
+    "command":  "/kill",
+    "supported":  true,
+    "response_text":  "KILL guard is active. Future live submissions will be blocked immediately by the live cage.",
+    "sent":  false,
+    "control_action_id":  "c09ed7c4-cc57-41ec-831a-e6f9101b098a"
+}

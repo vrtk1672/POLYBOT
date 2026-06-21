@@ -1,0 +1,7 @@
+{
+  "command": "/status",
+  "supported": true,
+  "response_text": "DB: OK\nPending eligible intents: 4\nTop candidates: 3\nWarnings: 1",
+  "sent": false,
+  "control_action_id": null
+}

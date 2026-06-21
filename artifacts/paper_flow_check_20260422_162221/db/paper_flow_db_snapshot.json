@@ -1,0 +1,277 @@
+{
+  "paper_runs_count": 15,
+  "paper_signals_count": 300,
+  "paper_orders_count": 1,
+  "paper_order_events_count": 2,
+  "paper_positions_count": 1,
+  "paper_position_events_count": 5,
+  "recent_paper_runs": [
+    [
+      "f83dcaf7-3fa5-46e5-bdfd-5ecf164831a6",
+      "8ac5f20f-cea7-4d08-a84d-fe1d92d97d64",
+      "COMPLETED",
+      20,
+      20,
+      0,
+      20,
+      {
+        "mode": "EXECUTION_AWARE_PAPER",
+        "cycle_id": "8ac5f20f-cea7-4d08-a84d-fe1d92d97d64",
+        "execution_aware": {
+          "open_orders_count": 0,
+          "paper_orders_count": 0,
+          "open_positions_count": 0
+        },
+        "selected_market_id": null
+      },
+      "2026-04-22 13:25:40.986598+00:00"
+    ],
+    [
+      "ffa4033f-41e3-4544-93e0-a71123e56f66",
+      "c112982b-41ed-448c-b121-67797a8b711f",
+      "COMPLETED",
+      20,
+      20,
+      0,
+      20,
+      {
+        "mode": "EXECUTION_AWARE_PAPER",
+        "cycle_id": "c112982b-41ed-448c-b121-67797a8b711f",
+        "execution_aware": {
+          "open_orders_count": 0,
+          "paper_orders_count": 0,
+          "open_positions_count": 0
+        },
+        "selected_market_id": null
+      },
+      "2026-04-22 13:23:48.594886+00:00"
+    ],
+    [
+      "57558def-ef31-47de-9ff5-43bdabc80c1d",
+      "428e8323-6421-4572-aa0f-375bebbf6035",
+      "COMPLETED",
+      20,
+      20,
+      1,
+      20,
+      {
+        "mode": "EXECUTION_AWARE_PAPER",
+        "cycle_id": "428e8323-6421-4572-aa0f-375bebbf6035",
+        "execution_aware": {
+          "open_orders_count": 0,
+          "paper_orders_count": 1,
+          "open_positions_count": 1
+        },
+        "selected_market_id": "1517835"
+      },
+      "2026-04-22 13:23:30.077148+00:00"
+    ]
+  ],
+  "recent_paper_signals": [
+    [
+      "109d3155-21d7-4bc7-bc17-18b2ed05f6ad",
+      "f83dcaf7-3fa5-46e5-bdfd-5ecf164831a6",
+      "1708086",
+      "WOULD_BLOCK",
+      "YES",
+      "0.700000",
+      "0.160000",
+      "5.000000",
+      "BLOCKED",
+      "open_orders_1_meet_exceed_live_max_open_positions_1",
+      "2026-04-22 13:25:40.986598+00:00"
+    ],
+    [
+      "09e82613-125c-44d7-97c7-6db992d93259",
+      "f83dcaf7-3fa5-46e5-bdfd-5ecf164831a6",
+      "1910397",
+      "WOULD_BLOCK",
+      "YES",
+      "0.690000",
+      "0.200000",
+      "5.000000",
+      "BLOCKED",
+      "open_orders_1_meet_exceed_live_max_open_positions_1",
+      "2026-04-22 13:25:40.986598+00:00"
+    ],
+    [
+      "fe721f0d-9fd7-45ce-965f-cb3ba58fbfb4",
+      "f83dcaf7-3fa5-46e5-bdfd-5ecf164831a6",
+      "1664037",
+      "WOULD_BLOCK",
+      "NO",
+      "0.690000",
+      "0.280000",
+      "5.000000",
+      "BLOCKED",
+      "open_orders_1_meet_exceed_live_max_open_positions_1",
+      "2026-04-22 13:25:40.986598+00:00"
+    ],
+    [
+      "140a0fa3-486f-40bc-84c9-a10a51bba2ce",
+      "f83dcaf7-3fa5-46e5-bdfd-5ecf164831a6",
+      "1664039",
+      "WOULD_BLOCK",
+      "YES",
+      "0.710000",
+      "0.263000",
+      "5.000000",
+      "BLOCKED",
+      "open_orders_1_meet_exceed_live_max_open_positions_1",
+      "2026-04-22 13:25:40.986598+00:00"
+    ],
+    [
+      "274a714f-4386-455d-8b5f-19c0064bd306",
+      "f83dcaf7-3fa5-46e5-bdfd-5ecf164831a6",
+      "1708109",
+      "WOULD_BLOCK",
+      "YES",
+      "0.690000",
+      "0.150000",
+      "5.000000",
+      "BLOCKED",
+      "open_orders_1_meet_exceed_live_max_open_positions_1",
+      "2026-04-22 13:25:40.986598+00:00"
+    ],
+    [
+      "35fc5ba6-990e-4357-a38f-d1d14fcaa3bd",
+      "f83dcaf7-3fa5-46e5-bdfd-5ecf164831a6",
+      "1797301",
+      "WOULD_BLOCK",
+      "NO",
+      "0.710000",
+      "0.200000",
+      "5.000000",
+      "BLOCKED",
+      "open_orders_1_meet_exceed_live_max_open_positions_1",
+      "2026-04-22 13:25:40.986598+00:00"
+    ],
+    [
+      "cc122c06-705a-4d82-b711-22ce2ad51d70",
+      "f83dcaf7-3fa5-46e5-bdfd-5ecf164831a6",
+      "1517835",
+      "WOULD_BLOCK",
+      "YES",
+      "0.720000",
+      "0.120000",
+      "6.250000",
+      "BLOCKED",
+      "open_orders_1_meet_exceed_live_max_open_positions_1",
+      "2026-04-22 13:25:40.986598+00:00"
+    ],
+    [
+      "ecd05bcb-44e9-4e30-8057-4c860475da97",
+      "f83dcaf7-3fa5-46e5-bdfd-5ecf164831a6",
+      "1929111",
+      "WOULD_BLOCK",
+      "YES",
+      "0.700000",
+      "0.160000",
+      "5.000000",
+      "BLOCKED",
+      "open_orders_1_meet_exceed_live_max_open_positions_1",
+      "2026-04-22 13:25:40.986598+00:00"
+    ]
+  ],
+  "recent_paper_orders": [
+    [
+      "662de698-0ddd-4b1b-9d98-8f4ce4e0a45e",
+      "57558def-ef31-47de-9ff5-43bdabc80c1d",
+      "539d497b-3371-4d1f-94b6-bcefb43a06ef",
+      "1517835",
+      "YES",
+      "BUY",
+      "0.120000",
+      "6.250000",
+      "FILLED",
+      "1.000000",
+      "6.250000",
+      "0.000000",
+      "0.120000",
+      true,
+      "2026-04-22 13:23:30.809414+00:00",
+      "2026-04-22 13:23:30.809414+00:00"
+    ]
+  ],
+  "recent_paper_order_events": [
+    [
+      "b22fb690-973b-477a-a46e-dfbd85a5a71c",
+      "662de698-0ddd-4b1b-9d98-8f4ce4e0a45e",
+      "CREATED",
+      "FILLED",
+      "filled_at_current_mark",
+      "order would fill at the current cycle mark",
+      "2026-04-22 13:23:30.990472+00:00"
+    ],
+    [
+      "203995de-193e-4178-9ab2-bf05b9cc7730",
+      "662de698-0ddd-4b1b-9d98-8f4ce4e0a45e",
+      null,
+      "CREATED",
+      "order_created",
+      "paper order created from WOULD_ENTER signal",
+      "2026-04-22 13:23:30.976869+00:00"
+    ]
+  ],
+  "recent_paper_positions": [
+    [
+      "35407965-229e-49f2-a4cd-55438e2562e1",
+      "57558def-ef31-47de-9ff5-43bdabc80c1d",
+      "1517835",
+      "YES",
+      "6.250000",
+      "0.120000",
+      "0.120000",
+      "0.000000",
+      "0.000000",
+      "OPEN",
+      "ACTIVE",
+      "NONE",
+      "2026-04-22 13:23:30.994277+00:00",
+      "2026-04-22 13:25:53.015646+00:00",
+      null
+    ]
+  ],
+  "recent_paper_position_events": [
+    [
+      "0ba55b97-e8c8-4d17-a96c-c2a4036939d4",
+      "35407965-229e-49f2-a4cd-55438e2562e1",
+      "MARKED",
+      "runtime_mark_to_market",
+      "position marked from the latest runtime market snapshot",
+      "2026-04-22 13:25:53.019968+00:00"
+    ],
+    [
+      "4d3c3c5c-c7e5-4cc5-b198-835432fbe6f2",
+      "35407965-229e-49f2-a4cd-55438e2562e1",
+      "MARKED",
+      "runtime_mark_to_market",
+      "position marked from the latest runtime market snapshot",
+      "2026-04-22 13:23:59.170963+00:00"
+    ],
+    [
+      "27bfbc2c-14ae-4fca-b58b-f48c3fb4bf2c",
+      "35407965-229e-49f2-a4cd-55438e2562e1",
+      "MARKED",
+      "runtime_mark_to_market",
+      "position marked from the latest runtime market snapshot",
+      "2026-04-22 13:23:33.518042+00:00"
+    ],
+    [
+      "d6de0eeb-331e-4b21-bbf4-c0721a196a4b",
+      "35407965-229e-49f2-a4cd-55438e2562e1",
+      "OPENED",
+      "simulated_fill",
+      "paper order 662de698-0ddd-4b1b-9d98-8f4ce4e0a45e contributed simulated fill",
+      "2026-04-22 13:23:30.994277+00:00"
+    ],
+    [
+      "a99c4441-0798-400f-8f9e-85c4233013f4",
+      "35407965-229e-49f2-a4cd-55438e2562e1",
+      "MARKED",
+      "mark_to_market",
+      "position marked using current cycle market price",
+      "2026-04-22 13:23:30.994277+00:00"
+    ]
+  ]
+}

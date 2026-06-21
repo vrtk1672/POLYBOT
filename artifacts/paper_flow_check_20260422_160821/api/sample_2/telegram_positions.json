@@ -1,0 +1,7 @@
+{
+    "command":  "/positions",
+    "supported":  true,
+    "response_text":  "No open persisted positions are available.",
+    "sent":  false,
+    "control_action_id":  null
+}

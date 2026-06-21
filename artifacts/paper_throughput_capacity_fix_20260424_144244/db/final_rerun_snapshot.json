@@ -1,0 +1,72 @@
+{
+  "signal_counts": {
+    "paper_signals": 60,
+    "would_enter": 3,
+    "would_block": 3,
+    "would_skip": 54
+  },
+  "order_counts": {
+    "paper_orders": 3,
+    "filled_orders": 3
+  },
+  "positions": [
+    {
+      "current_status": "OPEN",
+      "count": 3,
+      "realized": 0.0,
+      "unrealized": 0.0
+    }
+  ],
+  "position_events": [
+    {
+      "event_type": "MARKED",
+      "reason_code": "runtime_mark_to_market",
+      "count": 6
+    },
+    {
+      "event_type": "MARKED",
+      "reason_code": "mark_to_market",
+      "count": 3
+    },
+    {
+      "event_type": "OPENED",
+      "reason_code": "simulated_fill",
+      "count": 3
+    }
+  ],
+  "position_rows": [
+    {
+      "market_id": "1517835",
+      "current_status": "OPEN",
+      "size": 5.0,
+      "avg_entry": 0.15,
+      "mark_price": 0.15,
+      "realized": 0.0,
+      "unrealized": 0.0,
+      "opened_at": "2026-04-24T11:43:14.306050+00:00",
+      "closed_at": null
+    },
+    {
+      "market_id": "1980863",
+      "current_status": "OPEN",
+      "size": 5.0,
+      "avg_entry": 0.21,
+      "mark_price": 0.21,
+      "realized": 0.0,
+      "unrealized": 0.0,
+      "opened_at": "2026-04-24T11:43:45.514474+00:00",
+      "closed_at": null
+    },
+    {
+      "market_id": "1929170",
+      "current_status": "OPEN",
+      "size": 5.0,
+      "avg_entry": 0.24,
+      "mark_price": 0.24,
+      "realized": 0.0,
+      "unrealized": 0.0,
+      "opened_at": "2026-04-24T11:44:03.216790+00:00",
+      "closed_at": null
+    }
+  ]
+}

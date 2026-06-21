@@ -1,0 +1,11 @@
+{
+  "before_selection_fix": {
+    "paper_signals": 60,
+    "would_enter": 3,
+    "would_block": 3,
+    "would_skip": 54,
+    "paper_orders": 3,
+    "paper_positions": 3,
+    "dominant_skip_reason": "lower_ranked_after_would_enter"
+  }
+}

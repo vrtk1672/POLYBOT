@@ -1,0 +1,207 @@
+{
+  "window": {
+    "started_at": "2026-04-23T13:46:24.537256+00:00",
+    "ended_at": "2026-04-23T14:02:51.405850+00:00"
+  },
+  "runtime_cycles": [
+    {
+      "cycles": 12,
+      "first_started_at": "2026-04-23T13:46:24.537256+00:00",
+      "last_completed_at": "2026-04-23T14:01:41.125363+00:00",
+      "completed_cycles": 12,
+      "non_completed_cycles": 0
+    }
+  ],
+  "paper_table_counts": [
+    {
+      "table_name": "paper_order_events",
+      "count": 2
+    },
+    {
+      "table_name": "paper_orders",
+      "count": 1
+    },
+    {
+      "table_name": "paper_position_events",
+      "count": 14
+    },
+    {
+      "table_name": "paper_positions",
+      "count": 1
+    },
+    {
+      "table_name": "paper_runs",
+      "count": 12
+    },
+    {
+      "table_name": "paper_signals",
+      "count": 240
+    }
+  ],
+  "flow_totals_fresh": [
+    {
+      "paper_signals": 240,
+      "paper_orders_created": 1,
+      "paper_orders_filled": 1,
+      "paper_positions_total": 1,
+      "paper_positions_opened": 1,
+      "paper_positions_closed": 0,
+      "paper_positions_reduced": 0,
+      "paper_positions_still_open": 1,
+      "paper_positions_exit_pending": 0,
+      "paper_positions_exited": 0
+    }
+  ],
+  "pnl_totals": [
+    {
+      "total_realized_pnl": 0.0,
+      "total_unrealized_pnl": 0.05
+    }
+  ],
+  "position_status": [
+    {
+      "current_status": "OPEN",
+      "count": 1,
+      "realized_pnl": 0.0,
+      "unrealized_pnl": 0.05
+    }
+  ],
+  "closed_distribution": [
+    {
+      "closed_count": 0,
+      "positive_closes": 0,
+      "negative_closes": 0,
+      "flat_closes": 0,
+      "total_realized_pnl": 0.0,
+      "avg_realized_pnl": null,
+      "min_realized_pnl": null,
+      "max_realized_pnl": null,
+      "avg_hold_seconds": null,
+      "min_hold_seconds": null,
+      "max_hold_seconds": null
+    }
+  ],
+  "hold_buckets": [
+    {
+      "bucket": "OPEN",
+      "count": 1
+    }
+  ],
+  "position_events": [
+    {
+      "event_type": "MARKED",
+      "reason_code": "runtime_mark_to_market",
+      "count": 12
+    },
+    {
+      "event_type": "MARKED",
+      "reason_code": "mark_to_market",
+      "count": 1
+    },
+    {
+      "event_type": "OPENED",
+      "reason_code": "simulated_fill",
+      "count": 1
+    }
+  ],
+  "order_events": [
+    {
+      "old_status": "CREATED",
+      "new_status": "FILLED",
+      "reason_code": "filled_at_current_mark",
+      "count": 1
+    },
+    {
+      "old_status": null,
+      "new_status": "CREATED",
+      "reason_code": "order_created",
+      "count": 1
+    }
+  ],
+  "advisory_actions_fresh": [
+    {
+      "exposure_type": "SHADOW_ORDER",
+      "advisory_action_class": "BLOCK_NEW_ENTRY",
+      "count": 72
+    },
+    {
+      "exposure_type": "SHADOW_POSITION",
+      "advisory_action_class": "WATCH",
+      "count": 72
+    },
+    {
+      "exposure_type": "PAPER_POSITION",
+      "advisory_action_class": "WATCH",
+      "count": 12
+    }
+  ],
+  "command_intents_fresh": [
+    {
+      "exposure_type": "PAPER_POSITION",
+      "command_intent_class": "WATCH_ONLY",
+      "command_status_class": "SUPPRESSED",
+      "orchestration_eligibility_class": "INELIGIBLE",
+      "count": 97
+    },
+    {
+      "exposure_type": "SHADOW_ORDER",
+      "command_intent_class": "BLOCK_NEW_ENTRY",
+      "command_status_class": "STAGED",
+      "orchestration_eligibility_class": "REVIEW_REQUIRED",
+      "count": 72
+    },
+    {
+      "exposure_type": "SHADOW_POSITION",
+      "command_intent_class": "WATCH_ONLY",
+      "command_status_class": "NOT_ELIGIBLE",
+      "orchestration_eligibility_class": "INELIGIBLE",
+      "count": 72
+    },
+    {
+      "exposure_type": "PAPER_POSITION",
+      "command_intent_class": "EXIT_POSITION",
+      "command_status_class": "SUPPRESSED",
+      "orchestration_eligibility_class": "INELIGIBLE",
+      "count": 12
+    },
+    {
+      "exposure_type": "PAPER_POSITION",
+      "command_intent_class": "PREPARE_POSITION_EXIT",
+      "command_status_class": "SUPPRESSED",
+      "orchestration_eligibility_class": "INELIGIBLE",
+      "count": 12
+    },
+    {
+      "exposure_type": "PAPER_POSITION",
+      "command_intent_class": "WATCH_ONLY",
+      "command_status_class": "NOT_ELIGIBLE",
+      "orchestration_eligibility_class": "INELIGIBLE",
+      "count": 12
+    }
+  ],
+  "recent_positions": [
+    {
+      "id": "4d4a3eae-0df2-49cd-9d7b-9675a362f355",
+      "market_id": "1929170",
+      "intended_outcome": "YES",
+      "size": 5.0,
+      "avg_entry": 0.23,
+      "mark_price": 0.24,
+      "realized": 0.0,
+      "unrealized": 0.05,
+      "current_status": "OPEN",
+      "opened_at": "2026-04-23T13:46:26.969526+00:00",
+      "closed_at": null,
+      "updated_at": "2026-04-23T14:01:49.547344+00:00"
+    }
+  ],
+  "market_pnl": [
+    {
+      "market_id": "1929170",
+      "current_status": "OPEN",
+      "count": 1,
+      "realized_pnl": 0.0,
+      "unrealized_pnl": 0.05
+    }
+  ]
+}

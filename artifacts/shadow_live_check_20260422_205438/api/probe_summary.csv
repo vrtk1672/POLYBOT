@@ -1,0 +1,4 @@
+sample,timestamp,health_status,kpi_status,positions_status,audit_status,telegram_status,shadow_orders_count,shadow_positions_count,shadow_would_submit,shadow_blocked_by_risk,shadow_blocked_by_config,shadow_invalid_request
+1,2026-04-22T21:04:19.5913606+03:00,200,200,200,200,200,4,4,4,0,0,0
+2,2026-04-22T21:05:30.8574673+03:00,200,200,200,200,200,5,5,5,0,0,0
+3,2026-04-22T21:06:42.1196333+03:00,200,200,200,200,200,6,6,5,0,0,0

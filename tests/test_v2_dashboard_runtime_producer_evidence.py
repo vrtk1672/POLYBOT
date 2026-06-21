@@ -1,0 +1,91 @@
+from __future__ import annotations
+
+from fastapi import FastAPI
+from fastapi.testclient import TestClient
+
+from app.api.routes import create_router
+from app.db.connection import DatabaseConnectionFactory
+from app.db.migrate import run_migrations
+from app.repositories.source_status_repository import SourceStatusRepository
+from app.services.runtime_producer_evidence import RuntimeProducerEvidenceService
+
+
+class _DummyMarketService:
+    async def health(self) -> dict[str, object]:
+        return {"status": "ok"}
+
+    async def top_markets(self, limit: int | None = None) -> list[object]:
+        return []
+
+    async def raw_counts(self) -> dict[str, object]:
+        return {"raw_market_count": 0}
+
+    async def last_refresh(self) -> dict[str, object]:
+        return {"last_refresh_at": None}
+
+
+def _client() -> TestClient:
+    app = FastAPI()
+    app.state.market_service = _DummyMarketService()
+    app.include_router(create_router())
+    return TestClient(app)
+
+
+def _prepare_with_run() -> None:
+    run_migrations()
+    with DatabaseConnectionFactory().connect() as conn, conn.transaction():
+        conn.execute("DELETE FROM runtime_producer_evidence_items")
+        conn.execute("DELETE FROM runtime_producer_evidence_runs")
+        conn.execute("DELETE FROM neuron_signal_bindings")
+        conn.execute("DELETE FROM neuron_signals")
+        conn.execute("DELETE FROM source_status")
+        SourceStatusRepository().upsert_status(
+            conn,
+            {
+                "source_name": "polymarket_gamma",
+                "source_type": "market_discovery",
+                "configured": True,
+                "key_required": False,
+                "key_present": False,
+                "key_name": None,
+                "endpoint_url": "local://source-status/polymarket_gamma",
+                "runtime_status": "ACTIVE",
+                "freshness_status": "FRESH",
+                "read_only": True,
+                "mutation_allowed": False,
+                "details_json": {},
+                "latency_ms": 1,
+                "notes": "runtime evidence dashboard seed",
+            },
+        )
+    RuntimeProducerEvidenceService().run_runtime_evidence_loop(limit=10, apply_evaluations=True)
+
+
+def test_dashboard_runtime_producer_evidence_endpoint(postgres_test_schema) -> None:
+    _prepare_with_run()
+
+    with _client() as client:
+        response = client.get("/dashboard/api/v2/runtime-producer-evidence")
+
+    payload = response.json()
+    assert response.status_code == 200
+    assert payload["mock_data"] is False
+    assert payload["latest_run"] is not None
+    assert payload["signals_created"] == 1
+    assert payload["paper_ready"] is False
+    assert payload["orders_created"] == 0
+
+
+def test_mesh_dashboard_includes_runtime_producer_evidence_layer(postgres_test_schema) -> None:
+    _prepare_with_run()
+
+    with _client() as client:
+        response = client.get("/dashboard/api/v2/mesh")
+
+    payload = response.json()
+    assert response.status_code == 200
+    assert payload["mock_data"] is False
+    assert "runtime_producer_evidence" in payload["layers"]
+    assert "runtime_producer_evidence" in payload["flow"]
+    assert payload["readiness"]["paper_ready"] is False
+    assert payload["layers"]["runtime_producer_evidence"]["signals_created"] == 1

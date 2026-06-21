@@ -1,0 +1,228 @@
+{
+    "/dashboard/api/v2/control/paper-actionability":  {
+                                                          "runtime_state":  null,
+                                                          "readiness_state":  "PARTIAL",
+                                                          "system_power":  null,
+                                                          "freshness_state":  "STALE",
+                                                          "blockers":  [
+                                                                           "MISSING_CANDIDATE_EVENT_LINK",
+                                                                           "WAITING_FOR_PRICE_REFRESH",
+                                                                           "BLOCKED_BY_LIFECYCLE"
+                                                                       ],
+                                                          "status":  "REAL",
+                                                          "counts":  {
+                                                                         "items_checked":  50,
+                                                                         "candidate_scoped_bundles":  0,
+                                                                         "actionable_small_paper":  0,
+                                                                         "actionable_if_paper_enabled":  0,
+                                                                         "watch_for_confirmation":  0,
+                                                                         "waiting_for_price_refresh":  0,
+                                                                         "waiting_for_lifecycle":  0,
+                                                                         "waiting_for_capital":  0,
+                                                                         "waiting_for_risk":  0,
+                                                                         "waiting_for_exit":  0,
+                                                                         "blocked_by_lifecycle":  50,
+                                                                         "blocked_by_capital":  0,
+                                                                         "blocked_by_risk":  0,
+                                                                         "blocked_by_exit":  0,
+                                                                         "blocked_by_duplicate":  0,
+                                                                         "blocked_by_open_position":  0,
+                                                                         "blocked_by_data":  0,
+                                                                         "no_trade":  0,
+                                                                         "unknown":  0
+                                                                     }
+                                                      },
+    "/dashboard/api/v2/control/eligible-intent-bridge":  {
+                                                             "error":  "The operation has timed out."
+                                                         },
+    "/dashboard/api/v2/control/pre-paper-safety":  {
+                                                       "runtime_state":  null,
+                                                       "readiness_state":  "PRE_PAPER_NOT_READY",
+                                                       "system_power":  null,
+                                                       "freshness_state":  "FRESH",
+                                                       "blockers":  [
+                                                                        "PAPER_SIMULATION_OFF",
+                                                                        "NO_CANDIDATE_SCOPED_EVENT",
+                                                                        "NO_PAPER_ACTIONABILITY",
+                                                                        "MISSING_CANDIDATE_EVENT_LINK",
+                                                                        "WAITING_FOR_PRICE_REFRESH",
+                                                                        "BLOCKED_BY_LIFECYCLE"
+                                                                    ],
+                                                       "status":  "PARTIAL",
+                                                       "counts":  {
+                                                                      "paper_intents":  20,
+                                                                      "paper_orders":  12,
+                                                                      "paper_fills":  9,
+                                                                      "paper_positions":  12,
+                                                                      "open_paper_positions":  0,
+                                                                      "live_orders":  0,
+                                                                      "positions":  0,
+                                                                      "duplicate_active_intent_risk":  0
+                                                                  }
+                                                   },
+    "/dashboard/api/v2/control/candidate-explanations":  {
+                                                             "runtime_state":  null,
+                                                             "readiness_state":  "BLOCKED",
+                                                             "system_power":  null,
+                                                             "freshness_state":  "STALE",
+                                                             "blockers":  null,
+                                                             "status":  "STALE",
+                                                             "counts":  {
+                                                                            "total_candidates":  20392,
+                                                                            "blocked":  17421,
+                                                                            "eligible":  2971,
+                                                                            "waiting_for_refresh":  20392,
+                                                                            "ready_for_intent":  2957,
+                                                                            "intent_created":  20,
+                                                                            "stale":  20392,
+                                                                            "unknown":  0
+                                                                        }
+                                                         },
+    "/dashboard/api/v2/control/candidate-scoped-events":  {
+                                                              "runtime_state":  null,
+                                                              "readiness_state":  "PARTIAL",
+                                                              "system_power":  null,
+                                                              "freshness_state":  "STALE",
+                                                              "blockers":  [
+                                                                               "NO_CANDIDATE_SCOPED_EVENT"
+                                                                           ],
+                                                              "status":  "REAL",
+                                                              "counts":  {
+                                                                             "events_checked":  50,
+                                                                             "candidate_event_scoped":  0,
+                                                                             "market_event_only":  0,
+                                                                             "unlinked_with_reason":  0,
+                                                                             "ambiguous_candidate_event":  0,
+                                                                             "token_side_mismatch":  23
+                                                                         }
+                                                          },
+    "/dashboard/api/v2/control/runtime-readiness":  {
+                                                        "runtime_state":  null,
+                                                        "readiness_state":  null,
+                                                        "system_power":  null,
+                                                        "freshness_state":  null,
+                                                        "blockers":  [
+                                                                         "SYSTEM_POWER_OFF",
+                                                                         "GOVERNOR_DENIED_COLLECT_DATA",
+                                                                         "ACTIVE_CYCLE_STALE",
+                                                                         "LAST_SUCCESSFUL_CYCLE_STALE"
+                                                                     ],
+                                                        "status":  null,
+                                                        "counts":  null
+                                                    },
+    "/dashboard/api/v2/control/paper-readiness":  {
+                                                      "runtime_state":  null,
+                                                      "readiness_state":  "BLOCKED",
+                                                      "system_power":  null,
+                                                      "freshness_state":  "STALE",
+                                                      "blockers":  [
+                                                                       "SYSTEM_POWER_OFF",
+                                                                       "RUNTIME_STOPPED",
+                                                                       "PAPER_SIMULATION_OFF",
+                                                                       "GOVERNOR_DENIED_PAPER",
+                                                                       "STALE_MARKET_DATA",
+                                                                       "STALE_ORDERBOOK",
+                                                                       "STALE_TRUSTED_ORDERBOOK",
+                                                                       "STALE_PAPER_CANDIDATE",
+                                                                       "ONLY_STALE_PAPER_INTENTS",
+                                                                       "STALE_PAPER_INTENT",
+                                                                       "REFRESH_REQUIRED_BEFORE_EXECUTION",
+                                                                       "RISK_NOT_APPROVED",
+                                                                       "EXIT_NOT_READY",
+                                                                       "LIFECYCLE_GOVERNANCE_DENIED"
+                                                                   ],
+                                                      "status":  null,
+                                                      "counts":  {
+                                                                     "eligible_candidates":  2971,
+                                                                     "blocked_candidates":  17421,
+                                                                     "fresh_intents":  0,
+                                                                     "stale_intents":  14,
+                                                                     "open_positions":  0,
+                                                                     "paper_orders":  12,
+                                                                     "paper_fills":  9,
+                                                                     "price_ready_candidates":  0,
+                                                                     "candidates_waiting_for_orderbook_refresh":  100,
+                                                                     "candidate_price_ready_count":  0,
+                                                                     "candidates_waiting_for_price_refresh":  100,
+                                                                     "candidates_with_trusted_fresh_orderbook":  0,
+                                                                     "candidates_with_stale_orderbook":  100,
+                                                                     "candidate_scoped_event_count":  0,
+                                                                     "market_scoped_event_count":  16,
+                                                                     "unlinked_event_count":  0,
+                                                                     "ambiguous_event_count":  1
+                                                                 }
+                                                  },
+    "/dashboard/api/v2/control/paper-certification-plan":  {
+                                                               "runtime_state":  null,
+                                                               "readiness_state":  "PARTIAL",
+                                                               "system_power":  null,
+                                                               "freshness_state":  "FRESH",
+                                                               "blockers":  [
+                                                                                "PAPER_SIMULATION_OFF"
+                                                                            ],
+                                                               "status":  "REAL",
+                                                               "counts":  null
+                                                           },
+    "/dashboard/api/v2/control/candidate-event-correlation":  {
+                                                                  "runtime_state":  null,
+                                                                  "readiness_state":  "PARTIAL",
+                                                                  "system_power":  null,
+                                                                  "freshness_state":  "STALE",
+                                                                  "blockers":  null,
+                                                                  "status":  "PARTIAL",
+                                                                  "counts":  {
+                                                                                 "events_checked":  50,
+                                                                                 "linked_to_candidate":  0,
+                                                                                 "market_level_only":  0,
+                                                                                 "unlinked":  0,
+                                                                                 "ambiguous_multiple_candidates":  0,
+                                                                                 "token_side_mismatch":  23,
+                                                                                 "stale_candidate_link":  27,
+                                                                                 "candidate_scoped":  0,
+                                                                                 "market_scoped_only":  0,
+                                                                                 "not_actionable":  50
+                                                                             }
+                                                              },
+    "/dashboard/api/v2/control/mesh-evidence-bundles":  {
+                                                            "runtime_state":  null,
+                                                            "readiness_state":  "READY",
+                                                            "system_power":  null,
+                                                            "freshness_state":  "STALE",
+                                                            "blockers":  null,
+                                                            "status":  "STALE",
+                                                            "counts":  {
+                                                                           "bundles":  50,
+                                                                           "complete":  50,
+                                                                           "partial":  0,
+                                                                           "conflicted":  0,
+                                                                           "stale":  0,
+                                                                           "missing":  0,
+                                                                           "with_liquidity_opinion":  50,
+                                                                           "with_risk_opinion":  50,
+                                                                           "with_exit_opinion":  50,
+                                                                           "with_capital_opinion":  50,
+                                                                           "with_lifecycle_opinion":  50,
+                                                                           "with_event_native_capital":  50,
+                                                                           "with_event_native_lifecycle":  50,
+                                                                           "with_all_five_opinions":  50,
+                                                                           "consensus_ready":  0,
+                                                                           "consensus_blocked":  50,
+                                                                           "consensus_waiting_for_capital":  0,
+                                                                           "consensus_waiting_for_lifecycle":  0,
+                                                                           "with_coordinator_decision":  50,
+                                                                           "candidate_scoped":  0,
+                                                                           "market_scoped_only":  0,
+                                                                           "unlinked_events":  0,
+                                                                           "ambiguous_events":  0
+                                                                       }
+                                                        },
+    "/runtime/health":  {
+                            "runtime_state":  "STOPPED",
+                            "readiness_state":  "BLOCKED",
+                            "system_power":  "OFF",
+                            "freshness_state":  "STALE",
+                            "blockers":  null,
+                            "status":  null,
+                            "counts":  null
+                        }
+}

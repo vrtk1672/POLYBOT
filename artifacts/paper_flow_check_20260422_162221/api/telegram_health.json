@@ -1,0 +1,7 @@
+{
+  "command": "health",
+  "supported": false,
+  "response_text": "Command not supported yet by the current Telegram foundation.",
+  "sent": false,
+  "control_action_id": null
+}

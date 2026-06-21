@@ -1,0 +1,11 @@
+{
+  "paper_runs": 13,
+  "paper_signals": 260,
+  "paper_orders": 3,
+  "paper_positions": 3,
+  "paper_position_events": 45,
+  "market_snapshots": 33020,
+  "external_events_normalized": 101,
+  "whale_events": 2223,
+  "whale_market_scores": 436
+}

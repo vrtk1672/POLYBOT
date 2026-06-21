@@ -1,0 +1,22 @@
+           column_name           |        data_type         
+---------------------------------+--------------------------
+ id                              | uuid
+ command_intent_run_id           | uuid
+ market_id                       | text
+ advisory_resolution_record_id   | uuid
+ exit_advisory_record_id         | uuid
+ exposure_type                   | text
+ exposure_ref_id                 | text
+ command_intent_class            | text
+ command_priority_class          | text
+ command_status_class            | text
+ orchestration_eligibility_class | text
+ command_reason_codes_json       | jsonb
+ command_reason_text             | text
+ explanation_json                | jsonb
+ advisory_resolution_version     | text
+ command_intent_version          | text
+ created_at                      | timestamp with time zone
+ updated_at                      | timestamp with time zone
+(18 rows)
+

@@ -1,0 +1,121 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>POLYBOT Operator Control Room</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: #121a2f;
+      --panel-alt: #18223d;
+      --line: #2a3558;
+      --text: #ecf2ff;
+      --muted: #9fb0d9;
+      --accent: #67d0ff;
+      --warn: #ffce6b;
+      --danger: #ff7b7b;
+      --good: #7be0a9;
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "IBM Plex Sans", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(103, 208, 255, 0.16), transparent 26%),
+        linear-gradient(180deg, #0a0f1d, #0f1730 48%, #0b1020);
+      color: var(--text);
+    }
+    header {
+      padding: 24px 28px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 0.02em;
+    }
+    header p {
+      color: var(--muted);
+      margin: 8px 0 0;
+      max-width: 880px;
+    }
+    main {
+      padding: 20px 24px 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 16px;
+    }
+    section {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      word-break: break-word;
+      color: var(--text);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .meta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 0 24px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--panel-alt);
+      border: 1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>POLYBOT Operator Control Room</h1>
+    <p>Read-first operator control room for health, ranking, invalidation, advisories, staged intents, intelligence, and audit history. Remote controls remain audited placeholders until a safe runtime seam exists.</p>
+  </header>
+  <div class="meta">
+    <span class="badge">Auto refresh: 30s</span>
+    <span class="badge">Dashboard endpoints: /dashboard/api/*</span>
+    <span class="badge">Telegram foundation: /telegram/command and /telegram/webhook</span>
+  </div>
+  <main>
+    <section><h2>System Health</h2><pre id="system_health">Loading...</pre></section>
+    <section><h2>Ranking</h2><pre id="ranking">Loading...</pre></section>
+    <section><h2>Positions / Orders</h2><pre id="positions_orders">Loading...</pre></section>
+    <section><h2>Invalidation / Exit</h2><pre id="invalidation_exit">Loading...</pre></section>
+    <section><h2>Intelligence</h2><pre id="intelligence">Loading...</pre></section>
+    <section><h2>Audit / Alerts</h2><pre id="audit">Loading...</pre></section>
+  </main>
+  <script>
+    async function refreshDashboard() {
+      const response = await fetch('/dashboard/api/overview?limit=6');
+      const data = await response.json();
+      for (const key of ['system_health', 'ranking', 'positions_orders', 'invalidation_exit', 'intelligence', 'audit']) {
+        const node = document.getElementById(key);
+        if (node) {
+          node.textContent = JSON.stringify(data[key], null, 2);
+        }
+      }
+    }
+    refreshDashboard();
+    setInterval(refreshDashboard, 30000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "captured_market_ids": [
+    "553866",
+    "564198",
+    "566136"
+  ],
+  "cycle_id": "a026378a-32cf-4a35-977a-7ac9356cb5eb",
+  "decisions": [
+    {
+      "decision_type": "SELECT",
+      "market_id": "566136",
+      "reason": "score=39.88 confidence=18.00 edge=10.00 time=5.00 execution=8.00 risk_penalty=0.00",
+      "selected": true
+    },
+    {
+      "decision_type": "SKIP",
+      "market_id": "553866",
+      "reason": "not_selected_higher_ranked:566136",
+      "selected": false
+    },
+    {
+      "decision_type": "SKIP",
+      "market_id": "564198",
+      "reason": "not_selected_higher_ranked:566136",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [
+    "566136",
+    "564198",
+    "553866"
+  ],
+  "selected_market_id": "566136"
+}

@@ -1,0 +1,827 @@
+{
+    "status":  "REAL",
+    "source":  {
+                   "mesh_evidence_bundles":  "event_log + brain_outputs + coordinator_decisions",
+                   "candidate_price_path":  "orderbook_price_readiness",
+                   "paper_simulation":  "paper_simulation_status",
+                   "safety_counts":  "paper_intents + paper_positions"
+               },
+    "last_updated":  "2026-06-15T11:42:36.532728+00:00",
+    "stale_after_seconds":  300,
+    "age_seconds":  null,
+    "freshness_state":  "FRESH",
+    "runtime_state":  "RUNNING",
+    "truth_state":  "ACTIVE_FRESH",
+    "readiness_state":  "PARTIAL",
+    "data":  {
+                 "status":  "REAL",
+                 "source":  {
+                                "mesh_evidence_bundles":  "event_log + brain_outputs + coordinator_decisions",
+                                "candidate_price_path":  "orderbook_price_readiness",
+                                "paper_simulation":  "paper_simulation_status",
+                                "safety_counts":  "paper_intents + paper_positions"
+                            },
+                 "last_updated":  "2026-06-15T11:42:36.532728+00:00",
+                 "freshness_state":  "FRESH",
+                 "readiness_state":  "PARTIAL",
+                 "truth_state":  "ACTIVE_FRESH",
+                 "counts":  {
+                                "items_checked":  5,
+                                "candidate_scoped_bundles":  3,
+                                "actionable_small_paper":  0,
+                                "actionable_if_paper_enabled":  0,
+                                "watch_for_confirmation":  0,
+                                "waiting_for_price_refresh":  0,
+                                "waiting_for_lifecycle":  0,
+                                "waiting_for_capital":  0,
+                                "waiting_for_risk":  0,
+                                "waiting_for_exit":  0,
+                                "blocked_by_lifecycle":  5,
+                                "blocked_by_capital":  0,
+                                "blocked_by_risk":  0,
+                                "blocked_by_exit":  0,
+                                "blocked_by_duplicate":  0,
+                                "blocked_by_open_position":  0,
+                                "blocked_by_data":  0,
+                                "no_trade":  0,
+                                "unknown":  0
+                            },
+                 "candidate_actionability_exists":  false,
+                 "paper_simulation_enabled":  false,
+                 "safety_counts":  {
+                                       "duplicate_active_intent_risk":  0,
+                                       "open_paper_positions":  0
+                                   },
+                 "items":  [
+                               {
+                                   "candidate_id":  "eligibility_exit_risk_thesis_coord_5999fa6f53454e7b9c1815fe155c1a15",
+                                   "market_id":  "691547",
+                                   "side":  "YES",
+                                   "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                   "event_id":  "1025dc39-559e-4a4d-ad84-5d89e26d2ecc",
+                                   "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_b187e9b19922469abdedb8fe7fb1e369",
+                                   "mesh_bundle_id":  "mesh_bundle_trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_b187e9b19922469abdedb8fe7fb1e369",
+                                   "candidate_event_scope":  "CANDIDATE_SCOPED",
+                                   "candidate_event_link_state":  "LINKED_TO_CANDIDATE",
+                                   "candidate_event_actionability_scope":  "CANDIDATE_SCOPED",
+                                   "correlation_confidence":  "HIGH",
+                                   "candidate_price_path_state":  "CANDIDATE_PRICE_READY",
+                                   "candidate_trusted_orderbook_state":  "TRUSTED_FRESH_FOR_CANDIDATE",
+                                   "coordinator_decision":  "LIFECYCLE_BLOCKED",
+                                   "mesh_consensus_state":  "CONSENSUS_BLOCKED",
+                                   "candidate_paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                                   "paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                                   "operational_paper_execution_state":  "EXECUTION_DISABLED_PAPER_OFF",
+                                   "actionability_confidence":  "HIGH",
+                                   "opinions":  {
+                                                    "liquidity":  "PRESENT",
+                                                    "risk":  "PRESENT",
+                                                    "exit":  "PRESENT",
+                                                    "capital":  "CAPITAL_OK",
+                                                    "lifecycle":  "LIFECYCLE_DENIED"
+                                                },
+                                   "execution_allowed":  false,
+                                   "would_require_paper_simulation_on":  false,
+                                   "blockers":  [
+                                                    "BLOCKED_BY_LIFECYCLE"
+                                                ],
+                                   "unified_blockers":  [
+                                                            {
+                                                                "blocker_code":  "BLOCKED_BY_LIFECYCLE",
+                                                                "severity":  "GOVERNANCE_DENIED",
+                                                                "source":  "paper_actionability",
+                                                                "candidate_id":  "eligibility_exit_risk_thesis_coord_5999fa6f53454e7b9c1815fe155c1a15",
+                                                                "event_id":  "1025dc39-559e-4a4d-ad84-5d89e26d2ecc",
+                                                                "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_b187e9b19922469abdedb8fe7fb1e369",
+                                                                "market_id":  "691547",
+                                                                "side":  "YES",
+                                                                "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                                "required_to_pass":  [
+                                                                                         "Lifecycle opinion must allow paper intent progression."
+                                                                                     ],
+                                                                "is_refreshable":  false,
+                                                                "is_operator_action_required":  true,
+                                                                "created_at":  "2026-06-15T11:43:05.536363+00:00"
+                                                            }
+                                                        ],
+                                   "required_to_pass":  [
+                                                            "Lifecycle opinion must allow paper intent progression."
+                                                        ],
+                                   "next_possible_state":  "WAITING_FOR_LIFECYCLE_CLEARANCE",
+                                   "operator_summary":  "Candidate is not paper-actionable: BLOCKED_BY_LIFECYCLE."
+                               },
+                               {
+                                   "candidate_id":  "eligibility_exit_risk_thesis_coord_cbbe0eda4c7a4316b56c8bc3b251d795",
+                                   "market_id":  "691547",
+                                   "side":  "YES",
+                                   "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                   "event_id":  "2900d288-966f-4b28-94be-e74b52d9cf1c",
+                                   "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_2859145a5b3445858ffec0dbb5ab4348",
+                                   "mesh_bundle_id":  "mesh_bundle_trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_2859145a5b3445858ffec0dbb5ab4348",
+                                   "candidate_event_scope":  "CANDIDATE_SCOPED",
+                                   "candidate_event_link_state":  "LINKED_TO_CANDIDATE",
+                                   "candidate_event_actionability_scope":  "CANDIDATE_SCOPED",
+                                   "correlation_confidence":  "HIGH",
+                                   "candidate_price_path_state":  "CANDIDATE_PRICE_READY",
+                                   "candidate_trusted_orderbook_state":  "TRUSTED_FRESH_FOR_CANDIDATE",
+                                   "coordinator_decision":  "LIFECYCLE_BLOCKED",
+                                   "mesh_consensus_state":  "CONSENSUS_BLOCKED",
+                                   "candidate_paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                                   "paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                                   "operational_paper_execution_state":  "EXECUTION_DISABLED_PAPER_OFF",
+                                   "actionability_confidence":  "HIGH",
+                                   "opinions":  {
+                                                    "liquidity":  "PRESENT",
+                                                    "risk":  "PRESENT",
+                                                    "exit":  "PRESENT",
+                                                    "capital":  "CAPITAL_OK",
+                                                    "lifecycle":  "LIFECYCLE_DENIED"
+                                                },
+                                   "execution_allowed":  false,
+                                   "would_require_paper_simulation_on":  false,
+                                   "blockers":  [
+                                                    "BLOCKED_BY_LIFECYCLE"
+                                                ],
+                                   "unified_blockers":  [
+                                                            {
+                                                                "blocker_code":  "BLOCKED_BY_LIFECYCLE",
+                                                                "severity":  "GOVERNANCE_DENIED",
+                                                                "source":  "paper_actionability",
+                                                                "candidate_id":  "eligibility_exit_risk_thesis_coord_cbbe0eda4c7a4316b56c8bc3b251d795",
+                                                                "event_id":  "2900d288-966f-4b28-94be-e74b52d9cf1c",
+                                                                "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_2859145a5b3445858ffec0dbb5ab4348",
+                                                                "market_id":  "691547",
+                                                                "side":  "YES",
+                                                                "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                                "required_to_pass":  [
+                                                                                         "Lifecycle opinion must allow paper intent progression."
+                                                                                     ],
+                                                                "is_refreshable":  false,
+                                                                "is_operator_action_required":  true,
+                                                                "created_at":  "2026-06-15T11:43:05.564710+00:00"
+                                                            }
+                                                        ],
+                                   "required_to_pass":  [
+                                                            "Lifecycle opinion must allow paper intent progression."
+                                                        ],
+                                   "next_possible_state":  "WAITING_FOR_LIFECYCLE_CLEARANCE",
+                                   "operator_summary":  "Candidate is not paper-actionable: BLOCKED_BY_LIFECYCLE."
+                               },
+                               {
+                                   "candidate_id":  "eligibility_exit_risk_thesis_coord_f6c48212549845149e46d57effe941ed",
+                                   "market_id":  "691547",
+                                   "side":  "YES",
+                                   "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                   "event_id":  "4b09bd82-e5a2-41bd-b78e-a51fffdce86e",
+                                   "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_2d2e9add93404de1a1bc9be9df7d2f90",
+                                   "mesh_bundle_id":  "mesh_bundle_trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_2d2e9add93404de1a1bc9be9df7d2f90",
+                                   "candidate_event_scope":  "CANDIDATE_SCOPED",
+                                   "candidate_event_link_state":  "LINKED_TO_CANDIDATE",
+                                   "candidate_event_actionability_scope":  "CANDIDATE_SCOPED",
+                                   "correlation_confidence":  "HIGH",
+                                   "candidate_price_path_state":  "CANDIDATE_PRICE_READY",
+                                   "candidate_trusted_orderbook_state":  "TRUSTED_FRESH_FOR_CANDIDATE",
+                                   "coordinator_decision":  "LIFECYCLE_BLOCKED",
+                                   "mesh_consensus_state":  "CONSENSUS_BLOCKED",
+                                   "candidate_paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                                   "paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                                   "operational_paper_execution_state":  "EXECUTION_DISABLED_PAPER_OFF",
+                                   "actionability_confidence":  "HIGH",
+                                   "opinions":  {
+                                                    "liquidity":  "PRESENT",
+                                                    "risk":  "PRESENT",
+                                                    "exit":  "PRESENT",
+                                                    "capital":  "CAPITAL_OK",
+                                                    "lifecycle":  "LIFECYCLE_DENIED"
+                                                },
+                                   "execution_allowed":  false,
+                                   "would_require_paper_simulation_on":  false,
+                                   "blockers":  [
+                                                    "BLOCKED_BY_LIFECYCLE"
+                                                ],
+                                   "unified_blockers":  [
+                                                            {
+                                                                "blocker_code":  "BLOCKED_BY_LIFECYCLE",
+                                                                "severity":  "GOVERNANCE_DENIED",
+                                                                "source":  "paper_actionability",
+                                                                "candidate_id":  "eligibility_exit_risk_thesis_coord_f6c48212549845149e46d57effe941ed",
+                                                                "event_id":  "4b09bd82-e5a2-41bd-b78e-a51fffdce86e",
+                                                                "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_2d2e9add93404de1a1bc9be9df7d2f90",
+                                                                "market_id":  "691547",
+                                                                "side":  "YES",
+                                                                "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                                "required_to_pass":  [
+                                                                                         "Lifecycle opinion must allow paper intent progression."
+                                                                                     ],
+                                                                "is_refreshable":  false,
+                                                                "is_operator_action_required":  true,
+                                                                "created_at":  "2026-06-15T11:43:05.596502+00:00"
+                                                            }
+                                                        ],
+                                   "required_to_pass":  [
+                                                            "Lifecycle opinion must allow paper intent progression."
+                                                        ],
+                                   "next_possible_state":  "WAITING_FOR_LIFECYCLE_CLEARANCE",
+                                   "operator_summary":  "Candidate is not paper-actionable: BLOCKED_BY_LIFECYCLE."
+                               },
+                               {
+                                   "candidate_id":  "eligibility_exit_risk_thesis_coord_cf8b90dffcd043a78268b1ce3cd676c2",
+                                   "market_id":  "691547",
+                                   "side":  "YES",
+                                   "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                   "event_id":  "619bfb3f-c865-4c23-8a71-99c1a2e8b5e2",
+                                   "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_7ff8d50f2428485da94969117c888e7d",
+                                   "mesh_bundle_id":  "mesh_bundle_trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_7ff8d50f2428485da94969117c888e7d",
+                                   "candidate_event_scope":  "NOT_ACTIONABLE",
+                                   "candidate_event_link_state":  "TOKEN_SIDE_MISMATCH",
+                                   "candidate_event_actionability_scope":  "NOT_ACTIONABLE",
+                                   "correlation_confidence":  "LOW",
+                                   "candidate_price_path_state":  "CANDIDATE_PRICE_READY",
+                                   "candidate_trusted_orderbook_state":  "TRUSTED_FRESH_FOR_CANDIDATE",
+                                   "coordinator_decision":  "LIFECYCLE_BLOCKED",
+                                   "mesh_consensus_state":  "CONSENSUS_BLOCKED",
+                                   "candidate_paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                                   "paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                                   "operational_paper_execution_state":  "EXECUTION_DISABLED_PAPER_OFF",
+                                   "actionability_confidence":  "LOW",
+                                   "opinions":  {
+                                                    "liquidity":  "PRESENT",
+                                                    "risk":  "PRESENT",
+                                                    "exit":  "PRESENT",
+                                                    "capital":  "CAPITAL_OK",
+                                                    "lifecycle":  "LIFECYCLE_DENIED"
+                                                },
+                                   "execution_allowed":  false,
+                                   "would_require_paper_simulation_on":  false,
+                                   "blockers":  [
+                                                    "MISSING_CANDIDATE_EVENT_LINK",
+                                                    "BLOCKED_BY_LIFECYCLE"
+                                                ],
+                                   "unified_blockers":  [
+                                                            {
+                                                                "blocker_code":  "MISSING_CANDIDATE_EVENT_LINK",
+                                                                "severity":  "MISSING_DATA",
+                                                                "source":  "paper_actionability",
+                                                                "candidate_id":  "eligibility_exit_risk_thesis_coord_cf8b90dffcd043a78268b1ce3cd676c2",
+                                                                "event_id":  "619bfb3f-c865-4c23-8a71-99c1a2e8b5e2",
+                                                                "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_7ff8d50f2428485da94969117c888e7d",
+                                                                "market_id":  "691547",
+                                                                "side":  "YES",
+                                                                "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                                "required_to_pass":  [
+                                                                                         "A fresh event must link to the candidate by market, side, and token."
+                                                                                     ],
+                                                                "is_refreshable":  true,
+                                                                "is_operator_action_required":  false,
+                                                                "created_at":  "2026-06-15T11:43:05.624475+00:00"
+                                                            },
+                                                            {
+                                                                "blocker_code":  "BLOCKED_BY_LIFECYCLE",
+                                                                "severity":  "GOVERNANCE_DENIED",
+                                                                "source":  "paper_actionability",
+                                                                "candidate_id":  "eligibility_exit_risk_thesis_coord_cf8b90dffcd043a78268b1ce3cd676c2",
+                                                                "event_id":  "619bfb3f-c865-4c23-8a71-99c1a2e8b5e2",
+                                                                "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_7ff8d50f2428485da94969117c888e7d",
+                                                                "market_id":  "691547",
+                                                                "side":  "YES",
+                                                                "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                                "required_to_pass":  [
+                                                                                         "Lifecycle opinion must allow paper intent progression."
+                                                                                     ],
+                                                                "is_refreshable":  false,
+                                                                "is_operator_action_required":  true,
+                                                                "created_at":  "2026-06-15T11:43:05.624478+00:00"
+                                                            }
+                                                        ],
+                                   "required_to_pass":  [
+                                                            "A fresh event must link to the candidate by market, side, and token.",
+                                                            "Lifecycle opinion must allow paper intent progression."
+                                                        ],
+                                   "next_possible_state":  "WAITING_FOR_LIFECYCLE_CLEARANCE",
+                                   "operator_summary":  "Candidate is not paper-actionable: MISSING_CANDIDATE_EVENT_LINK, BLOCKED_BY_LIFECYCLE."
+                               },
+                               {
+                                   "candidate_id":  "eligibility_exit_risk_thesis_coord_60e9ddb539034c5086b814d4f95a12ea",
+                                   "market_id":  "691547",
+                                   "side":  "YES",
+                                   "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                   "event_id":  "f910d43b-3043-419c-b559-1c7b2f211f87",
+                                   "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_e07a6ca1c8244f93846251372b3f5f9a",
+                                   "mesh_bundle_id":  "mesh_bundle_trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_e07a6ca1c8244f93846251372b3f5f9a",
+                                   "candidate_event_scope":  "NOT_ACTIONABLE",
+                                   "candidate_event_link_state":  "TOKEN_SIDE_MISMATCH",
+                                   "candidate_event_actionability_scope":  "NOT_ACTIONABLE",
+                                   "correlation_confidence":  "LOW",
+                                   "candidate_price_path_state":  "CANDIDATE_PRICE_READY",
+                                   "candidate_trusted_orderbook_state":  "TRUSTED_FRESH_FOR_CANDIDATE",
+                                   "coordinator_decision":  "LIFECYCLE_BLOCKED",
+                                   "mesh_consensus_state":  "CONSENSUS_BLOCKED",
+                                   "candidate_paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                                   "paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                                   "operational_paper_execution_state":  "EXECUTION_DISABLED_PAPER_OFF",
+                                   "actionability_confidence":  "LOW",
+                                   "opinions":  {
+                                                    "liquidity":  "PRESENT",
+                                                    "risk":  "PRESENT",
+                                                    "exit":  "PRESENT",
+                                                    "capital":  "CAPITAL_OK",
+                                                    "lifecycle":  "LIFECYCLE_DENIED"
+                                                },
+                                   "execution_allowed":  false,
+                                   "would_require_paper_simulation_on":  false,
+                                   "blockers":  [
+                                                    "MISSING_CANDIDATE_EVENT_LINK",
+                                                    "BLOCKED_BY_LIFECYCLE"
+                                                ],
+                                   "unified_blockers":  [
+                                                            {
+                                                                "blocker_code":  "MISSING_CANDIDATE_EVENT_LINK",
+                                                                "severity":  "MISSING_DATA",
+                                                                "source":  "paper_actionability",
+                                                                "candidate_id":  "eligibility_exit_risk_thesis_coord_60e9ddb539034c5086b814d4f95a12ea",
+                                                                "event_id":  "f910d43b-3043-419c-b559-1c7b2f211f87",
+                                                                "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_e07a6ca1c8244f93846251372b3f5f9a",
+                                                                "market_id":  "691547",
+                                                                "side":  "YES",
+                                                                "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                                "required_to_pass":  [
+                                                                                         "A fresh event must link to the candidate by market, side, and token."
+                                                                                     ],
+                                                                "is_refreshable":  true,
+                                                                "is_operator_action_required":  false,
+                                                                "created_at":  "2026-06-15T11:43:05.662043+00:00"
+                                                            },
+                                                            {
+                                                                "blocker_code":  "BLOCKED_BY_LIFECYCLE",
+                                                                "severity":  "GOVERNANCE_DENIED",
+                                                                "source":  "paper_actionability",
+                                                                "candidate_id":  "eligibility_exit_risk_thesis_coord_60e9ddb539034c5086b814d4f95a12ea",
+                                                                "event_id":  "f910d43b-3043-419c-b559-1c7b2f211f87",
+                                                                "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_e07a6ca1c8244f93846251372b3f5f9a",
+                                                                "market_id":  "691547",
+                                                                "side":  "YES",
+                                                                "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                                "required_to_pass":  [
+                                                                                         "Lifecycle opinion must allow paper intent progression."
+                                                                                     ],
+                                                                "is_refreshable":  false,
+                                                                "is_operator_action_required":  true,
+                                                                "created_at":  "2026-06-15T11:43:05.662046+00:00"
+                                                            }
+                                                        ],
+                                   "required_to_pass":  [
+                                                            "A fresh event must link to the candidate by market, side, and token.",
+                                                            "Lifecycle opinion must allow paper intent progression."
+                                                        ],
+                                   "next_possible_state":  "WAITING_FOR_LIFECYCLE_CLEARANCE",
+                                   "operator_summary":  "Candidate is not paper-actionable: MISSING_CANDIDATE_EVENT_LINK, BLOCKED_BY_LIFECYCLE."
+                               }
+                           ],
+                 "blockers":  [
+                                  "BLOCKED_BY_LIFECYCLE",
+                                  "MISSING_CANDIDATE_EVENT_LINK"
+                              ],
+                 "unified_blockers":  [
+                                          {
+                                              "blocker_code":  "BLOCKED_BY_LIFECYCLE",
+                                              "severity":  "GOVERNANCE_DENIED",
+                                              "source":  "paper_actionability",
+                                              "candidate_id":  "eligibility_exit_risk_thesis_coord_5999fa6f53454e7b9c1815fe155c1a15",
+                                              "event_id":  "1025dc39-559e-4a4d-ad84-5d89e26d2ecc",
+                                              "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_b187e9b19922469abdedb8fe7fb1e369",
+                                              "market_id":  "691547",
+                                              "side":  "YES",
+                                              "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                              "required_to_pass":  [
+                                                                       "Lifecycle opinion must allow paper intent progression."
+                                                                   ],
+                                              "is_refreshable":  false,
+                                              "is_operator_action_required":  true,
+                                              "created_at":  "2026-06-15T11:43:05.536363+00:00"
+                                          },
+                                          {
+                                              "blocker_code":  "MISSING_CANDIDATE_EVENT_LINK",
+                                              "severity":  "MISSING_DATA",
+                                              "source":  "paper_actionability",
+                                              "candidate_id":  "eligibility_exit_risk_thesis_coord_cf8b90dffcd043a78268b1ce3cd676c2",
+                                              "event_id":  "619bfb3f-c865-4c23-8a71-99c1a2e8b5e2",
+                                              "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_7ff8d50f2428485da94969117c888e7d",
+                                              "market_id":  "691547",
+                                              "side":  "YES",
+                                              "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                              "required_to_pass":  [
+                                                                       "A fresh event must link to the candidate by market, side, and token."
+                                                                   ],
+                                              "is_refreshable":  true,
+                                              "is_operator_action_required":  false,
+                                              "created_at":  "2026-06-15T11:43:05.624475+00:00"
+                                          }
+                                      ],
+                 "warnings":  [
+                                  "No candidate currently satisfies candidate-level paper actionability."
+                              ],
+                 "errors":  [
+
+                            ],
+                 "generated_at":  "2026-06-15T11:43:04.912586+00:00"
+             },
+    "warnings":  [
+                     "No candidate currently satisfies candidate-level paper actionability."
+                 ],
+    "errors":  [
+
+               ],
+    "counts":  {
+                   "items_checked":  5,
+                   "candidate_scoped_bundles":  3,
+                   "actionable_small_paper":  0,
+                   "actionable_if_paper_enabled":  0,
+                   "watch_for_confirmation":  0,
+                   "waiting_for_price_refresh":  0,
+                   "waiting_for_lifecycle":  0,
+                   "waiting_for_capital":  0,
+                   "waiting_for_risk":  0,
+                   "waiting_for_exit":  0,
+                   "blocked_by_lifecycle":  5,
+                   "blocked_by_capital":  0,
+                   "blocked_by_risk":  0,
+                   "blocked_by_exit":  0,
+                   "blocked_by_duplicate":  0,
+                   "blocked_by_open_position":  0,
+                   "blocked_by_data":  0,
+                   "no_trade":  0,
+                   "unknown":  0
+               },
+    "candidate_actionability_exists":  false,
+    "paper_simulation_enabled":  false,
+    "safety_counts":  {
+                          "duplicate_active_intent_risk":  0,
+                          "open_paper_positions":  0
+                      },
+    "items":  [
+                  {
+                      "candidate_id":  "eligibility_exit_risk_thesis_coord_5999fa6f53454e7b9c1815fe155c1a15",
+                      "market_id":  "691547",
+                      "side":  "YES",
+                      "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                      "event_id":  "1025dc39-559e-4a4d-ad84-5d89e26d2ecc",
+                      "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_b187e9b19922469abdedb8fe7fb1e369",
+                      "mesh_bundle_id":  "mesh_bundle_trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_b187e9b19922469abdedb8fe7fb1e369",
+                      "candidate_event_scope":  "CANDIDATE_SCOPED",
+                      "candidate_event_link_state":  "LINKED_TO_CANDIDATE",
+                      "candidate_event_actionability_scope":  "CANDIDATE_SCOPED",
+                      "correlation_confidence":  "HIGH",
+                      "candidate_price_path_state":  "CANDIDATE_PRICE_READY",
+                      "candidate_trusted_orderbook_state":  "TRUSTED_FRESH_FOR_CANDIDATE",
+                      "coordinator_decision":  "LIFECYCLE_BLOCKED",
+                      "mesh_consensus_state":  "CONSENSUS_BLOCKED",
+                      "candidate_paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                      "paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                      "operational_paper_execution_state":  "EXECUTION_DISABLED_PAPER_OFF",
+                      "actionability_confidence":  "HIGH",
+                      "opinions":  {
+                                       "liquidity":  "PRESENT",
+                                       "risk":  "PRESENT",
+                                       "exit":  "PRESENT",
+                                       "capital":  "CAPITAL_OK",
+                                       "lifecycle":  "LIFECYCLE_DENIED"
+                                   },
+                      "execution_allowed":  false,
+                      "would_require_paper_simulation_on":  false,
+                      "blockers":  [
+                                       "BLOCKED_BY_LIFECYCLE"
+                                   ],
+                      "unified_blockers":  [
+                                               {
+                                                   "blocker_code":  "BLOCKED_BY_LIFECYCLE",
+                                                   "severity":  "GOVERNANCE_DENIED",
+                                                   "source":  "paper_actionability",
+                                                   "candidate_id":  "eligibility_exit_risk_thesis_coord_5999fa6f53454e7b9c1815fe155c1a15",
+                                                   "event_id":  "1025dc39-559e-4a4d-ad84-5d89e26d2ecc",
+                                                   "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_b187e9b19922469abdedb8fe7fb1e369",
+                                                   "market_id":  "691547",
+                                                   "side":  "YES",
+                                                   "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                   "required_to_pass":  [
+                                                                            "Lifecycle opinion must allow paper intent progression."
+                                                                        ],
+                                                   "is_refreshable":  false,
+                                                   "is_operator_action_required":  true,
+                                                   "created_at":  "2026-06-15T11:43:05.536363+00:00"
+                                               }
+                                           ],
+                      "required_to_pass":  [
+                                               "Lifecycle opinion must allow paper intent progression."
+                                           ],
+                      "next_possible_state":  "WAITING_FOR_LIFECYCLE_CLEARANCE",
+                      "operator_summary":  "Candidate is not paper-actionable: BLOCKED_BY_LIFECYCLE."
+                  },
+                  {
+                      "candidate_id":  "eligibility_exit_risk_thesis_coord_cbbe0eda4c7a4316b56c8bc3b251d795",
+                      "market_id":  "691547",
+                      "side":  "YES",
+                      "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                      "event_id":  "2900d288-966f-4b28-94be-e74b52d9cf1c",
+                      "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_2859145a5b3445858ffec0dbb5ab4348",
+                      "mesh_bundle_id":  "mesh_bundle_trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_2859145a5b3445858ffec0dbb5ab4348",
+                      "candidate_event_scope":  "CANDIDATE_SCOPED",
+                      "candidate_event_link_state":  "LINKED_TO_CANDIDATE",
+                      "candidate_event_actionability_scope":  "CANDIDATE_SCOPED",
+                      "correlation_confidence":  "HIGH",
+                      "candidate_price_path_state":  "CANDIDATE_PRICE_READY",
+                      "candidate_trusted_orderbook_state":  "TRUSTED_FRESH_FOR_CANDIDATE",
+                      "coordinator_decision":  "LIFECYCLE_BLOCKED",
+                      "mesh_consensus_state":  "CONSENSUS_BLOCKED",
+                      "candidate_paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                      "paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                      "operational_paper_execution_state":  "EXECUTION_DISABLED_PAPER_OFF",
+                      "actionability_confidence":  "HIGH",
+                      "opinions":  {
+                                       "liquidity":  "PRESENT",
+                                       "risk":  "PRESENT",
+                                       "exit":  "PRESENT",
+                                       "capital":  "CAPITAL_OK",
+                                       "lifecycle":  "LIFECYCLE_DENIED"
+                                   },
+                      "execution_allowed":  false,
+                      "would_require_paper_simulation_on":  false,
+                      "blockers":  [
+                                       "BLOCKED_BY_LIFECYCLE"
+                                   ],
+                      "unified_blockers":  [
+                                               {
+                                                   "blocker_code":  "BLOCKED_BY_LIFECYCLE",
+                                                   "severity":  "GOVERNANCE_DENIED",
+                                                   "source":  "paper_actionability",
+                                                   "candidate_id":  "eligibility_exit_risk_thesis_coord_cbbe0eda4c7a4316b56c8bc3b251d795",
+                                                   "event_id":  "2900d288-966f-4b28-94be-e74b52d9cf1c",
+                                                   "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_2859145a5b3445858ffec0dbb5ab4348",
+                                                   "market_id":  "691547",
+                                                   "side":  "YES",
+                                                   "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                   "required_to_pass":  [
+                                                                            "Lifecycle opinion must allow paper intent progression."
+                                                                        ],
+                                                   "is_refreshable":  false,
+                                                   "is_operator_action_required":  true,
+                                                   "created_at":  "2026-06-15T11:43:05.564710+00:00"
+                                               }
+                                           ],
+                      "required_to_pass":  [
+                                               "Lifecycle opinion must allow paper intent progression."
+                                           ],
+                      "next_possible_state":  "WAITING_FOR_LIFECYCLE_CLEARANCE",
+                      "operator_summary":  "Candidate is not paper-actionable: BLOCKED_BY_LIFECYCLE."
+                  },
+                  {
+                      "candidate_id":  "eligibility_exit_risk_thesis_coord_f6c48212549845149e46d57effe941ed",
+                      "market_id":  "691547",
+                      "side":  "YES",
+                      "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                      "event_id":  "4b09bd82-e5a2-41bd-b78e-a51fffdce86e",
+                      "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_2d2e9add93404de1a1bc9be9df7d2f90",
+                      "mesh_bundle_id":  "mesh_bundle_trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_2d2e9add93404de1a1bc9be9df7d2f90",
+                      "candidate_event_scope":  "CANDIDATE_SCOPED",
+                      "candidate_event_link_state":  "LINKED_TO_CANDIDATE",
+                      "candidate_event_actionability_scope":  "CANDIDATE_SCOPED",
+                      "correlation_confidence":  "HIGH",
+                      "candidate_price_path_state":  "CANDIDATE_PRICE_READY",
+                      "candidate_trusted_orderbook_state":  "TRUSTED_FRESH_FOR_CANDIDATE",
+                      "coordinator_decision":  "LIFECYCLE_BLOCKED",
+                      "mesh_consensus_state":  "CONSENSUS_BLOCKED",
+                      "candidate_paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                      "paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                      "operational_paper_execution_state":  "EXECUTION_DISABLED_PAPER_OFF",
+                      "actionability_confidence":  "HIGH",
+                      "opinions":  {
+                                       "liquidity":  "PRESENT",
+                                       "risk":  "PRESENT",
+                                       "exit":  "PRESENT",
+                                       "capital":  "CAPITAL_OK",
+                                       "lifecycle":  "LIFECYCLE_DENIED"
+                                   },
+                      "execution_allowed":  false,
+                      "would_require_paper_simulation_on":  false,
+                      "blockers":  [
+                                       "BLOCKED_BY_LIFECYCLE"
+                                   ],
+                      "unified_blockers":  [
+                                               {
+                                                   "blocker_code":  "BLOCKED_BY_LIFECYCLE",
+                                                   "severity":  "GOVERNANCE_DENIED",
+                                                   "source":  "paper_actionability",
+                                                   "candidate_id":  "eligibility_exit_risk_thesis_coord_f6c48212549845149e46d57effe941ed",
+                                                   "event_id":  "4b09bd82-e5a2-41bd-b78e-a51fffdce86e",
+                                                   "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_2d2e9add93404de1a1bc9be9df7d2f90",
+                                                   "market_id":  "691547",
+                                                   "side":  "YES",
+                                                   "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                   "required_to_pass":  [
+                                                                            "Lifecycle opinion must allow paper intent progression."
+                                                                        ],
+                                                   "is_refreshable":  false,
+                                                   "is_operator_action_required":  true,
+                                                   "created_at":  "2026-06-15T11:43:05.596502+00:00"
+                                               }
+                                           ],
+                      "required_to_pass":  [
+                                               "Lifecycle opinion must allow paper intent progression."
+                                           ],
+                      "next_possible_state":  "WAITING_FOR_LIFECYCLE_CLEARANCE",
+                      "operator_summary":  "Candidate is not paper-actionable: BLOCKED_BY_LIFECYCLE."
+                  },
+                  {
+                      "candidate_id":  "eligibility_exit_risk_thesis_coord_cf8b90dffcd043a78268b1ce3cd676c2",
+                      "market_id":  "691547",
+                      "side":  "YES",
+                      "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                      "event_id":  "619bfb3f-c865-4c23-8a71-99c1a2e8b5e2",
+                      "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_7ff8d50f2428485da94969117c888e7d",
+                      "mesh_bundle_id":  "mesh_bundle_trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_7ff8d50f2428485da94969117c888e7d",
+                      "candidate_event_scope":  "NOT_ACTIONABLE",
+                      "candidate_event_link_state":  "TOKEN_SIDE_MISMATCH",
+                      "candidate_event_actionability_scope":  "NOT_ACTIONABLE",
+                      "correlation_confidence":  "LOW",
+                      "candidate_price_path_state":  "CANDIDATE_PRICE_READY",
+                      "candidate_trusted_orderbook_state":  "TRUSTED_FRESH_FOR_CANDIDATE",
+                      "coordinator_decision":  "LIFECYCLE_BLOCKED",
+                      "mesh_consensus_state":  "CONSENSUS_BLOCKED",
+                      "candidate_paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                      "paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                      "operational_paper_execution_state":  "EXECUTION_DISABLED_PAPER_OFF",
+                      "actionability_confidence":  "LOW",
+                      "opinions":  {
+                                       "liquidity":  "PRESENT",
+                                       "risk":  "PRESENT",
+                                       "exit":  "PRESENT",
+                                       "capital":  "CAPITAL_OK",
+                                       "lifecycle":  "LIFECYCLE_DENIED"
+                                   },
+                      "execution_allowed":  false,
+                      "would_require_paper_simulation_on":  false,
+                      "blockers":  [
+                                       "MISSING_CANDIDATE_EVENT_LINK",
+                                       "BLOCKED_BY_LIFECYCLE"
+                                   ],
+                      "unified_blockers":  [
+                                               {
+                                                   "blocker_code":  "MISSING_CANDIDATE_EVENT_LINK",
+                                                   "severity":  "MISSING_DATA",
+                                                   "source":  "paper_actionability",
+                                                   "candidate_id":  "eligibility_exit_risk_thesis_coord_cf8b90dffcd043a78268b1ce3cd676c2",
+                                                   "event_id":  "619bfb3f-c865-4c23-8a71-99c1a2e8b5e2",
+                                                   "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_7ff8d50f2428485da94969117c888e7d",
+                                                   "market_id":  "691547",
+                                                   "side":  "YES",
+                                                   "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                   "required_to_pass":  [
+                                                                            "A fresh event must link to the candidate by market, side, and token."
+                                                                        ],
+                                                   "is_refreshable":  true,
+                                                   "is_operator_action_required":  false,
+                                                   "created_at":  "2026-06-15T11:43:05.624475+00:00"
+                                               },
+                                               {
+                                                   "blocker_code":  "BLOCKED_BY_LIFECYCLE",
+                                                   "severity":  "GOVERNANCE_DENIED",
+                                                   "source":  "paper_actionability",
+                                                   "candidate_id":  "eligibility_exit_risk_thesis_coord_cf8b90dffcd043a78268b1ce3cd676c2",
+                                                   "event_id":  "619bfb3f-c865-4c23-8a71-99c1a2e8b5e2",
+                                                   "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_7ff8d50f2428485da94969117c888e7d",
+                                                   "market_id":  "691547",
+                                                   "side":  "YES",
+                                                   "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                   "required_to_pass":  [
+                                                                            "Lifecycle opinion must allow paper intent progression."
+                                                                        ],
+                                                   "is_refreshable":  false,
+                                                   "is_operator_action_required":  true,
+                                                   "created_at":  "2026-06-15T11:43:05.624478+00:00"
+                                               }
+                                           ],
+                      "required_to_pass":  [
+                                               "A fresh event must link to the candidate by market, side, and token.",
+                                               "Lifecycle opinion must allow paper intent progression."
+                                           ],
+                      "next_possible_state":  "WAITING_FOR_LIFECYCLE_CLEARANCE",
+                      "operator_summary":  "Candidate is not paper-actionable: MISSING_CANDIDATE_EVENT_LINK, BLOCKED_BY_LIFECYCLE."
+                  },
+                  {
+                      "candidate_id":  "eligibility_exit_risk_thesis_coord_60e9ddb539034c5086b814d4f95a12ea",
+                      "market_id":  "691547",
+                      "side":  "YES",
+                      "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                      "event_id":  "f910d43b-3043-419c-b559-1c7b2f211f87",
+                      "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_e07a6ca1c8244f93846251372b3f5f9a",
+                      "mesh_bundle_id":  "mesh_bundle_trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_e07a6ca1c8244f93846251372b3f5f9a",
+                      "candidate_event_scope":  "NOT_ACTIONABLE",
+                      "candidate_event_link_state":  "TOKEN_SIDE_MISMATCH",
+                      "candidate_event_actionability_scope":  "NOT_ACTIONABLE",
+                      "correlation_confidence":  "LOW",
+                      "candidate_price_path_state":  "CANDIDATE_PRICE_READY",
+                      "candidate_trusted_orderbook_state":  "TRUSTED_FRESH_FOR_CANDIDATE",
+                      "coordinator_decision":  "LIFECYCLE_BLOCKED",
+                      "mesh_consensus_state":  "CONSENSUS_BLOCKED",
+                      "candidate_paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                      "paper_actionability_state":  "BLOCKED_BY_LIFECYCLE",
+                      "operational_paper_execution_state":  "EXECUTION_DISABLED_PAPER_OFF",
+                      "actionability_confidence":  "LOW",
+                      "opinions":  {
+                                       "liquidity":  "PRESENT",
+                                       "risk":  "PRESENT",
+                                       "exit":  "PRESENT",
+                                       "capital":  "CAPITAL_OK",
+                                       "lifecycle":  "LIFECYCLE_DENIED"
+                                   },
+                      "execution_allowed":  false,
+                      "would_require_paper_simulation_on":  false,
+                      "blockers":  [
+                                       "MISSING_CANDIDATE_EVENT_LINK",
+                                       "BLOCKED_BY_LIFECYCLE"
+                                   ],
+                      "unified_blockers":  [
+                                               {
+                                                   "blocker_code":  "MISSING_CANDIDATE_EVENT_LINK",
+                                                   "severity":  "MISSING_DATA",
+                                                   "source":  "paper_actionability",
+                                                   "candidate_id":  "eligibility_exit_risk_thesis_coord_60e9ddb539034c5086b814d4f95a12ea",
+                                                   "event_id":  "f910d43b-3043-419c-b559-1c7b2f211f87",
+                                                   "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_e07a6ca1c8244f93846251372b3f5f9a",
+                                                   "market_id":  "691547",
+                                                   "side":  "YES",
+                                                   "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                   "required_to_pass":  [
+                                                                            "A fresh event must link to the candidate by market, side, and token."
+                                                                        ],
+                                                   "is_refreshable":  true,
+                                                   "is_operator_action_required":  false,
+                                                   "created_at":  "2026-06-15T11:43:05.662043+00:00"
+                                               },
+                                               {
+                                                   "blocker_code":  "BLOCKED_BY_LIFECYCLE",
+                                                   "severity":  "GOVERNANCE_DENIED",
+                                                   "source":  "paper_actionability",
+                                                   "candidate_id":  "eligibility_exit_risk_thesis_coord_60e9ddb539034c5086b814d4f95a12ea",
+                                                   "event_id":  "f910d43b-3043-419c-b559-1c7b2f211f87",
+                                                   "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_e07a6ca1c8244f93846251372b3f5f9a",
+                                                   "market_id":  "691547",
+                                                   "side":  "YES",
+                                                   "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                                   "required_to_pass":  [
+                                                                            "Lifecycle opinion must allow paper intent progression."
+                                                                        ],
+                                                   "is_refreshable":  false,
+                                                   "is_operator_action_required":  true,
+                                                   "created_at":  "2026-06-15T11:43:05.662046+00:00"
+                                               }
+                                           ],
+                      "required_to_pass":  [
+                                               "A fresh event must link to the candidate by market, side, and token.",
+                                               "Lifecycle opinion must allow paper intent progression."
+                                           ],
+                      "next_possible_state":  "WAITING_FOR_LIFECYCLE_CLEARANCE",
+                      "operator_summary":  "Candidate is not paper-actionable: MISSING_CANDIDATE_EVENT_LINK, BLOCKED_BY_LIFECYCLE."
+                  }
+              ],
+    "blockers":  [
+                     "BLOCKED_BY_LIFECYCLE",
+                     "MISSING_CANDIDATE_EVENT_LINK"
+                 ],
+    "unified_blockers":  [
+                             {
+                                 "blocker_code":  "BLOCKED_BY_LIFECYCLE",
+                                 "severity":  "GOVERNANCE_DENIED",
+                                 "source":  "paper_actionability",
+                                 "candidate_id":  "eligibility_exit_risk_thesis_coord_5999fa6f53454e7b9c1815fe155c1a15",
+                                 "event_id":  "1025dc39-559e-4a4d-ad84-5d89e26d2ecc",
+                                 "correlation_id":  "trusted_orderbook_c2b8d98434a34e53a0ebd78c27b66498:ob_b187e9b19922469abdedb8fe7fb1e369",
+                                 "market_id":  "691547",
+                                 "side":  "YES",
+                                 "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                 "required_to_pass":  [
+                                                          "Lifecycle opinion must allow paper intent progression."
+                                                      ],
+                                 "is_refreshable":  false,
+                                 "is_operator_action_required":  true,
+                                 "created_at":  "2026-06-15T11:43:05.536363+00:00"
+                             },
+                             {
+                                 "blocker_code":  "MISSING_CANDIDATE_EVENT_LINK",
+                                 "severity":  "MISSING_DATA",
+                                 "source":  "paper_actionability",
+                                 "candidate_id":  "eligibility_exit_risk_thesis_coord_cf8b90dffcd043a78268b1ce3cd676c2",
+                                 "event_id":  "619bfb3f-c865-4c23-8a71-99c1a2e8b5e2",
+                                 "correlation_id":  "trusted_orderbook_8c4ff2fb25ea40afa776c64544d26ce7:ob_7ff8d50f2428485da94969117c888e7d",
+                                 "market_id":  "691547",
+                                 "side":  "YES",
+                                 "token_id":  "34626184950254225208692030156208941308358060420950772251072421141618169142241",
+                                 "required_to_pass":  [
+                                                          "A fresh event must link to the candidate by market, side, and token."
+                                                      ],
+                                 "is_refreshable":  true,
+                                 "is_operator_action_required":  false,
+                                 "created_at":  "2026-06-15T11:43:05.624475+00:00"
+                             }
+                         ],
+    "generated_at":  "2026-06-15T11:43:04.912586+00:00"
+}

@@ -1,0 +1,22 @@
+     column_name     |        data_type         
+---------------------+--------------------------
+ id                  | uuid
+ paper_run_id        | uuid
+ cycle_id            | uuid
+ market_id           | text
+ decision_id         | uuid
+ signal_type         | text
+ intended_outcome    | text
+ trade_type          | text
+ bucket_type         | text
+ confidence          | numeric
+ expected_edge_proxy | numeric
+ intended_price      | numeric
+ intended_size       | numeric
+ guard_result        | text
+ reason_code         | text
+ reason_text         | text
+ payload_json        | jsonb
+ created_at          | timestamp with time zone
+(18 rows)
+

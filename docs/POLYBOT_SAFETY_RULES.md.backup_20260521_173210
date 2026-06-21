@@ -1,0 +1,52 @@
+# POLYBOT Safety Rules
+
+## Runtime Authority
+
+- Live trading is disabled by default.
+- Live cannot be enabled by environment variables alone.
+- Runtime State Governor is the authority.
+- `KILL` overrides everything.
+- `COOLDOWN` blocks or limits new entries and reduces risk.
+- `ATTACK_MODE` requires explicit Governor approval.
+
+## Trading Rules
+
+- No entry without exit.
+- No trade without Risk Gate approval.
+- No real order without mode permission.
+- No live order in `DATA_ONLY`, `PAPER`, `SHADOW_LIVE`, `COOLDOWN`, or `KILL`.
+- Missing data means `NO_TRADE`.
+- Bad rules or ambiguous wording means `NO_TRADE` or severe penalty.
+- Wide spread or bad liquidity means `NO_TRADE`.
+- Excessive correlation means reduce, block, or `NO_TRADE`.
+
+## AI Rules
+
+- AI cannot execute trades.
+- AI cannot bypass risk.
+- AI cannot bypass runtime mode.
+- AI output must be persisted or auditable when used for decisions.
+- AI uncertainty should increase risk penalty or produce `NO_TRADE`.
+
+## Dashboard and Observability
+
+- Dashboard must show truth only.
+- No fake runtime state.
+- No fake controls.
+- No mock health in production paths.
+- Operator actions must be audited.
+
+## Secrets and Environment
+
+- Secrets must never be printed.
+- Do not expose `.env` contents.
+- Tests must isolate environment.
+- `.env` must not silently enable live behavior in tests.
+
+## Persistence Truth
+
+- Stage 3 SQLite paper trading is legacy only.
+- Postgres paper path is canonical.
+- Every mode change must require actor and reason.
+- Every mode change must be persisted.
+- Missing state must never enable trading.

@@ -1,0 +1,18 @@
+          column_name          |        data_type         
+-------------------------------+--------------------------
+ id                            | uuid
+ exit_advisory_run_id          | uuid
+ market_id                     | text
+ invalidation_policy_record_id | uuid
+ exposure_type                 | text
+ exposure_ref_id               | uuid
+ advisory_action_class         | text
+ advisory_priority_class       | text
+ advisory_reason_codes_json    | jsonb
+ advisory_reason_text          | text
+ explanation_json              | jsonb
+ advisory_version              | text
+ created_at                    | timestamp with time zone
+ updated_at                    | timestamp with time zone
+(14 rows)
+

@@ -1,0 +1,36 @@
+{
+  "captured_at": "2026-04-23T13:45:52.776283+00:00",
+  "paper_table_counts": [
+    {
+      "table_name": "paper_order_events",
+      "count": 0
+    },
+    {
+      "table_name": "paper_orders",
+      "count": 0
+    },
+    {
+      "table_name": "paper_position_events",
+      "count": 0
+    },
+    {
+      "table_name": "paper_positions",
+      "count": 0
+    },
+    {
+      "table_name": "paper_runs",
+      "count": 0
+    },
+    {
+      "table_name": "paper_signals",
+      "count": 0
+    }
+  ],
+  "paper_positions_status": [],
+  "pnl_totals": [
+    {
+      "total_realized_pnl": 0.0,
+      "total_unrealized_pnl": 0.0
+    }
+  ]
+}

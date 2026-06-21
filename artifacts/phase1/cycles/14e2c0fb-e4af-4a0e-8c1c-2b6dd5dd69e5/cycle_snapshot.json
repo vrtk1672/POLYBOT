@@ -1,0 +1,18 @@
+{
+  "captured_market_ids": [
+    "566136"
+  ],
+  "cycle_id": "14e2c0fb-e4af-4a0e-8c1c-2b6dd5dd69e5",
+  "decisions": [
+    {
+      "decision_type": "SELECT",
+      "market_id": "566136",
+      "reason": "score=39.88 confidence=18.00 edge=10.00 time=5.00 execution=8.00 risk_penalty=0.00",
+      "selected": true
+    }
+  ],
+  "ranked_market_ids": [
+    "566136"
+  ],
+  "selected_market_id": "566136"
+}

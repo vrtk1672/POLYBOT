@@ -1,0 +1,232 @@
+﻿name: polybot_server
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: polybot_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-polybot}
+      POSTGRES_USER: ${POSTGRES_USER:-polybot}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-polybot_local_password}
+    ports:
+      - "55432:5432"
+    volumes:
+      - polybot_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-polybot} -d ${POSTGRES_DB:-polybot}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    container_name: polybot_redis
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "56379:6379"
+    volumes:
+      - polybot_redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  postgres_test:
+    image: postgres:16
+    container_name: polybot_postgres_test
+    profiles: ["test"]
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: polybot_test
+      POSTGRES_USER: ${POSTGRES_USER:-polybot}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-polybot_local_password}
+    ports:
+      - "55433:5432"
+    volumes:
+      - polybot_postgres_test_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-polybot} -d polybot_test"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  migrate:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: polybot_migrate
+    restart: "no"
+    environment:
+      POLYBOT_RUNTIME_MODE: PAPER
+      POLYBOT_EXECUTION_BACKEND: paper
+      LIVE_TRADING_ENABLED: "false"
+      LIVE_KILL_SWITCH: "true"
+      PHASE1_PERSISTENCE_ENABLED: "true"
+      POLYBOT_DATABASE_URL: postgresql://polybot:${POSTGRES_PASSWORD:-polybot_local_password}@postgres:5432/${POSTGRES_DB:-polybot}
+      DATABASE_URL: postgresql://polybot:${POSTGRES_PASSWORD:-polybot_local_password}@postgres:5432/${POSTGRES_DB:-polybot}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: ["python", "-m", "app.db.migrate"]
+
+  test_migrate:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    profiles: ["test"]
+    restart: "no"
+    environment:
+      POLYBOT_RUNTIME_MODE: PAPER
+      POLYBOT_EXECUTION_BACKEND: paper
+      LIVE_TRADING_ENABLED: "false"
+      LIVE_KILL_SWITCH: "true"
+      PHASE1_PERSISTENCE_ENABLED: "true"
+      POLYBOT_DATABASE_URL: postgresql://polybot:${POSTGRES_PASSWORD:-polybot_local_password}@postgres_test:5432/polybot_test
+      DATABASE_URL: postgresql://polybot:${POSTGRES_PASSWORD:-polybot_local_password}@postgres_test:5432/polybot_test
+    depends_on:
+      postgres_test:
+        condition: service_healthy
+    command: ["python", "-m", "app.db.migrate"]
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: polybot_api
+    restart: unless-stopped
+    environment:
+      POLYBOT_RUNTIME_MODE: PAPER
+      POLYBOT_EXECUTION_BACKEND: paper
+      LIVE_TRADING_ENABLED: "false"
+      LIVE_KILL_SWITCH: "true"
+      PHASE1_PERSISTENCE_ENABLED: "true"
+      POLYBOT_DATABASE_URL: postgresql://polybot:${POSTGRES_PASSWORD:-polybot_local_password}@postgres:5432/${POSTGRES_DB:-polybot}
+      DATABASE_URL: postgresql://polybot:${POSTGRES_PASSWORD:-polybot_local_password}@postgres:5432/${POSTGRES_DB:-polybot}
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379/0}
+      NEWS_RSS_FEEDS: ${NEWS_RSS_FEEDS:-}
+      NEWS_API_KEY: ${NEWS_API_KEY:-}
+      CRYPTOPANIC_API_KEY: ${CRYPTOPANIC_API_KEY:-}
+      X_BEARER_TOKEN: ${X_BEARER_TOKEN:-}
+      REDDIT_CLIENT_ID: ${REDDIT_CLIENT_ID:-}
+      REDDIT_CLIENT_SECRET: ${REDDIT_CLIENT_SECRET:-}
+      REDDIT_USER_AGENT: ${REDDIT_USER_AGENT:-}
+      TELEGRAM_API_ID: ${TELEGRAM_API_ID:-}
+      TELEGRAM_API_HASH: ${TELEGRAM_API_HASH:-}
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN:-}
+      TELEGRAM_CHANNELS: ${TELEGRAM_CHANNELS:-}
+      DISCORD_BOT_TOKEN: ${DISCORD_BOT_TOKEN:-}
+      DISCORD_CHANNELS: ${DISCORD_CHANNELS:-}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-}
+      AI_CONTEXT_OPENAI_MODEL: ${AI_CONTEXT_OPENAI_MODEL:-}
+      AI_CONTEXT_OPENAI_ENDPOINT: ${AI_CONTEXT_OPENAI_ENDPOINT:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-}
+      AI_CONTEXT_ANTHROPIC_MODEL: ${AI_CONTEXT_ANTHROPIC_MODEL:-}
+      AI_CONTEXT_ANTHROPIC_ENDPOINT: ${AI_CONTEXT_ANTHROPIC_ENDPOINT:-}
+      ANTHROPIC_VERSION: ${ANTHROPIC_VERSION:-2023-06-01}
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      OLLAMA_MODEL_FAST: ${OLLAMA_MODEL_FAST:-}
+      OLLAMA_MODEL_PRIMARY: ${OLLAMA_MODEL_PRIMARY:-}
+      OLLAMA_MODEL_REASONING: ${OLLAMA_MODEL_REASONING:-}
+      AI_CONTEXT_OLLAMA_KEEP_ALIVE: ${AI_CONTEXT_OLLAMA_KEEP_ALIVE:-5m}
+      AI_CONTEXT_PROVIDER_ORDER: ${AI_CONTEXT_PROVIDER_ORDER:-ollama,openai,anthropic}
+      AI_CONTEXT_PROVIDER_TIMEOUT_SECONDS: ${AI_CONTEXT_PROVIDER_TIMEOUT_SECONDS:-90}
+      AI_CONTEXT_TOTAL_TIMEOUT_SECONDS: ${AI_CONTEXT_TOTAL_TIMEOUT_SECONDS:-120}
+      OLLAMA_TIMEOUT_SECONDS: ${OLLAMA_TIMEOUT_SECONDS:-90}
+      OLLAMA_TIMEOUT_FAST_SECONDS: ${OLLAMA_TIMEOUT_FAST_SECONDS:-60}
+      OLLAMA_TIMEOUT_PRIMARY_SECONDS: ${OLLAMA_TIMEOUT_PRIMARY_SECONDS:-90}
+      OLLAMA_TIMEOUT_REASONING_SECONDS: ${OLLAMA_TIMEOUT_REASONING_SECONDS:-120}
+      AI_CONTEXT_MAX_PROMPT_CHARS: ${AI_CONTEXT_MAX_PROMPT_CHARS:-2000}
+      AI_CONTEXT_MAX_RESPONSE_TOKENS: ${AI_CONTEXT_MAX_RESPONSE_TOKENS:-300}
+      AI_CONTEXT_ENABLE_CLOUD_FALLBACK: ${AI_CONTEXT_ENABLE_CLOUD_FALLBACK:-true}
+      AI_REQUIRED: ${AI_REQUIRED:-false}
+      POLYMARKET_CLOB_API_KEY: ${POLYMARKET_CLOB_API_KEY:-}
+      POLYMARKET_CLOB_SECRET: ${POLYMARKET_CLOB_SECRET:-}
+      POLYMARKET_CLOB_PASSPHRASE: ${POLYMARKET_CLOB_PASSPHRASE:-}
+      POLYMARKET_CLOB_HOST: ${POLYMARKET_CLOB_HOST:-https://clob.polymarket.com}
+      POLYBOT_LOG_DIR: /app/logs
+      POLYBOT_DATA_DIR: /app/data
+      POLYBOT_EXPORT_DIR: /app/exports
+    ports:
+      - "8000:8000"
+    volumes:
+      - C:/Server/logs/polybot:/app/logs
+      - C:/Server/data/polybot:/app/data
+      - C:/Server/exports/polybot:/app/exports
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8000/docs > /dev/null || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        INSTALL_DEV: "true"
+    profiles: ["test"]
+    environment:
+      POLYBOT_RUNTIME_MODE: PAPER
+      POLYBOT_EXECUTION_BACKEND: paper
+      LIVE_TRADING_ENABLED: "false"
+      LIVE_KILL_SWITCH: "true"
+      PHASE1_PERSISTENCE_ENABLED: "true"
+      POLYBOT_DATABASE_URL: postgresql://polybot:${POSTGRES_PASSWORD:-polybot_local_password}@postgres_test:5432/polybot_test
+      DATABASE_URL: postgresql://polybot:${POSTGRES_PASSWORD:-polybot_local_password}@postgres_test:5432/polybot_test
+      REDIS_URL: ${REDIS_URL:-redis://redis:6379/0}
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      AI_CONTEXT_OLLAMA_KEEP_ALIVE: ${AI_CONTEXT_OLLAMA_KEEP_ALIVE:-5m}
+      OPENAI_MODEL: ${OPENAI_MODEL:-}
+      AI_CONTEXT_OPENAI_MODEL: ${AI_CONTEXT_OPENAI_MODEL:-}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-}
+      AI_CONTEXT_ANTHROPIC_MODEL: ${AI_CONTEXT_ANTHROPIC_MODEL:-}
+      ANTHROPIC_VERSION: ${ANTHROPIC_VERSION:-2023-06-01}
+      AI_CONTEXT_PROVIDER_ORDER: ${AI_CONTEXT_PROVIDER_ORDER:-ollama,openai,anthropic}
+      AI_CONTEXT_PROVIDER_TIMEOUT_SECONDS: ${AI_CONTEXT_PROVIDER_TIMEOUT_SECONDS:-90}
+      AI_CONTEXT_TOTAL_TIMEOUT_SECONDS: ${AI_CONTEXT_TOTAL_TIMEOUT_SECONDS:-120}
+      OLLAMA_TIMEOUT_SECONDS: ${OLLAMA_TIMEOUT_SECONDS:-90}
+      OLLAMA_TIMEOUT_FAST_SECONDS: ${OLLAMA_TIMEOUT_FAST_SECONDS:-60}
+      OLLAMA_TIMEOUT_PRIMARY_SECONDS: ${OLLAMA_TIMEOUT_PRIMARY_SECONDS:-90}
+      OLLAMA_TIMEOUT_REASONING_SECONDS: ${OLLAMA_TIMEOUT_REASONING_SECONDS:-120}
+      AI_CONTEXT_MAX_PROMPT_CHARS: ${AI_CONTEXT_MAX_PROMPT_CHARS:-2000}
+      AI_CONTEXT_MAX_RESPONSE_TOKENS: ${AI_CONTEXT_MAX_RESPONSE_TOKENS:-300}
+      AI_CONTEXT_ENABLE_CLOUD_FALLBACK: ${AI_CONTEXT_ENABLE_CLOUD_FALLBACK:-true}
+      AI_REQUIRED: ${AI_REQUIRED:-false}
+      POLYBOT_LOG_DIR: /app/logs
+      POLYBOT_DATA_DIR: /app/data
+      POLYBOT_EXPORT_DIR: /app/exports
+    volumes:
+      - C:/Server/apps/polybot/tests:/app/tests:ro
+      - C:/Server/apps/polybot/scripts:/app/scripts:ro
+      - C:/Server/logs/polybot:/app/logs
+      - C:/Server/data/polybot:/app/data
+      - C:/Server/exports/polybot:/app/exports
+    depends_on:
+      postgres_test:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      test_migrate:
+        condition: service_completed_successfully
+    command: ["python", "-m", "pytest"]
+
+volumes:
+  polybot_postgres_data:
+    name: polybot_postgres_data
+  polybot_postgres_test_data:
+    name: polybot_postgres_test_data
+  polybot_redis_data:
+    name: polybot_redis_data

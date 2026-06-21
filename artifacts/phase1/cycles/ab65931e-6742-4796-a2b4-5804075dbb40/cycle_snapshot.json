@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "exit-watch-31dddb"
+  ],
+  "cycle_id": "ab65931e-6742-4796-a2b4-5804075dbb40",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "exit-watch-31dddb",
+      "reason": "missing_yes_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

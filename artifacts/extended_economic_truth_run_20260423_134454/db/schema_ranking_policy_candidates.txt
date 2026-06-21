@@ -1,0 +1,20 @@
+         column_name         |        data_type         
+-----------------------------+--------------------------
+ id                          | uuid
+ ranking_policy_run_id       | uuid
+ market_id                   | text
+ ranking_v2_candidate_id     | uuid
+ total_rank_score            | numeric
+ rank_position               | integer
+ rank_tier_class             | text
+ gate_decision_class         | text
+ gate_priority_class         | text
+ max_selected_within_run     | integer
+ selection_reason_codes_json | jsonb
+ selection_reason_text       | text
+ policy_explanation_json     | jsonb
+ policy_version              | text
+ created_at                  | timestamp with time zone
+ updated_at                  | timestamp with time zone
+(16 rows)
+

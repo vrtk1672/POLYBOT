@@ -1,0 +1,221 @@
+{
+  "invalidation_policy_records": [
+    {
+      "market_id": "1797301",
+      "invalidation_state_class": "WATCH",
+      "exit_policy_class": "BLOCK_NEW_DEPLOYMENT",
+      "deployment_gate_effect": "HARD_BLOCK",
+      "policy_reason_text": "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+      "created_at": "2026-04-22T13:25:50.951675+00:00"
+    },
+    {
+      "market_id": "1910397",
+      "invalidation_state_class": "WATCH",
+      "exit_policy_class": "BLOCK_NEW_DEPLOYMENT",
+      "deployment_gate_effect": "HARD_BLOCK",
+      "policy_reason_text": "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+      "created_at": "2026-04-22T13:25:50.951675+00:00"
+    },
+    {
+      "market_id": "951182",
+      "invalidation_state_class": "WATCH",
+      "exit_policy_class": "BLOCK_NEW_DEPLOYMENT",
+      "deployment_gate_effect": "HARD_BLOCK",
+      "policy_reason_text": "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+      "created_at": "2026-04-22T13:25:50.951675+00:00"
+    },
+    {
+      "market_id": "1664037",
+      "invalidation_state_class": "WATCH",
+      "exit_policy_class": "BLOCK_NEW_DEPLOYMENT",
+      "deployment_gate_effect": "HARD_BLOCK",
+      "policy_reason_text": "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+      "created_at": "2026-04-22T13:25:50.951675+00:00"
+    },
+    {
+      "market_id": "842015",
+      "invalidation_state_class": "WATCH",
+      "exit_policy_class": "BLOCK_NEW_DEPLOYMENT",
+      "deployment_gate_effect": "HARD_BLOCK",
+      "policy_reason_text": "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+      "created_at": "2026-04-22T13:25:50.951675+00:00"
+    },
+    {
+      "market_id": "1708086",
+      "invalidation_state_class": "WATCH",
+      "exit_policy_class": "BLOCK_NEW_DEPLOYMENT",
+      "deployment_gate_effect": "HARD_BLOCK",
+      "policy_reason_text": "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+      "created_at": "2026-04-22T13:25:50.951675+00:00"
+    },
+    {
+      "market_id": "1929170",
+      "invalidation_state_class": "WATCH",
+      "exit_policy_class": "BLOCK_NEW_DEPLOYMENT",
+      "deployment_gate_effect": "HARD_BLOCK",
+      "policy_reason_text": "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+      "created_at": "2026-04-22T13:25:50.951675+00:00"
+    },
+    {
+      "market_id": "842016",
+      "invalidation_state_class": "WATCH",
+      "exit_policy_class": "BLOCK_NEW_DEPLOYMENT",
+      "deployment_gate_effect": "HARD_BLOCK",
+      "policy_reason_text": "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+      "created_at": "2026-04-22T13:25:50.951675+00:00"
+    },
+    {
+      "market_id": "566140",
+      "invalidation_state_class": "WATCH",
+      "exit_policy_class": "BLOCK_NEW_DEPLOYMENT",
+      "deployment_gate_effect": "HARD_BLOCK",
+      "policy_reason_text": "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+      "created_at": "2026-04-22T13:25:50.951675+00:00"
+    },
+    {
+      "market_id": "1929111",
+      "invalidation_state_class": "WATCH",
+      "exit_policy_class": "BLOCK_NEW_DEPLOYMENT",
+      "deployment_gate_effect": "HARD_BLOCK",
+      "policy_reason_text": "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+      "created_at": "2026-04-22T13:25:50.951675+00:00"
+    }
+  ],
+  "exit_advisory_records": [
+    {
+      "market_id": "1517835",
+      "exposure_type": "PAPER_POSITION",
+      "advisory_action_class": "WATCH",
+      "advisory_priority_class": "HIGH",
+      "advisory_reason_text": "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+      "created_at": "2026-04-22T13:25:51.535392+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "exposure_type": "PAPER_POSITION",
+      "advisory_action_class": "WATCH",
+      "advisory_priority_class": "HIGH",
+      "advisory_reason_text": "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+      "created_at": "2026-04-22T13:23:58.253015+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "exposure_type": "PAPER_POSITION",
+      "advisory_action_class": "WATCH",
+      "advisory_priority_class": "HIGH",
+      "advisory_reason_text": "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+      "created_at": "2026-04-22T13:23:32.671842+00:00"
+    }
+  ],
+  "advisory_resolution_records": [
+    {
+      "market_id": "1910397",
+      "primary_advisory_action_class": "NO_ACTION",
+      "primary_priority_class": "LOW",
+      "action_readiness_class": "NOT_READY",
+      "conflict_status_class": "NONE",
+      "created_at": "2026-04-22T13:25:52.585702+00:00"
+    },
+    {
+      "market_id": "566140",
+      "primary_advisory_action_class": "NO_ACTION",
+      "primary_priority_class": "LOW",
+      "action_readiness_class": "NOT_READY",
+      "conflict_status_class": "NONE",
+      "created_at": "2026-04-22T13:25:52.585702+00:00"
+    },
+    {
+      "market_id": "1664039",
+      "primary_advisory_action_class": "NO_ACTION",
+      "primary_priority_class": "LOW",
+      "action_readiness_class": "NOT_READY",
+      "conflict_status_class": "NONE",
+      "created_at": "2026-04-22T13:25:52.585702+00:00"
+    },
+    {
+      "market_id": "1664037",
+      "primary_advisory_action_class": "NO_ACTION",
+      "primary_priority_class": "LOW",
+      "action_readiness_class": "NOT_READY",
+      "conflict_status_class": "NONE",
+      "created_at": "2026-04-22T13:25:52.585702+00:00"
+    },
+    {
+      "market_id": "951182",
+      "primary_advisory_action_class": "NO_ACTION",
+      "primary_priority_class": "LOW",
+      "action_readiness_class": "NOT_READY",
+      "conflict_status_class": "NONE",
+      "created_at": "2026-04-22T13:25:52.585702+00:00"
+    },
+    {
+      "market_id": "1929111",
+      "primary_advisory_action_class": "NO_ACTION",
+      "primary_priority_class": "LOW",
+      "action_readiness_class": "NOT_READY",
+      "conflict_status_class": "NONE",
+      "created_at": "2026-04-22T13:25:52.585702+00:00"
+    },
+    {
+      "market_id": "566136",
+      "primary_advisory_action_class": "NO_ACTION",
+      "primary_priority_class": "LOW",
+      "action_readiness_class": "NOT_READY",
+      "conflict_status_class": "NONE",
+      "created_at": "2026-04-22T13:25:52.585702+00:00"
+    },
+    {
+      "market_id": "1708109",
+      "primary_advisory_action_class": "NO_ACTION",
+      "primary_priority_class": "LOW",
+      "action_readiness_class": "NOT_READY",
+      "conflict_status_class": "NONE",
+      "created_at": "2026-04-22T13:25:52.585702+00:00"
+    },
+    {
+      "market_id": "1797301",
+      "primary_advisory_action_class": "NO_ACTION",
+      "primary_priority_class": "LOW",
+      "action_readiness_class": "NOT_READY",
+      "conflict_status_class": "NONE",
+      "created_at": "2026-04-22T13:25:52.585702+00:00"
+    },
+    {
+      "market_id": "2034205",
+      "primary_advisory_action_class": "NO_ACTION",
+      "primary_priority_class": "LOW",
+      "action_readiness_class": "NOT_READY",
+      "conflict_status_class": "NONE",
+      "created_at": "2026-04-22T13:25:52.585702+00:00"
+    }
+  ],
+  "command_intent_records": [
+    {
+      "market_id": "1517835",
+      "exposure_type": "PAPER_POSITION",
+      "command_intent_class": "WATCH_ONLY",
+      "command_priority_class": "MEDIUM",
+      "command_status_class": "NOT_ELIGIBLE",
+      "orchestration_eligibility_class": "INELIGIBLE",
+      "created_at": "2026-04-22T13:25:52.889425+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "exposure_type": "PAPER_POSITION",
+      "command_intent_class": "WATCH_ONLY",
+      "command_priority_class": "MEDIUM",
+      "command_status_class": "NOT_ELIGIBLE",
+      "orchestration_eligibility_class": "INELIGIBLE",
+      "created_at": "2026-04-22T13:23:59.057400+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "exposure_type": "PAPER_POSITION",
+      "command_intent_class": "WATCH_ONLY",
+      "command_priority_class": "MEDIUM",
+      "command_status_class": "NOT_ELIGIBLE",
+      "orchestration_eligibility_class": "INELIGIBLE",
+      "created_at": "2026-04-22T13:23:33.412529+00:00"
+    }
+  ]
+}

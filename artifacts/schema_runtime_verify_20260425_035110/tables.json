@@ -1,0 +1,282 @@
+[
+  {
+    "schema": "public",
+    "table": "advisory_resolution_records"
+  },
+  {
+    "schema": "public",
+    "table": "advisory_resolution_runs"
+  },
+  {
+    "schema": "public",
+    "table": "alert_events"
+  },
+  {
+    "schema": "public",
+    "table": "bucket_allocation_runs"
+  },
+  {
+    "schema": "public",
+    "table": "bucket_allocations"
+  },
+  {
+    "schema": "public",
+    "table": "cognition_handoff_candidates"
+  },
+  {
+    "schema": "public",
+    "table": "cognition_handoff_runs"
+  },
+  {
+    "schema": "public",
+    "table": "cognition_summaries"
+  },
+  {
+    "schema": "public",
+    "table": "cognition_summary_runs"
+  },
+  {
+    "schema": "public",
+    "table": "command_intent_records"
+  },
+  {
+    "schema": "public",
+    "table": "command_intent_runs"
+  },
+  {
+    "schema": "public",
+    "table": "cycles"
+  },
+  {
+    "schema": "public",
+    "table": "decision_ledger"
+  },
+  {
+    "schema": "public",
+    "table": "event_interpretation_runs"
+  },
+  {
+    "schema": "public",
+    "table": "event_interpretations"
+  },
+  {
+    "schema": "public",
+    "table": "exit_advisory_records"
+  },
+  {
+    "schema": "public",
+    "table": "exit_advisory_runs"
+  },
+  {
+    "schema": "public",
+    "table": "external_event_enrichment_runs"
+  },
+  {
+    "schema": "public",
+    "table": "external_event_enrichments"
+  },
+  {
+    "schema": "public",
+    "table": "external_events_normalized"
+  },
+  {
+    "schema": "public",
+    "table": "external_raw_events"
+  },
+  {
+    "schema": "public",
+    "table": "intelligence_ingestion_runs"
+  },
+  {
+    "schema": "public",
+    "table": "intelligence_sources"
+  },
+  {
+    "schema": "public",
+    "table": "invalidation_policy_records"
+  },
+  {
+    "schema": "public",
+    "table": "invalidation_policy_runs"
+  },
+  {
+    "schema": "public",
+    "table": "invalidation_reasoning_runs"
+  },
+  {
+    "schema": "public",
+    "table": "invalidation_reasonings"
+  },
+  {
+    "schema": "public",
+    "table": "live_orders"
+  },
+  {
+    "schema": "public",
+    "table": "market_link_candidates"
+  },
+  {
+    "schema": "public",
+    "table": "market_link_runs"
+  },
+  {
+    "schema": "public",
+    "table": "market_snapshots"
+  },
+  {
+    "schema": "public",
+    "table": "operator_control_actions"
+  },
+  {
+    "schema": "public",
+    "table": "orchestration_gate_records"
+  },
+  {
+    "schema": "public",
+    "table": "orchestration_gate_runs"
+  },
+  {
+    "schema": "public",
+    "table": "orchestration_packets"
+  },
+  {
+    "schema": "public",
+    "table": "order_status_history"
+  },
+  {
+    "schema": "public",
+    "table": "paper_order_events"
+  },
+  {
+    "schema": "public",
+    "table": "paper_orders"
+  },
+  {
+    "schema": "public",
+    "table": "paper_position_events"
+  },
+  {
+    "schema": "public",
+    "table": "paper_positions"
+  },
+  {
+    "schema": "public",
+    "table": "paper_runs"
+  },
+  {
+    "schema": "public",
+    "table": "paper_signals"
+  },
+  {
+    "schema": "public",
+    "table": "position_events"
+  },
+  {
+    "schema": "public",
+    "table": "positions"
+  },
+  {
+    "schema": "public",
+    "table": "ranking_policy_candidates"
+  },
+  {
+    "schema": "public",
+    "table": "ranking_policy_runs"
+  },
+  {
+    "schema": "public",
+    "table": "ranking_snapshots"
+  },
+  {
+    "schema": "public",
+    "table": "ranking_v2_candidates"
+  },
+  {
+    "schema": "public",
+    "table": "ranking_v2_runs"
+  },
+  {
+    "schema": "public",
+    "table": "rejection_ledger"
+  },
+  {
+    "schema": "public",
+    "table": "resolution_analyses"
+  },
+  {
+    "schema": "public",
+    "table": "resolution_analysis_runs"
+  },
+  {
+    "schema": "public",
+    "table": "run_artifacts"
+  },
+  {
+    "schema": "public",
+    "table": "schema_migrations"
+  },
+  {
+    "schema": "public",
+    "table": "shadow_order_events"
+  },
+  {
+    "schema": "public",
+    "table": "shadow_orders"
+  },
+  {
+    "schema": "public",
+    "table": "shadow_position_events"
+  },
+  {
+    "schema": "public",
+    "table": "shadow_positions"
+  },
+  {
+    "schema": "public",
+    "table": "shadow_runs"
+  },
+  {
+    "schema": "public",
+    "table": "trade_classification_runs"
+  },
+  {
+    "schema": "public",
+    "table": "trade_classifications"
+  },
+  {
+    "schema": "public",
+    "table": "whale_categories"
+  },
+  {
+    "schema": "public",
+    "table": "whale_category_runs"
+  },
+  {
+    "schema": "public",
+    "table": "whale_events"
+  },
+  {
+    "schema": "public",
+    "table": "whale_market_scores"
+  },
+  {
+    "schema": "public",
+    "table": "whale_profile_runs"
+  },
+  {
+    "schema": "public",
+    "table": "whale_profiles"
+  },
+  {
+    "schema": "public",
+    "table": "whale_registry"
+  },
+  {
+    "schema": "public",
+    "table": "whale_scan_runs"
+  },
+  {
+    "schema": "public",
+    "table": "whale_scoring_runs"
+  }
+]

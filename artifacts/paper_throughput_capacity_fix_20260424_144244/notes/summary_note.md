@@ -1,0 +1,1 @@
+paper-safe cap rerun opened 3 positions from a clean reset while live/shadow policy remained unchanged. Next visible bottleneck became candidate ordering/skip behavior rather than one-slot capacity.

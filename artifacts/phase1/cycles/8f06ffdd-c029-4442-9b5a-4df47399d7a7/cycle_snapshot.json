@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "inv-degraded-54cfd3"
+  ],
+  "cycle_id": "8f06ffdd-c029-4442-9b5a-4df47399d7a7",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "inv-degraded-54cfd3",
+      "reason": "missing_yes_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

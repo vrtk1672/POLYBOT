@@ -1,0 +1,22 @@
+## Continuous Flow Summary
+
+- Canonical runtime path used:
+  - `powershell -ExecutionPolicy Bypass -File .\scripts\migrate_runtime.ps1`
+  - `powershell -ExecutionPolicy Bypass -File .\scripts\start_runtime.ps1`
+  - `powershell -ExecutionPolicy Bypass -File .\scripts\smoke_runtime.ps1`
+- Verification window:
+  - Startup readiness confirmed at `2026-04-22T12:50:10Z`
+  - Timed API samples captured at `12:50:39Z`, `12:51:52Z`, `12:53:03Z`, `12:54:13Z`
+  - Total sampled runtime window: about 3 minutes 34 seconds
+- Observed runtime behavior:
+  - Startup completed successfully and the app stayed alive throughout sampling.
+  - Repeated `refresh_complete` events were logged during the run.
+  - `/dashboard/api/health`, `/dashboard/api/overview`, `/dashboard/api/ranking`, `/dashboard/api/invalidation`, `/dashboard/api/intelligence`, and `POST /telegram/command` all returned `200` on every sample.
+  - Dashboard freshness advanced across samples:
+    - `last_cycle.started_at` moved from `2026-04-22T12:50:17Z` to `2026-04-22T12:53:38Z`
+    - `last_market_snapshot.captured_at` moved from `2026-04-22T12:50:17Z` to `2026-04-22T12:53:38Z`
+    - ranking output changed between sample 1 and sample 4, including the top market switching from `947289` to `1929170`
+  - Health warnings stayed at `0` on every sample.
+- Instability found and resolved during this task:
+  - Initial runtime persistence attempted to store all scored markets each refresh, which made the listener unresponsive during refresh.
+  - The runtime persistence path was reduced to the canonical `top_n` slice so freshness stays current without blocking API responsiveness.

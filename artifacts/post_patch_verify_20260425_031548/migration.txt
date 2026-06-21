@@ -1,0 +1,7 @@
+COMMAND: powershell -ExecutionPolicy Bypass -File scripts\migrate_runtime.ps1
+EXIT_CODE: 0
+
+--- STDOUT ---
+No pending migrations.
+
+--- STDERR ---

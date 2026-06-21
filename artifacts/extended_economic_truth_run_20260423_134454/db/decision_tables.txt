@@ -1,0 +1,19 @@
+         table_name          
+-----------------------------
+ advisory_resolution_records
+ advisory_resolution_runs
+ command_intent_records
+ command_intent_runs
+ exit_advisory_records
+ exit_advisory_runs
+ invalidation_policy_records
+ invalidation_policy_runs
+ invalidation_reasoning_runs
+ invalidation_reasonings
+ ranking_policy_candidates
+ ranking_policy_runs
+ ranking_snapshots
+ ranking_v2_candidates
+ ranking_v2_runs
+(15 rows)
+

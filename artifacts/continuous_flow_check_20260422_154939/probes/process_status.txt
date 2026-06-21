@@ -1,0 +1,2 @@
+before_stop_process_alive=True
+after_stop_process_alive=False

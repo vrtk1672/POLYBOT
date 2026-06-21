@@ -1,0 +1,40 @@
+export const controlCenterEndpoints = {
+  overview: "/dashboard/api/v2/control/overview",
+  organs: "/dashboard/api/v2/control/organs",
+  liveFlow: "/dashboard/api/v2/control/live-flow",
+  decisionXray: "/dashboard/api/v2/control/decision-xray",
+  blockers: "/dashboard/api/v2/control/blockers",
+  closestActionable: "/dashboard/api/v2/control/closest-actionable",
+  truthState: "/dashboard/api/v2/control/truth-state",
+  riskEvidence: "/dashboard/api/v2/control/risk-evidence",
+  lifecycleGovernance: "/dashboard/api/v2/control/lifecycle-governance",
+  meshDialogues: "/dashboard/api/v2/control/mesh-dialogues",
+  pnlLedger: "/dashboard/api/v2/control/pnl-ledger",
+  positions: "/dashboard/api/v2/control/positions",
+  noTrade: "/dashboard/api/v2/control/no-trade",
+  ai: "/dashboard/api/v2/control/ai",
+  logs: "/dashboard/api/v2/control/logs",
+  truthContract: "/dashboard/api/v2/control/truth-contract",
+  runtimeReadiness: "/dashboard/api/v2/control/runtime-readiness",
+  supervisorLifePath: "/dashboard/api/v2/control/supervisor-life-path",
+  candidateProducerFreshness: "/dashboard/api/v2/control/candidate-producer-freshness",
+  paperReadiness: "/dashboard/api/v2/control/paper-readiness",
+  candidateExplanations: "/dashboard/api/v2/control/candidate-explanations",
+  eligibleIntentBridge: "/dashboard/api/v2/control/eligible-intent-bridge",
+  orderbookPriceReadiness: "/dashboard/api/v2/control/orderbook-price-readiness",
+  candidatePricePath: "/dashboard/api/v2/control/candidate-price-path",
+  eventMeshProof: "/dashboard/api/v2/control/event-mesh-proof",
+  meshEvidenceBundles: "/dashboard/api/v2/control/mesh-evidence-bundles",
+  candidateEventCorrelation: "/dashboard/api/v2/control/candidate-event-correlation",
+  candidateScopedEvents: "/dashboard/api/v2/control/candidate-scoped-events",
+  paperActionability: "/dashboard/api/v2/control/paper-actionability",
+  prePaperSafety: "/dashboard/api/v2/control/pre-paper-safety",
+  paperCertificationPlan: "/dashboard/api/v2/control/paper-certification-plan",
+  fullMonitorRun: "/dashboard/api/v2/control/full-monitor-run",
+  runtimeSupervisor: "/dashboard/api/v2/control/runtime-supervisor",
+  paperSimulation: "/dashboard/api/v2/control/paper-simulation"
+} as const;
+
+export type ControlCenterEndpointKey = keyof typeof controlCenterEndpoints;
+
+export const controlCenterEndpointKeys = Object.keys(controlCenterEndpoints) as ControlCenterEndpointKey[];

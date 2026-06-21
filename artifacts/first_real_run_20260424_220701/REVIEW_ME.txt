@@ -1,0 +1,14 @@
+﻿First review these files:
+1. .\artifacts\first_real_run_20260424_220701\logs\check_env_runtime.log
+2. .\artifacts\first_real_run_20260424_220701\listen_only\intelligence_2.json
+3. .\artifacts\first_real_run_20260424_220701\listen_only\db_listen_only_snapshot.txt
+4. .\artifacts\first_real_run_20260424_220701\paper\health_2.json
+5. .\artifacts\first_real_run_20260424_220701\paper\intelligence_2.json
+6. .\artifacts\first_real_run_20260424_220701\paper\kpi_quality_2.json
+7. .\artifacts\first_real_run_20260424_220701\paper\positions_orders_2.json
+8. .\artifacts\first_real_run_20260424_220701\paper\db_counts.txt
+9. .\artifacts\first_real_run_20260424_220701\paper\positions_by_status.txt
+10. .\artifacts\first_real_run_20260424_220701\paper\position_event_distribution.txt
+11. .\artifacts\first_real_run_20260424_220701\paper\recent_positions.txt
+12. .\artifacts\first_real_run_20260424_220701\paper\signal_decisions.txt
+13. .\artifacts\first_real_run_20260424_220701\paper\top_block_reasons.txt

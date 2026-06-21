@@ -1,0 +1,238 @@
+{
+  "paper_runs_total": 52,
+  "paper_signals_total": 1040,
+  "paper_orders_total": 20,
+  "paper_positions_total": 20,
+  "paper_order_events_total": 40,
+  "paper_position_events_total": 238,
+  "paper_open_positions": 20,
+  "paper_closed_positions": 0,
+  "paper_order_statuses": [
+    [
+      "FILLED",
+      20
+    ]
+  ],
+  "paper_position_statuses": [
+    [
+      "OPEN",
+      20
+    ]
+  ],
+  "recent_filled_orders": [
+    [
+      "1708109",
+      "YES",
+      "FILLED",
+      "2026-04-22 14:24:18.402250+00:00"
+    ],
+    [
+      "842015",
+      "YES",
+      "FILLED",
+      "2026-04-22 14:22:45.880884+00:00"
+    ],
+    [
+      "1708086",
+      "YES",
+      "FILLED",
+      "2026-04-22 14:20:41.605734+00:00"
+    ],
+    [
+      "1742819",
+      "NO",
+      "FILLED",
+      "2026-04-22 14:18:46.432247+00:00"
+    ],
+    [
+      "566140",
+      "YES",
+      "FILLED",
+      "2026-04-22 14:17:14.893006+00:00"
+    ],
+    [
+      "842016",
+      "YES",
+      "FILLED",
+      "2026-04-22 14:15:32.482359+00:00"
+    ],
+    [
+      "566136",
+      "YES",
+      "FILLED",
+      "2026-04-22 14:13:50.833987+00:00"
+    ],
+    [
+      "558936",
+      "YES",
+      "FILLED",
+      "2026-04-22 14:12:11.384480+00:00"
+    ],
+    [
+      "558934",
+      "YES",
+      "FILLED",
+      "2026-04-22 14:10:35.273140+00:00"
+    ],
+    [
+      "947289",
+      "YES",
+      "FILLED",
+      "2026-04-22 14:09:02.967848+00:00"
+    ]
+  ],
+  "recent_position_events": [
+    [
+      "OPENED",
+      "simulated_fill",
+      "2026-04-22 14:24:18.579469+00:00"
+    ],
+    [
+      "MARKED",
+      "mark_to_market",
+      "2026-04-22 14:24:18.579469+00:00"
+    ],
+    [
+      "MARKED",
+      "runtime_mark_to_market",
+      "2026-04-22 14:22:49.986121+00:00"
+    ],
+    [
+      "MARKED",
+      "runtime_mark_to_market",
+      "2026-04-22 14:22:49.978633+00:00"
+    ],
+    [
+      "MARKED",
+      "runtime_mark_to_market",
+      "2026-04-22 14:22:49.966470+00:00"
+    ],
+    [
+      "MARKED",
+      "runtime_mark_to_market",
+      "2026-04-22 14:22:49.958077+00:00"
+    ],
+    [
+      "MARKED",
+      "runtime_mark_to_market",
+      "2026-04-22 14:22:49.951800+00:00"
+    ],
+    [
+      "MARKED",
+      "runtime_mark_to_market",
+      "2026-04-22 14:22:49.945276+00:00"
+    ],
+    [
+      "MARKED",
+      "runtime_mark_to_market",
+      "2026-04-22 14:22:49.935712+00:00"
+    ],
+    [
+      "MARKED",
+      "runtime_mark_to_market",
+      "2026-04-22 14:22:49.925901+00:00"
+    ],
+    [
+      "MARKED",
+      "runtime_mark_to_market",
+      "2026-04-22 14:22:49.915449+00:00"
+    ],
+    [
+      "MARKED",
+      "runtime_mark_to_market",
+      "2026-04-22 14:22:49.904964+00:00"
+    ],
+    [
+      "MARKED",
+      "runtime_mark_to_market",
+      "2026-04-22 14:22:49.895992+00:00"
+    ],
+    [
+      "MARKED",
+      "runtime_mark_to_market",
+      "2026-04-22 14:22:49.883233+00:00"
+    ],
+    [
+      "MARKED",
+      "runtime_mark_to_market",
+      "2026-04-22 14:22:49.869435+00:00"
+    ]
+  ],
+  "recent_order_events": [
+    [
+      "FILLED",
+      "filled_at_current_mark",
+      "2026-04-22 14:24:18.575401+00:00"
+    ],
+    [
+      "CREATED",
+      "order_created",
+      "2026-04-22 14:24:18.564114+00:00"
+    ],
+    [
+      "FILLED",
+      "filled_at_current_mark",
+      "2026-04-22 14:22:46.074888+00:00"
+    ],
+    [
+      "CREATED",
+      "order_created",
+      "2026-04-22 14:22:46.063108+00:00"
+    ],
+    [
+      "FILLED",
+      "filled_at_current_mark",
+      "2026-04-22 14:20:41.833192+00:00"
+    ],
+    [
+      "CREATED",
+      "order_created",
+      "2026-04-22 14:20:41.812455+00:00"
+    ],
+    [
+      "FILLED",
+      "filled_at_current_mark",
+      "2026-04-22 14:18:46.625414+00:00"
+    ],
+    [
+      "CREATED",
+      "order_created",
+      "2026-04-22 14:18:46.617654+00:00"
+    ],
+    [
+      "FILLED",
+      "filled_at_current_mark",
+      "2026-04-22 14:17:15.181185+00:00"
+    ],
+    [
+      "CREATED",
+      "order_created",
+      "2026-04-22 14:17:15.166052+00:00"
+    ],
+    [
+      "FILLED",
+      "filled_at_current_mark",
+      "2026-04-22 14:15:32.819343+00:00"
+    ],
+    [
+      "CREATED",
+      "order_created",
+      "2026-04-22 14:15:32.770435+00:00"
+    ],
+    [
+      "FILLED",
+      "filled_at_current_mark",
+      "2026-04-22 14:13:51.091431+00:00"
+    ],
+    [
+      "CREATED",
+      "order_created",
+      "2026-04-22 14:13:51.081550+00:00"
+    ],
+    [
+      "FILLED",
+      "filled_at_current_mark",
+      "2026-04-22 14:12:11.653292+00:00"
+    ]
+  ]
+}

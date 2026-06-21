@@ -1,0 +1,15 @@
+﻿Check these first:
+1. api\final_kpi_quality.json
+2. api\final_positions_orders.json
+3. api\final_audit.json
+4. db\paper_positions_by_status.txt
+5. db\paper_position_event_distribution.txt
+6. db\paper_positions_recent.txt
+
+The questions to answer:
+- how many fresh opens happened
+- how many fresh closes happened
+- realized pnl positive or negative
+- exit reasons repeated or random
+- are we getting only WATCH, or real EXIT / REDUCE behavior
+- are winners/losses coherent or noisy

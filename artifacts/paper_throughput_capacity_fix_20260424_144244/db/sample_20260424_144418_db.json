@@ -1,0 +1,27 @@
+{
+  "counts": {
+    "paper_signals": 60,
+    "paper_orders": 3,
+    "paper_positions": 3,
+    "open_positions": 3,
+    "exited_positions": 0,
+    "paper_position_events": 12
+  },
+  "top_signal_reasons": [
+    {
+      "signal_type": "WOULD_SKIP",
+      "reason_code": "lower_ranked_after_would_enter",
+      "count": 54
+    },
+    {
+      "signal_type": "WOULD_BLOCK",
+      "reason_code": "same_market_exposure_1_meets_exceeds_live_max_same_market_exposu",
+      "count": 3
+    },
+    {
+      "signal_type": "WOULD_ENTER",
+      "reason_code": "would_enter",
+      "count": 3
+    }
+  ]
+}

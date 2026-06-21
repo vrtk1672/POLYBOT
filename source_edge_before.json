@@ -1,0 +1,31 @@
+{
+    "status":  "MISSING",
+    "source":  {
+                   "edge_thesis":  "risk_evidence_mesh_evaluations.metadata_json.edge_thesis",
+                   "risk_evidence":  "risk_evidence_mesh_evaluations"
+               },
+    "last_updated":  "2026-06-15T12:33:14.052381+00:00",
+    "freshness_state":  "MISSING",
+    "readiness_state":  "UNKNOWN",
+    "truth_state":  "UNKNOWN",
+    "counts":  {
+                   "items":  0,
+                   "edge_supported":  0,
+                   "edge_watch":  0,
+                   "edge_weak":  0,
+                   "no_source_backed_edge":  0,
+                   "source_conflict":  0,
+                   "edge_stale":  0,
+                   "risk_usable":  0,
+                   "source_backed":  0
+               },
+    "items":  [
+
+              ],
+    "warnings":  [
+                     "No source-backed edge theses exist yet."
+                 ],
+    "errors":  [
+
+               ]
+}

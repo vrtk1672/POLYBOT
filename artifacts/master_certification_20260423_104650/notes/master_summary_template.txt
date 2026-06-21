@@ -1,0 +1,27 @@
+﻿POLYBOT MASTER CERTIFICATION SUMMARY
+
+Check these manually:
+1. docs reachable
+2. dashboard reachable
+3. paper mode surfaces populated
+4. KPI quality visible
+5. paper positions/orders visible
+6. shadow activity visible
+7. live cage visible
+8. live kill/resume visible
+9. DB snapshots coherent
+10. no obvious crash loop
+
+Review files:
+- logs\focused_regression.log
+- api\paper_health.json
+- api\paper_kpi_quality.json
+- api\paper_positions_orders.json
+- api\shadow_kpi_quality.json
+- api\shadow_positions_orders.json
+- api\live_health.json
+- api\live_positions_orders.json
+- api\live_audit.json
+- logs\paper_db_snapshot.log
+- logs\shadow_db_snapshot.log
+- logs\live_db_snapshot.log

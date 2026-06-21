@@ -1,0 +1,9 @@
+{
+  "DATABASE_URL": null,
+  "RUNTIME_MODE": null,
+  "EXECUTION_BACKEND": null,
+  "LIVE_ENABLED": null,
+  "LIVE_KILL_SWITCH": "true",
+  "ANTHROPIC_API_KEY_LOADED": true,
+  "ANTHROPIC_API_KEY_PREVIEW": "sk-ant-a..."
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "C:\\Users\\harel\\Desktop\\polybot\\artifacts\\always_on_intelligence_integration_20260424_204846\\logs\\listen_only_stdout.log",
+    "line": 85,
+    "pattern": "runtime_whale_refresh_skipped",
+    "text": "           INFO     runtime_whale_refresh_skipped error=at least one market_id "
+  },
+  {
+    "file": "C:\\Users\\harel\\Desktop\\polybot\\artifacts\\always_on_intelligence_integration_20260424_204846\\logs\\paper_stdout.log",
+    "line": 85,
+    "pattern": "runtime_whale_refresh_skipped",
+    "text": "           INFO     runtime_whale_refresh_skipped error=at least one market_id "
+  },
+  {
+    "file": "C:\\Users\\harel\\Desktop\\polybot\\artifacts\\env_runtime_audit_20260424_212821\\logs\\listen_only_stdout.log",
+    "line": 86,
+    "pattern": "runtime_whale_refresh_skipped",
+    "text": "           INFO     runtime_whale_refresh_skipped error=at least one market_id "
+  },
+  {
+    "file": "C:\\Users\\harel\\Desktop\\polybot\\artifacts\\env_runtime_audit_20260424_212821\\logs\\paper_stdout.log",
+    "line": 86,
+    "pattern": "runtime_whale_refresh_skipped",
+    "text": "           INFO     runtime_whale_refresh_skipped error=at least one market_id "
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "ba-strong-ac62cc"
+  ],
+  "cycle_id": "44b38bc2-f843-4863-966b-90088ba1280a",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "ba-strong-ac62cc",
+      "reason": "missing_yes_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

@@ -1,0 +1,55 @@
+﻿# =========================
+# POLYBOT SAFE GITIGNORE
+# =========================
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cert
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / UI
+node_modules/
+dist/
+build/
+.next/
+.cache/
+
+# Runtime / logs / reports / temp
+logs/
+*.log
+tmp/
+temp/
+run_reports/
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.bak
+
+# Docker / local volumes
+postgres_data/
+pgdata/
+redis_data/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+docs/POLYBOT_ACTIVE_30M_OBSERVATION_REPORT_20260604T002500Z.md

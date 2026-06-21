@@ -1,0 +1,25 @@
+{
+  "env_exists": true,
+  "anthropic_loaded": true,
+  "import_psycopg": true,
+  "import_dotenv": true,
+  "import_pytest": true,
+  "db_connected": true,
+  "compile_ok": true,
+  "pytest_ok": true,
+  "migration_ok": true,
+  "db_counts": {
+    "markets": "ERROR: UndefinedTable: relation \"markets\" does not exist\nLINE 1: select count(*) from markets\n                             ^",
+    "paper_signals": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+    "paper_orders": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+    "paper_positions": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+    "paper_position_events": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+    "intelligence_ingestion_runs": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+    "external_events_normalized": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+    "whale_events": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+    "whale_market_scores": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block"
+  },
+  "old_failure_matches": 4,
+  "new_good_markers": 0,
+  "final_status": "YELLOW"
+}

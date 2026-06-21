@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "inv-degraded-757cab"
+  ],
+  "cycle_id": "4e858a31-be02-43f0-86cd-f6f00c749f86",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "inv-degraded-757cab",
+      "reason": "missing_yes_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

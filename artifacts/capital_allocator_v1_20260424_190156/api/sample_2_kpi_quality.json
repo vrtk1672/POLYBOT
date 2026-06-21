@@ -1,0 +1,192 @@
+{
+  "window": {
+    "recent_cycle_count": 5,
+    "window_started_at": "2026-04-24T11:44:01.939292+00:00",
+    "window_completed_at": "2026-04-24T16:04:04.343446+00:00",
+    "cycle_ids": [
+      "4e054294-0dc4-42d0-81ba-77d35bf1e6d8",
+      "064535b6-dfbb-4508-907d-8494e6b79d38",
+      "b884ec3b-7b09-40c3-90f1-9a8847b24b40",
+      "54108652-f28c-4f8b-aa96-04bf59fe52b2",
+      "aab40346-b452-4e07-ab6d-95422d0e20e8"
+    ]
+  },
+  "kpis": {
+    "opportunity_intake": {
+      "opportunities_seen": 12500,
+      "opportunities_scored": 58996,
+      "candidates_ranked": 50,
+      "ranking_policy_candidates": 100,
+      "ranking_policy_selectable": 0,
+      "ranking_policy_rejected": 100,
+      "paper_candidates_selected": 3
+    },
+    "paper_activity": {
+      "paper_signals_created": 40,
+      "paper_would_enter": 3,
+      "paper_would_block": 37,
+      "paper_orders_created": 3,
+      "paper_orders_filled": 3,
+      "paper_positions_opened": 3,
+      "paper_positions_closed": 0,
+      "paper_position_events_count": 12
+    },
+    "shadow_activity": {
+      "shadow_orders_created": 0,
+      "shadow_would_submit": 0,
+      "shadow_would_reject": 0,
+      "shadow_blocked_by_risk": 0,
+      "shadow_blocked_by_config": 0,
+      "shadow_invalid_request": 0,
+      "shadow_positions_pending": 0
+    },
+    "invalidation_advisory_activity": {
+      "invalidation_policy_records_count": 61,
+      "exit_advisory_records_count": 75,
+      "advisory_resolution_records_count": 61,
+      "command_intent_records_count": 123
+    },
+    "flow_ratios": {
+      "selection_rate": 0.06,
+      "reject_rate": 1.0,
+      "paper_order_per_signal_rate": 0.075,
+      "fill_rate": 1.0,
+      "position_open_rate": 1.0,
+      "exit_advisory_incidence_rate": 1.2295
+    }
+  },
+  "quality": {
+    "ranking_tier_distribution": [
+      {
+        "label": "REJECT",
+        "count": 100
+      }
+    ],
+    "ranking_gate_distribution": [
+      {
+        "label": "HARD_REJECT",
+        "count": 100
+      }
+    ],
+    "trade_classification_distribution": [
+      {
+        "label": "NO_TRADE",
+        "count": 61
+      }
+    ],
+    "bucket_allocation_distribution": [
+      {
+        "label": "NO_BUCKET",
+        "count": 100
+      }
+    ],
+    "invalidation_state_distribution": [
+      {
+        "label": "WATCH",
+        "count": 61
+      }
+    ],
+    "exit_policy_distribution": [
+      {
+        "label": "BLOCK_NEW_DEPLOYMENT",
+        "count": 61
+      }
+    ],
+    "advisory_action_distribution": [
+      {
+        "label": "WATCH",
+        "count": 45
+      },
+      {
+        "label": "BLOCK_NEW_ENTRY",
+        "count": 30
+      }
+    ],
+    "command_intent_distribution": [
+      {
+        "label": "WATCH_ONLY",
+        "count": 82
+      },
+      {
+        "label": "BLOCK_NEW_ENTRY",
+        "count": 30
+      },
+      {
+        "label": "EXIT_POSITION",
+        "count": 11
+      }
+    ],
+    "paper_signal_distribution": [
+      {
+        "label": "WOULD_BLOCK",
+        "count": 37
+      },
+      {
+        "label": "WOULD_ENTER",
+        "count": 3
+      }
+    ],
+    "paper_position_status_distribution": [
+      {
+        "label": "OPEN",
+        "count": 3
+      }
+    ],
+    "shadow_status_distribution": [],
+    "top_shadow_reason_codes": [],
+    "top_rejection_reasons": [],
+    "top_paper_block_reasons": [
+      {
+        "label": "open_positions_3_meet_exceed_paper_safe_max_concurrent_positions",
+        "count": 20
+      },
+      {
+        "label": "deployment_cap_reached",
+        "count": 17
+      }
+    ],
+    "top_rank_reasons": [
+      {
+        "label": "Candidate is hard rejected by ranking-policy guards at score 9.35.",
+        "count": 6
+      },
+      {
+        "label": "Candidate is hard rejected by ranking-policy guards at score 7.41.",
+        "count": 5
+      },
+      {
+        "label": "Candidate is hard rejected by ranking-policy guards at score 7.47.",
+        "count": 5
+      },
+      {
+        "label": "Candidate is hard rejected by ranking-policy guards at score 7.89.",
+        "count": 5
+      },
+      {
+        "label": "Candidate is hard rejected by ranking-policy guards at score 7.93.",
+        "count": 5
+      }
+    ],
+    "top_advisory_reasons": [
+      {
+        "label": "Advisory set BLOCK_NEW_ENTRY for SHADOW_ORDER based on persisted invalidation policy and exposure context.",
+        "count": 30
+      },
+      {
+        "label": "Advisory set WATCH for SHADOW_POSITION based on persisted invalidation policy and exposure context.",
+        "count": 30
+      },
+      {
+        "label": "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+        "count": 15
+      }
+    ]
+  },
+  "observations": [
+    "Recent runtime window covers 5 canonical refresh cycles from 2026-04-24T11:44:01.939292+00:00 to 2026-04-24T16:04:04.343446+00:00.",
+    "Opportunity intake saw 12500 markets fetched, 50 runtime-ranked candidates, and 40 persisted paper signals.",
+    "Paper flow converted 3 paper orders into 3 fills and 3 opened positions in the measured window.",
+    "Paper flow is currently more selective than active: 37 blocked signals vs 3 would-enter signals, led by open_positions_3_meet_exceed_paper_safe_max_concurrent_positions.",
+    "Ranking policy produced no SELECTABLE candidates in the recent window while the paper signal layer still emitted WOULD_ENTER candidates, so policy and execution selection strictness are materially different."
+  ]
+}

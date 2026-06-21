@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "real-enum-c139f18f"
+  ],
+  "cycle_id": "0b68517f-53e2-43ca-bab8-b7e6c1ca3404",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "real-enum-c139f18f",
+      "reason": "missing_yes_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

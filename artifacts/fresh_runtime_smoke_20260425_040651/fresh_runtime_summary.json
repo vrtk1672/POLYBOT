@@ -1,0 +1,26 @@
+{
+  "status": "YELLOW_NO_FRESH_GROWTH_BUT_NO_OLD_FAILURE",
+  "bad_count": 0,
+  "good_count": 0,
+  "important_delta": {
+    "market_snapshots": 0,
+    "paper_runs": 0,
+    "paper_signals": 0,
+    "paper_orders": 0,
+    "paper_positions": 0,
+    "paper_position_events": 0,
+    "intelligence_ingestion_runs": 0,
+    "external_raw_events": 0,
+    "external_events_normalized": 0,
+    "event_interpretation_runs": 0,
+    "event_interpretations": 0,
+    "market_link_runs": 0,
+    "market_link_candidates": 0,
+    "whale_scan_runs": 0,
+    "whale_events": 0,
+    "whale_scoring_runs": 0,
+    "whale_market_scores": 0
+  },
+  "bad_matches": [],
+  "good_matches": []
+}

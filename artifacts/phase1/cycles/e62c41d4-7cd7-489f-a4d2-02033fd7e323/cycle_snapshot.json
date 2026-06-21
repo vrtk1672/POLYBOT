@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "gate-soft-6c04f1"
+  ],
+  "cycle_id": "e62c41d4-7cd7-489f-a4d2-02033fd7e323",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "gate-soft-6c04f1",
+      "reason": "missing_yes_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

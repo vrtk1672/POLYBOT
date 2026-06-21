@@ -1,0 +1,20 @@
+    column_name     |        data_type         
+--------------------+--------------------------
+ id                 | uuid
+ paper_run_id       | uuid
+ market_id          | text
+ intended_outcome   | text
+ size               | numeric
+ avg_entry          | numeric
+ mark_price         | numeric
+ unrealized         | numeric
+ realized           | numeric
+ current_status     | text
+ thesis_state       | text
+ invalidation_state | text
+ opened_at          | timestamp with time zone
+ updated_at         | timestamp with time zone
+ closed_at          | timestamp with time zone
+ payload_json       | jsonb
+(16 rows)
+

@@ -1,0 +1,15 @@
+{
+  "paper_signals": 40,
+  "paper_orders": 3,
+  "paper_positions": 3,
+  "paper_order_events": 6,
+  "paper_position_events": 12,
+  "intelligence_ingestion_runs": 5,
+  "external_events_normalized": 41,
+  "external_event_enrichments": 11,
+  "cognition_handoff_runs": 1,
+  "alert_events": 1,
+  "paper_orders_filled": 3,
+  "paper_open_positions": 3,
+  "paper_closed_positions": 0
+}

@@ -1,0 +1,8 @@
+COMMAND: .venv\Scripts\python.exe -m pytest tests\test_runtime_intelligence.py tests\test_phase5d_whale_scoring.py tests\test_market_service.py tests\test_phase2_signal_paper.py tests\test_phase2_execution_aware_paper.py -q
+EXIT_CODE: 0
+
+--- STDOUT ---
+ssssssssssssss..sssssssssssssssss                                        [100%]
+2 passed, 31 skipped in 2.32s
+
+--- STDERR ---

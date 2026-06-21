@@ -1,0 +1,84 @@
+{
+  "live_positions": [],
+  "paper_positions": [
+    {
+      "market_id": "1731344",
+      "intended_outcome": "YES",
+      "size": 5.725,
+      "avg_entry": 0.131,
+      "current_status": "OPEN",
+      "unrealized": 0.0,
+      "realized": 0.0,
+      "updated_at": "2026-04-22T13:57:19.759433+00:00"
+    },
+    {
+      "market_id": "1929170",
+      "intended_outcome": "YES",
+      "size": 5.0,
+      "avg_entry": 0.18,
+      "current_status": "OPEN",
+      "unrealized": 0.0,
+      "realized": 0.0,
+      "updated_at": "2026-04-22T13:57:19.726879+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "intended_outcome": "YES",
+      "size": 6.25,
+      "avg_entry": 0.12,
+      "current_status": "OPEN",
+      "unrealized": 0.125,
+      "realized": 0.0,
+      "updated_at": "2026-04-22T13:57:19.715630+00:00"
+    }
+  ],
+  "shadow_positions": [],
+  "live_orders": [],
+  "paper_orders": [
+    {
+      "market_id": "1731344",
+      "action": "BUY",
+      "intended_outcome": "YES",
+      "intended_price": 0.131,
+      "intended_size": 5.725,
+      "notional": 0.75,
+      "status": "FILLED",
+      "updated_at": "2026-04-22T13:57:15.817934+00:00"
+    },
+    {
+      "market_id": "1929170",
+      "action": "BUY",
+      "intended_outcome": "YES",
+      "intended_price": 0.18,
+      "intended_size": 5.0,
+      "notional": 0.9,
+      "status": "FILLED",
+      "updated_at": "2026-04-22T13:56:52.020905+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "action": "BUY",
+      "intended_outcome": "YES",
+      "intended_price": 0.12,
+      "intended_size": 6.25,
+      "notional": 0.75,
+      "status": "FILLED",
+      "updated_at": "2026-04-22T13:23:30.809414+00:00"
+    }
+  ],
+  "shadow_orders": [],
+  "pnl": {
+    "live": {
+      "unrealized": 0.0,
+      "realized": 0.0
+    },
+    "paper": {
+      "unrealized": 0.125,
+      "realized": 0.0
+    },
+    "shadow": {
+      "unrealized": 0.0,
+      "realized": 0.0
+    }
+  }
+}

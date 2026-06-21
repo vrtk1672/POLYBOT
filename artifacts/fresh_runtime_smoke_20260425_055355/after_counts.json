@@ -1,0 +1,43 @@
+{
+  "captured_at": "2026-04-25T05:58:41.133935",
+  "counts": {
+    "market_snapshots": 33020,
+    "paper_runs": 13,
+    "paper_signals": 260,
+    "paper_orders": 3,
+    "paper_positions": 3,
+    "paper_position_events": 45,
+    "intelligence_ingestion_runs": 11,
+    "external_raw_events": 101,
+    "external_events_normalized": 101,
+    "event_interpretation_runs": 1346,
+    "event_interpretations": 1346,
+    "market_link_runs": 1340,
+    "market_link_candidates": 1340,
+    "whale_scan_runs": 1052,
+    "whale_events": 2223,
+    "whale_scoring_runs": 352,
+    "whale_market_scores": 436,
+    "alert_events": 1
+  },
+  "delta": {
+    "market_snapshots": 0,
+    "paper_runs": 0,
+    "paper_signals": 0,
+    "paper_orders": 0,
+    "paper_positions": 0,
+    "paper_position_events": 0,
+    "intelligence_ingestion_runs": 0,
+    "external_raw_events": 0,
+    "external_events_normalized": 0,
+    "event_interpretation_runs": 0,
+    "event_interpretations": 0,
+    "market_link_runs": 0,
+    "market_link_candidates": 0,
+    "whale_scan_runs": 0,
+    "whale_events": 0,
+    "whale_scoring_runs": 0,
+    "whale_market_scores": 0,
+    "alert_events": 0
+  }
+}

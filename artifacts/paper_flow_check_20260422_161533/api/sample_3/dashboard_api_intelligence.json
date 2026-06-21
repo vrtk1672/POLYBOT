@@ -1,0 +1,196 @@
+{
+  "whales": [
+    {
+      "market_id": "rank-top-8c28a1",
+      "whale_presence_score": 0.66467,
+      "whale_conviction_score": 0.884,
+      "smart_whale_alignment_score": 0.2,
+      "whale_reversal_risk": 0.0,
+      "scoring_reason_text": "Market rank-top-8c28a1 has 2 supporting whale wallet(s) across 2 event(s), presence=0.66, conviction=0.88, alignment=0.20, reversal_risk=0.00.",
+      "created_at": "2026-04-22T10:27:11.454362+00:00"
+    },
+    {
+      "market_id": "rank-strong-cb548d",
+      "whale_presence_score": 0.65267,
+      "whale_conviction_score": 0.873,
+      "smart_whale_alignment_score": 0.2,
+      "whale_reversal_risk": 0.0,
+      "scoring_reason_text": "Market rank-strong-cb548d has 2 supporting whale wallet(s) across 2 event(s), presence=0.65, conviction=0.87, alignment=0.20, reversal_risk=0.00.",
+      "created_at": "2026-04-22T10:27:08.535991+00:00"
+    },
+    {
+      "market_id": "ba-whale-8fb85b",
+      "whale_presence_score": 0.7825,
+      "whale_conviction_score": 0.88375,
+      "smart_whale_alignment_score": 0.2,
+      "whale_reversal_risk": 0.0,
+      "scoring_reason_text": "Market ba-whale-8fb85b has 3 supporting whale wallet(s) across 3 event(s), presence=0.78, conviction=0.88, alignment=0.20, reversal_risk=0.00.",
+      "created_at": "2026-04-22T10:26:43.958293+00:00"
+    },
+    {
+      "market_id": "sports-psg-whale-6c652b",
+      "whale_presence_score": 0.7825,
+      "whale_conviction_score": 0.88375,
+      "smart_whale_alignment_score": 0.2,
+      "whale_reversal_risk": 0.0,
+      "scoring_reason_text": "Market sports-psg-whale-6c652b has 3 supporting whale wallet(s) across 3 event(s), presence=0.78, conviction=0.88, alignment=0.20, reversal_risk=0.00.",
+      "created_at": "2026-04-22T10:26:18.829073+00:00"
+    },
+    {
+      "market_id": "fast-market-c681dbc5",
+      "whale_presence_score": 0.60167,
+      "whale_conviction_score": 0.83975,
+      "smart_whale_alignment_score": 0.2,
+      "whale_reversal_risk": 0.0,
+      "scoring_reason_text": "Market fast-market-c681dbc5 has 2 supporting whale wallet(s) across 2 event(s), presence=0.60, conviction=0.84, alignment=0.20, reversal_risk=0.00.",
+      "created_at": "2026-04-22T10:26:16.555048+00:00"
+    },
+    {
+      "market_id": "safe-whale-market-a12b830f",
+      "whale_presence_score": 0.46767,
+      "whale_conviction_score": 0.59825,
+      "smart_whale_alignment_score": 0.95,
+      "whale_reversal_risk": 0.1,
+      "scoring_reason_text": "Market safe-whale-market-a12b830f has 1 supporting whale wallet(s) across 2 event(s), presence=0.47, conviction=0.60, alignment=0.95, reversal_risk=0.10.",
+      "created_at": "2026-04-22T10:26:09.886555+00:00"
+    },
+    {
+      "market_id": "sparse-honest-market-01a98fe9",
+      "whale_presence_score": 0.36683,
+      "whale_conviction_score": 0.77425,
+      "smart_whale_alignment_score": 0.2,
+      "whale_reversal_risk": 0.0,
+      "scoring_reason_text": "Market sparse-honest-market-01a98fe9 has 1 supporting whale wallet(s) across 1 event(s), presence=0.37, conviction=0.77, alignment=0.20, reversal_risk=0.00.",
+      "created_at": "2026-04-22T10:25:59.799273+00:00"
+    },
+    {
+      "market_id": "reversal-market-a1607624",
+      "whale_presence_score": 0.49317,
+      "whale_conviction_score": 0.539,
+      "smart_whale_alignment_score": 0.95,
+      "whale_reversal_risk": 0.325,
+      "scoring_reason_text": "Market reversal-market-a1607624 has 1 supporting whale wallet(s) across 2 event(s), presence=0.49, conviction=0.54, alignment=0.95, reversal_risk=0.33.",
+      "created_at": "2026-04-22T10:25:59.277290+00:00"
+    },
+    {
+      "market_id": "steady-market-60fda998",
+      "whale_presence_score": 0.5603,
+      "whale_conviction_score": 0.72152,
+      "smart_whale_alignment_score": 0.95,
+      "whale_reversal_risk": 0.06667,
+      "scoring_reason_text": "Market steady-market-60fda998 has 1 supporting whale wallet(s) across 3 event(s), presence=0.56, conviction=0.72, alignment=0.95, reversal_risk=0.07.",
+      "created_at": "2026-04-22T10:25:59.277290+00:00"
+    },
+    {
+      "market_id": "politics-noisy-support-33074256",
+      "whale_presence_score": 0.4605,
+      "whale_conviction_score": 0.61093,
+      "smart_whale_alignment_score": 0.0,
+      "whale_reversal_risk": 0.56667,
+      "scoring_reason_text": "Market politics-noisy-support-33074256 has 1 supporting whale wallet(s) across 3 event(s), presence=0.46, conviction=0.61, alignment=0.00, reversal_risk=0.57.",
+      "created_at": "2026-04-22T10:25:58.516772+00:00"
+    }
+  ],
+  "news": [
+    {
+      "normalized_title": "PSG striker ruled out for tonight",
+      "normalized_summary": "Confirmed injury update before kickoff in Paris.",
+      "source_category": "sports_news",
+      "canonical_url": "https://example.com/story/1",
+      "published_at": "2026-04-19T10:00:00+00:00",
+      "created_at": "2026-04-21T19:05:12.514966+00:00"
+    }
+  ],
+  "cognition": [
+    {
+      "market_id": "isolated-policy-a273213a",
+      "cognition_conclusion_class": "SUPPORTIVE",
+      "overall_confidence_score": 0.78,
+      "caution_score": 0.24,
+      "usability_class": "USABLE_NOW",
+      "summary_text": "Seeded cognition summary.",
+      "created_at": "2026-04-22T10:28:21.528641+00:00"
+    },
+    {
+      "market_id": "query-policy-942281a1",
+      "cognition_conclusion_class": "SUPPORTIVE",
+      "overall_confidence_score": 0.81,
+      "caution_score": 0.19,
+      "usability_class": "USABLE_NOW",
+      "summary_text": "Seeded cognition summary.",
+      "created_at": "2026-04-22T10:28:19.539195+00:00"
+    },
+    {
+      "market_id": "rank-block-af971ffa",
+      "cognition_conclusion_class": "WATCHFUL",
+      "overall_confidence_score": 0.76,
+      "caution_score": 0.34,
+      "usability_class": "USABLE_NOW",
+      "summary_text": "Seeded cognition summary.",
+      "created_at": "2026-04-22T10:28:17.616609+00:00"
+    },
+    {
+      "market_id": "real-enum-4c0cc5ec",
+      "cognition_conclusion_class": "WATCHFUL",
+      "overall_confidence_score": 0.7,
+      "caution_score": 0.5,
+      "usability_class": "NEEDS_CONFIRMATION",
+      "summary_text": "Seeded cognition summary.",
+      "created_at": "2026-04-22T10:28:15.616655+00:00"
+    },
+    {
+      "market_id": "exit-rec-3127427a",
+      "cognition_conclusion_class": "CONTRADICTORY",
+      "overall_confidence_score": 0.18,
+      "caution_score": 0.96,
+      "usability_class": "DO_NOT_USE",
+      "summary_text": "Seeded cognition summary.",
+      "created_at": "2026-04-22T10:28:12.123799+00:00"
+    },
+    {
+      "market_id": "gate-hard-47064c",
+      "cognition_conclusion_class": "SUPPORTIVE",
+      "overall_confidence_score": 0.79,
+      "caution_score": 0.92,
+      "usability_class": "DO_NOT_USE",
+      "summary_text": "Seeded cognition summary.",
+      "created_at": "2026-04-22T10:28:09.926310+00:00"
+    },
+    {
+      "market_id": "gate-soft-b6f2e7",
+      "cognition_conclusion_class": "SUPPORTIVE",
+      "overall_confidence_score": 0.79,
+      "caution_score": 0.22,
+      "usability_class": "USABLE_NOW",
+      "summary_text": "Seeded cognition summary.",
+      "created_at": "2026-04-22T10:28:08.261759+00:00"
+    },
+    {
+      "market_id": "gate-none-2a76ec",
+      "cognition_conclusion_class": "SUPPORTIVE",
+      "overall_confidence_score": 0.79,
+      "caution_score": 0.22,
+      "usability_class": "USABLE_NOW",
+      "summary_text": "Seeded cognition summary.",
+      "created_at": "2026-04-22T10:28:06.761030+00:00"
+    },
+    {
+      "market_id": "exit-block-cb9746",
+      "cognition_conclusion_class": "WATCHFUL",
+      "overall_confidence_score": 0.68,
+      "caution_score": 0.4,
+      "usability_class": "NEEDS_CONFIRMATION",
+      "summary_text": "Seeded cognition summary.",
+      "created_at": "2026-04-22T10:28:04.425517+00:00"
+    },
+    {
+      "market_id": "exit-prepare-caa63e",
+      "cognition_conclusion_class": "WATCHFUL",
+      "overall_confidence_score": 0.68,
+      "caution_score": 0.72,
+      "usability_class": "NEEDS_CONFIRMATION",
+      "summary_text": "Seeded cognition summary.",
+      "created_at": "2026-04-22T10:28:01.673661+00:00"
+    }
+  ]
+}

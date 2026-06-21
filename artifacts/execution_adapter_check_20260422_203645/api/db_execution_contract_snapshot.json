@@ -1,0 +1,344 @@
+[
+  {
+    "market_id": "703257",
+    "status": "FILLED",
+    "updated_at": "2026-04-22 17:42:03.156403+00:00",
+    "latest_event_status": "FILLED",
+    "latest_event_reason": "filled_at_current_mark",
+    "execution_contract": {
+      "side": "BUY",
+      "size": 5.0,
+      "intent_id": "5018f98d-34de-4c89-98c2-928898e03554",
+      "market_id": "703257",
+      "created_at": "2026-04-22T17:42:03.165073+00:00",
+      "order_type": "LIMIT",
+      "price_limit": 0.2,
+      "reason_code": "would_enter",
+      "reason_text": "candidate passed current guards and would have been attempted",
+      "risk_metadata": {
+        "bucket": "whale",
+        "spread": 0.01,
+        "neg_risk": false,
+        "tick_size": "0.01",
+        "balance_info": {
+          "collateral": {
+            "balance": "0",
+            "allowances": {
+              "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+              "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+              "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+            },
+            "balance_usd": 0.0
+          },
+          "conditional": {
+            "balance": "0",
+            "allowances": {
+              "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+              "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+              "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195398462578067141184799968521174335529155754622898352762650625"
+            }
+          }
+        },
+        "notional_usd": 1.0,
+        "min_order_size": 5.0,
+        "time_to_close_seconds": 21795477
+      },
+      "backend_target": "paper",
+      "correlation_id": "d5090d0a-6513-41b8-a08e-64fa85005990",
+      "execution_mode": "paper",
+      "source_context": {
+        "action": "BUY_YES",
+        "cycle_id": "2cc3c439-4ee6-49ac-9ac6-b94ce4002e4d",
+        "question": "Will the US confirm that aliens exist before 2027?",
+        "token_id": "107505882767731489358349912513945399560393482969656700824895970500493757150417",
+        "rank_total": 75.38,
+        "rank_reason": "score=39.38 confidence=18.00 edge=10.00 time=2.00 execution=10.00 risk_penalty=4.00",
+        "market_price": 0.2,
+        "paper_run_id": "d5090d0a-6513-41b8-a08e-64fa85005990",
+        "paper_signal_id": "5018f98d-34de-4c89-98c2-928898e03554",
+        "intended_outcome": "YES",
+        "recommendation_action": "BUY_YES"
+      }
+    },
+    "execution_result": {
+      "accepted": true,
+      "intent_id": "5018f98d-34de-4c89-98c2-928898e03554",
+      "error_code": null,
+      "error_text": null,
+      "filled_size": 5.0,
+      "processed_at": "2026-04-22T17:42:03.319289+00:00",
+      "result_status": "FILLED",
+      "avg_fill_price": 0.2,
+      "correlation_id": "d5090d0a-6513-41b8-a08e-64fa85005990",
+      "remaining_size": 0.0,
+      "raw_result_json": {
+        "spread": 0.01,
+        "adapter": "paper",
+        "stale_at": null,
+        "fill_ratio": 1.0,
+        "reason_code": "filled_at_current_mark",
+        "reason_text": "order would fill at the current cycle mark",
+        "risk_metadata": {
+          "bucket": "whale",
+          "spread": 0.01,
+          "neg_risk": false,
+          "tick_size": "0.01",
+          "balance_info": {
+            "collateral": {
+              "balance": "0",
+              "allowances": {
+                "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+              },
+              "balance_usd": 0.0
+            },
+            "conditional": {
+              "balance": "0",
+              "allowances": {
+                "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+                "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+                "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195398462578067141184799968521174335529155754622898352762650625"
+              }
+            }
+          },
+          "notional_usd": 1.0,
+          "min_order_size": 5.0,
+          "time_to_close_seconds": 21795477
+        },
+        "min_order_size": 5.0,
+        "time_to_close_seconds": 21795477,
+        "execution_contract_version": "v1"
+      },
+      "external_order_id": null
+    }
+  },
+  {
+    "market_id": "1664037",
+    "status": "FILLED",
+    "updated_at": "2026-04-22 17:39:54.675483+00:00",
+    "latest_event_status": "FILLED",
+    "latest_event_reason": "filled_at_current_mark",
+    "execution_contract": {
+      "side": "BUY",
+      "size": 5.0,
+      "intent_id": "84baf635-97d6-4c3c-a021-6e79e4836638",
+      "market_id": "1664037",
+      "created_at": "2026-04-22T17:39:54.686224+00:00",
+      "order_type": "LIMIT",
+      "price_limit": 0.29,
+      "reason_code": "would_enter",
+      "reason_text": "candidate passed current guards and would have been attempted",
+      "risk_metadata": {
+        "bucket": "high",
+        "spread": 0.02,
+        "neg_risk": true,
+        "tick_size": "0.01",
+        "balance_info": {
+          "collateral": {
+            "balance": "0",
+            "allowances": {
+              "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+              "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+              "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+            },
+            "balance_usd": 0.0
+          },
+          "conditional": {
+            "balance": "0",
+            "allowances": {
+              "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+              "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+              "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195398462578067141184799968521174335529155754622898352762650625"
+            }
+          }
+        },
+        "notional_usd": 1.45,
+        "min_order_size": 5.0,
+        "time_to_close_seconds": 627605
+      },
+      "backend_target": "paper",
+      "correlation_id": "0bf37eec-63f1-4b4d-a646-be4b48b4262b",
+      "execution_mode": "paper",
+      "source_context": {
+        "action": "BUY_NO",
+        "cycle_id": "855ba05e-f279-4503-a687-3d3116571261",
+        "question": "Will Anthropic have the best AI model at the end of April 2026?",
+        "token_id": "105405518749794585659920802334065784844421595560299264393991543592561093487351",
+        "rank_total": 84.93,
+        "rank_reason": "score=37.68 confidence=17.25 edge=10.00 time=12.00 execution=8.00 risk_penalty=0.00",
+        "market_price": 0.29,
+        "paper_run_id": "0bf37eec-63f1-4b4d-a646-be4b48b4262b",
+        "paper_signal_id": "84baf635-97d6-4c3c-a021-6e79e4836638",
+        "intended_outcome": "NO",
+        "recommendation_action": "BUY_NO"
+      }
+    },
+    "execution_result": {
+      "accepted": true,
+      "intent_id": "84baf635-97d6-4c3c-a021-6e79e4836638",
+      "error_code": null,
+      "error_text": null,
+      "filled_size": 5.0,
+      "processed_at": "2026-04-22T17:39:54.820312+00:00",
+      "result_status": "FILLED",
+      "avg_fill_price": 0.29,
+      "correlation_id": "0bf37eec-63f1-4b4d-a646-be4b48b4262b",
+      "remaining_size": 0.0,
+      "raw_result_json": {
+        "spread": 0.02,
+        "adapter": "paper",
+        "stale_at": null,
+        "fill_ratio": 1.0,
+        "reason_code": "filled_at_current_mark",
+        "reason_text": "order would fill at the current cycle mark",
+        "risk_metadata": {
+          "bucket": "high",
+          "spread": 0.02,
+          "neg_risk": true,
+          "tick_size": "0.01",
+          "balance_info": {
+            "collateral": {
+              "balance": "0",
+              "allowances": {
+                "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+              },
+              "balance_usd": 0.0
+            },
+            "conditional": {
+              "balance": "0",
+              "allowances": {
+                "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+                "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+                "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195398462578067141184799968521174335529155754622898352762650625"
+              }
+            }
+          },
+          "notional_usd": 1.45,
+          "min_order_size": 5.0,
+          "time_to_close_seconds": 627605
+        },
+        "min_order_size": 5.0,
+        "time_to_close_seconds": 627605,
+        "execution_contract_version": "v1"
+      },
+      "external_order_id": null
+    }
+  },
+  {
+    "market_id": "553828",
+    "status": "FILLED",
+    "updated_at": "2026-04-22 17:38:27.563839+00:00",
+    "latest_event_status": "FILLED",
+    "latest_event_reason": "filled_at_current_mark",
+    "execution_contract": {
+      "side": "BUY",
+      "size": 5.0,
+      "intent_id": "2a37a8db-2486-4f4c-beaa-0041341b3b6d",
+      "market_id": "553828",
+      "created_at": "2026-04-22T17:38:27.573606+00:00",
+      "order_type": "LIMIT",
+      "price_limit": 0.251,
+      "reason_code": "would_enter",
+      "reason_text": "candidate passed current guards and would have been attempted",
+      "risk_metadata": {
+        "bucket": "whale",
+        "spread": 0.005,
+        "neg_risk": true,
+        "tick_size": "0.001",
+        "balance_info": {
+          "collateral": {
+            "balance": "0",
+            "allowances": {
+              "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+              "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+              "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+            },
+            "balance_usd": 0.0
+          },
+          "conditional": {
+            "balance": "0",
+            "allowances": {
+              "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+              "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+              "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195398462578067141184799968521174335529155754622898352762650625"
+            }
+          }
+        },
+        "notional_usd": 1.255,
+        "min_order_size": 5.0,
+        "time_to_close_seconds": 5898092
+      },
+      "backend_target": "paper",
+      "correlation_id": "f239be53-ade2-42d3-ac5d-659a00780ca8",
+      "execution_mode": "paper",
+      "source_context": {
+        "action": "BUY_YES",
+        "cycle_id": "6abfedc9-a1b2-4d63-ac1c-01150927f77e",
+        "question": "Will the Colorado Avalanche win the 2026 NHL Stanley Cup?",
+        "token_id": "101738487887518832481587379955535423775326921556438741919099866785354159699479",
+        "rank_total": 80.93,
+        "rank_reason": "score=37.68 confidence=17.25 edge=10.00 time=6.00 execution=10.00 risk_penalty=0.00",
+        "market_price": 0.251,
+        "paper_run_id": "f239be53-ade2-42d3-ac5d-659a00780ca8",
+        "paper_signal_id": "2a37a8db-2486-4f4c-beaa-0041341b3b6d",
+        "intended_outcome": "YES",
+        "recommendation_action": "BUY_YES"
+      }
+    },
+    "execution_result": {
+      "accepted": true,
+      "intent_id": "2a37a8db-2486-4f4c-beaa-0041341b3b6d",
+      "error_code": null,
+      "error_text": null,
+      "filled_size": 5.0,
+      "processed_at": "2026-04-22T17:38:27.728208+00:00",
+      "result_status": "FILLED",
+      "avg_fill_price": 0.251,
+      "correlation_id": "f239be53-ade2-42d3-ac5d-659a00780ca8",
+      "remaining_size": 0.0,
+      "raw_result_json": {
+        "spread": 0.005,
+        "adapter": "paper",
+        "stale_at": null,
+        "fill_ratio": 1.0,
+        "reason_code": "filled_at_current_mark",
+        "reason_text": "order would fill at the current cycle mark",
+        "risk_metadata": {
+          "bucket": "whale",
+          "spread": 0.005,
+          "neg_risk": true,
+          "tick_size": "0.001",
+          "balance_info": {
+            "collateral": {
+              "balance": "0",
+              "allowances": {
+                "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+                "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195423570985008687907853269984665640564039457584007913129639935"
+              },
+              "balance_usd": 0.0
+            },
+            "conditional": {
+              "balance": "0",
+              "allowances": {
+                "0x4bFb41d5B3570DeFd03C39a9A4D8dE6Bd8B8982E": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+                "0xC5d563A36AE78145C45a50134d48A1215220f80a": "115792089237316195398462578067141184799968521174335529155754622898352762650625",
+                "0xd91E80cF2E7be2e162c6513ceD06f1dD0dA35296": "115792089237316195398462578067141184799968521174335529155754622898352762650625"
+              }
+            }
+          },
+          "notional_usd": 1.255,
+          "min_order_size": 5.0,
+          "time_to_close_seconds": 5898092
+        },
+        "min_order_size": 5.0,
+        "time_to_close_seconds": 5898092,
+        "execution_contract_version": "v1"
+      },
+      "external_order_id": null
+    }
+  }
+]

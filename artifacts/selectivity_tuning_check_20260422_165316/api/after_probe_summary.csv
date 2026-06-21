@@ -1,0 +1,3 @@
+sample,timestamp,health_status,kpi_status,positions_status,ranking_status,telegram_status,ranking_policy_selectable,ranking_policy_rejected,paper_would_enter,paper_would_block,paper_orders_created,paper_orders_filled,paper_positions_opened,top_block_reason
+1,2026-04-22T13:57:26Z,200,200,200,200,200,0,100,2,63,2,2,2,open_orders_1_meet_exceed_live_max_open_positions_1
+2,2026-04-22T13:58:47Z,200,200,200,200,200,0,100,3,46,3,3,3,open_orders_1_meet_exceed_live_max_open_positions_1

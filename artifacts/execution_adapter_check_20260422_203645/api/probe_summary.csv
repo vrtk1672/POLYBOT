@@ -1,0 +1,4 @@
+sample,timestamp,health_status,kpi_status,positions_status,audit_status,telegram_status,paper_orders_created,paper_orders_filled,paper_positions_opened,open_paper_positions,top_block_reason
+1,2026-04-22T20:38:51.5738184+03:00,200,200,200,200,200,5,5,5,10,same_market_exposure_1_meets_exceeds_live_max_same_market_exposu
+2,2026-04-22T20:40:23.6762207+03:00,200,200,200,200,200,5,5,5,10,same_market_exposure_1_meets_exceeds_live_max_same_market_exposu
+3,2026-04-22T20:41:55.2337522+03:00,200,200,200,200,200,5,5,5,10,same_market_exposure_1_meets_exceeds_live_max_same_market_exposu

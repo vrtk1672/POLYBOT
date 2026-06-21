@@ -1,0 +1,35 @@
+{
+  "signal_counts": {
+    "paper_signals": 40,
+    "would_enter": 3,
+    "would_block": 37,
+    "would_skip": 0
+  },
+  "order_counts": {
+    "paper_orders": 3,
+    "filled_orders": 3
+  },
+  "position_counts": [
+    {
+      "current_status": "OPEN",
+      "count": 3
+    }
+  ],
+  "top_signal_reasons": [
+    {
+      "signal_type": "WOULD_BLOCK",
+      "reason_code": "open_positions_3_meet_exceed_paper_safe_max_concurrent_positions",
+      "count": 20
+    },
+    {
+      "signal_type": "WOULD_BLOCK",
+      "reason_code": "open_orders_3_meet_exceed_paper_safe_max_concurrent_positions_3",
+      "count": 17
+    },
+    {
+      "signal_type": "WOULD_ENTER",
+      "reason_code": "would_enter",
+      "count": 3
+    }
+  ]
+}

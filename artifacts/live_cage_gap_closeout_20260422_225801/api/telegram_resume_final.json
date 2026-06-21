@@ -1,0 +1,7 @@
+{
+    "command":  "/resume",
+    "supported":  true,
+    "response_text":  "RESUME cleared the live cage kill override. Env guards still remain in force.",
+    "sent":  false,
+    "control_action_id":  "3454b05c-802d-4819-92a9-62d7c8ccd523"
+}

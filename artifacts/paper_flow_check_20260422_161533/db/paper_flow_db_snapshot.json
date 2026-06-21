@@ -1,0 +1,180 @@
+{
+  "paper_runs_count": 12,
+  "paper_signals_count": 240,
+  "paper_orders_count": 0,
+  "paper_order_events_count": 0,
+  "paper_positions_count": 0,
+  "paper_position_events_count": 0,
+  "recent_paper_runs": [
+    [
+      "6ef1f5ff-3d72-4eec-94e0-bcc92eedcde3",
+      "ae49efa7-6207-43b9-85c3-d4faa8d96b2c",
+      "COMPLETED",
+      20,
+      20,
+      0,
+      20,
+      {
+        "mode": "EXECUTION_AWARE_PAPER",
+        "cycle_id": "ae49efa7-6207-43b9-85c3-d4faa8d96b2c",
+        "execution_aware": {
+          "open_orders_count": 0,
+          "paper_orders_count": 0,
+          "open_positions_count": 0
+        },
+        "selected_market_id": null
+      },
+      "2026-04-22 13:21:10.848261+00:00"
+    ],
+    [
+      "51c4491c-a55a-4f7a-accc-77382e92577d",
+      "bd16d3f6-6af8-481b-9f3b-2f8b2ea583a1",
+      "COMPLETED",
+      20,
+      20,
+      0,
+      20,
+      {
+        "mode": "EXECUTION_AWARE_PAPER",
+        "cycle_id": "bd16d3f6-6af8-481b-9f3b-2f8b2ea583a1",
+        "execution_aware": {
+          "open_orders_count": 0,
+          "paper_orders_count": 0,
+          "open_positions_count": 0
+        },
+        "selected_market_id": null
+      },
+      "2026-04-22 13:19:47.051838+00:00"
+    ],
+    [
+      "b3dea4f5-165e-46b1-bfff-05937ae83514",
+      "0e09ee04-7ae7-4eda-8f7e-937113f271c2",
+      "COMPLETED",
+      20,
+      20,
+      0,
+      20,
+      {
+        "mode": "EXECUTION_AWARE_PAPER",
+        "cycle_id": "0e09ee04-7ae7-4eda-8f7e-937113f271c2",
+        "execution_aware": {
+          "open_orders_count": 0,
+          "paper_orders_count": 0,
+          "open_positions_count": 0
+        },
+        "selected_market_id": null
+      },
+      "2026-04-22 13:18:23.072389+00:00"
+    ]
+  ],
+  "recent_paper_signals": [
+    [
+      "fb1f2a5c-f72f-4bc3-babf-2e8f52fc17db",
+      "6ef1f5ff-3d72-4eec-94e0-bcc92eedcde3",
+      "1708086",
+      "WOULD_BLOCK",
+      "YES",
+      "0.700000",
+      "0.160000",
+      "5.000000",
+      "BLOCKED",
+      "live_kill_switch_is_enabled",
+      "2026-04-22 13:21:10.848261+00:00"
+    ],
+    [
+      "51096706-fc69-4e32-94f6-41b60d606752",
+      "6ef1f5ff-3d72-4eec-94e0-bcc92eedcde3",
+      "1910397",
+      "WOULD_BLOCK",
+      "YES",
+      "0.690000",
+      "0.200000",
+      "5.000000",
+      "BLOCKED",
+      "live_kill_switch_is_enabled",
+      "2026-04-22 13:21:10.848261+00:00"
+    ],
+    [
+      "96e8fcd6-dc31-4f8f-83a5-02c33e2aeb35",
+      "6ef1f5ff-3d72-4eec-94e0-bcc92eedcde3",
+      "1664037",
+      "WOULD_BLOCK",
+      "NO",
+      "0.690000",
+      "0.280000",
+      "5.000000",
+      "BLOCKED",
+      "live_kill_switch_is_enabled",
+      "2026-04-22 13:21:10.848261+00:00"
+    ],
+    [
+      "cb45188c-3a8b-440e-8e3a-45757dc450f4",
+      "6ef1f5ff-3d72-4eec-94e0-bcc92eedcde3",
+      "1664039",
+      "WOULD_BLOCK",
+      "YES",
+      "0.710000",
+      "0.263000",
+      "5.000000",
+      "BLOCKED",
+      "live_kill_switch_is_enabled",
+      "2026-04-22 13:21:10.848261+00:00"
+    ],
+    [
+      "f2aad1b8-bf83-4fd1-803d-f4b6ce897e61",
+      "6ef1f5ff-3d72-4eec-94e0-bcc92eedcde3",
+      "1708109",
+      "WOULD_BLOCK",
+      "YES",
+      "0.690000",
+      "0.150000",
+      "5.000000",
+      "BLOCKED",
+      "live_kill_switch_is_enabled",
+      "2026-04-22 13:21:10.848261+00:00"
+    ],
+    [
+      "a99fbccf-13cd-440e-bfec-a7c9181346ed",
+      "6ef1f5ff-3d72-4eec-94e0-bcc92eedcde3",
+      "1797301",
+      "WOULD_BLOCK",
+      "NO",
+      "0.710000",
+      "0.200000",
+      "5.000000",
+      "BLOCKED",
+      "live_kill_switch_is_enabled",
+      "2026-04-22 13:21:10.848261+00:00"
+    ],
+    [
+      "27669e84-ec84-41b6-a64c-4955476a3956",
+      "6ef1f5ff-3d72-4eec-94e0-bcc92eedcde3",
+      "1517835",
+      "WOULD_BLOCK",
+      "YES",
+      "0.720000",
+      "0.120000",
+      "6.250000",
+      "BLOCKED",
+      "live_kill_switch_is_enabled",
+      "2026-04-22 13:21:10.848261+00:00"
+    ],
+    [
+      "d8be3b38-2053-4a59-b3d9-e83541f8f517",
+      "6ef1f5ff-3d72-4eec-94e0-bcc92eedcde3",
+      "1929111",
+      "WOULD_BLOCK",
+      "YES",
+      "0.700000",
+      "0.160000",
+      "5.000000",
+      "BLOCKED",
+      "live_kill_switch_is_enabled",
+      "2026-04-22 13:21:10.848261+00:00"
+    ]
+  ],
+  "recent_paper_orders": [],
+  "recent_paper_order_events": [],
+  "recent_paper_positions": [],
+  "recent_paper_position_events": []
+}

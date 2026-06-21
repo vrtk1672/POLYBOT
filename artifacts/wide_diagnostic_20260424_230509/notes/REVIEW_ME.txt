@@ -1,0 +1,13 @@
+﻿Send me these files first:
+1. .\artifacts\wide_diagnostic_20260424_230509\logs\check_env_runtime.log
+2. .\artifacts\wide_diagnostic_20260424_230509\logs\runtime_errors_and_markers.txt
+3. .\artifacts\wide_diagnostic_20260424_230509\api\health_final.json
+4. .\artifacts\wide_diagnostic_20260424_230509\api\intelligence_final.json
+5. .\artifacts\wide_diagnostic_20260424_230509\db\db_counts_final.txt
+6. .\artifacts\wide_diagnostic_20260424_230509\db\schema_paper_signals.txt
+7. .\artifacts\wide_diagnostic_20260424_230509\db\paper_signals_final.txt
+8. .\artifacts\wide_diagnostic_20260424_230509\db\paper_orders_final.txt
+9. .\artifacts\wide_diagnostic_20260424_230509\db\paper_positions_final.txt
+10. .\artifacts\wide_diagnostic_20260424_230509\db\intelligence_ingestion_runs_final.txt
+11. .\artifacts\wide_diagnostic_20260424_230509\db\external_events_normalized_final.txt
+12. .\artifacts\wide_diagnostic_20260424_230509\db\alert_events_final.txt

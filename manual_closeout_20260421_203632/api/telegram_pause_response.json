@@ -1,0 +1,1 @@
+﻿{"command":"/pause","supported":true,"response_text":"PAUSE was recorded for audit only. No runtime control seam is wired yet, so no execution state was changed.","sent":false,"control_action_id":"d1f801ed-5857-4d91-8d69-a5ed6d8a6430"}

@@ -1,0 +1,1447 @@
+{
+    "system_health":  {
+                          "db_connected":  true,
+                          "last_cycle":  {
+                                             "id":  "0f2de380-b06b-48db-9b9e-6e32553e9349",
+                                             "started_at":  "2026-04-22T14:17:01.818481+00:00",
+                                             "completed_at":  "2026-04-22T14:17:01.952512+00:00",
+                                             "status":  "COMPLETED",
+                                             "mode":  "SCAN_ONLY",
+                                             "trigger_source":  "runtime.market_service",
+                                             "session_id":  null,
+                                             "top_n":  10,
+                                             "pages_requested":  25,
+                                             "markets_fetched_count":  2500,
+                                             "markets_scored_count":  11822,
+                                             "markets_ranked_count":  10,
+                                             "decisions_count":  0,
+                                             "selected_market_id":  "1517835",
+                                             "last_error":  null,
+                                             "runtime_ms":  134,
+                                             "metadata":  {
+                                                              "runtime_surface":  "canonical_local_runtime",
+                                                              "refresh_interval_seconds":  60
+                                                          },
+                                             "created_at":  "2026-04-22T14:17:01.819222+00:00",
+                                             "updated_at":  "2026-04-22T14:17:01.819222+00:00"
+                                         },
+                          "last_market_snapshot":  {
+                                                       "market_id":  "1929170",
+                                                       "captured_at":  "2026-04-22T14:17:01.658118+00:00",
+                                                       "created_at":  "2026-04-22T14:17:01.819222+00:00"
+                                                   },
+                          "last_ranking_policy_run":  {
+                                                          "id":  "bd4e8352-b53f-4438-a069-4ee25c4115c0",
+                                                          "status":  "COMPLETED",
+                                                          "started_at":  "2026-04-22T14:17:16.765940+00:00",
+                                                          "ended_at":  "2026-04-22T14:17:17.050270+00:00"
+                                                      },
+                          "last_invalidation_policy_run":  {
+                                                               "id":  "fd8a64e0-89be-441f-9fa5-899e9884bc0e",
+                                                               "status":  "COMPLETED",
+                                                               "started_at":  "2026-04-22T14:17:17.075366+00:00",
+                                                               "ended_at":  "2026-04-22T14:17:17.704835+00:00"
+                                                           },
+                          "last_orchestration_gate_run":  null,
+                          "pending_eligible_command_intents":  0,
+                          "critical_alert_count_24h":  0,
+                          "warnings":  [
+
+                                       ]
+                      },
+    "kpi_quality":  {
+                        "window":  {
+                                       "recent_cycle_count":  8,
+                                       "window_started_at":  "2026-04-22T14:06:53.771312+00:00",
+                                       "window_completed_at":  "2026-04-22T14:17:01.952512+00:00",
+                                       "cycle_ids":  [
+                                                         "0f2de380-b06b-48db-9b9e-6e32553e9349",
+                                                         "526d172e-50a6-42c9-880b-2e7171dac96c",
+                                                         "f9d84834-93c2-473d-8f5b-63dd19708cf4",
+                                                         "ca16d85a-7134-4113-85ae-5cd7312c1c23",
+                                                         "6de53682-294c-45b6-82ef-38c6837345ba",
+                                                         "db325b46-187f-4d85-b2a3-d48ecf50f249",
+                                                         "a81fb8b2-0863-49e7-a8b4-579a43640cd5",
+                                                         "cd93e2c5-5ce9-4dda-ae4d-b195df427e11"
+                                                     ]
+                                   },
+                        "kpis":  {
+                                     "opportunity_intake":  {
+                                                                "opportunities_seen":  20000,
+                                                                "opportunities_scored":  94512,
+                                                                "candidates_ranked":  80,
+                                                                "ranking_policy_candidates":  160,
+                                                                "ranking_policy_selectable":  0,
+                                                                "ranking_policy_rejected":  160,
+                                                                "paper_candidates_selected":  8
+                                                            },
+                                     "paper_activity":  {
+                                                            "paper_signals_created":  160,
+                                                            "paper_would_enter":  8,
+                                                            "paper_would_block":  87,
+                                                            "paper_orders_created":  8,
+                                                            "paper_orders_filled":  8,
+                                                            "paper_positions_opened":  8,
+                                                            "paper_positions_closed":  0,
+                                                            "paper_position_events_count":  111
+                                                        },
+                                     "invalidation_advisory_activity":  {
+                                                                            "invalidation_policy_records_count":  84,
+                                                                            "exit_advisory_records_count":  95,
+                                                                            "advisory_resolution_records_count":  84,
+                                                                            "command_intent_records_count":  95
+                                                                        },
+                                     "flow_ratios":  {
+                                                         "selection_rate":  0.1,
+                                                         "reject_rate":  1.0,
+                                                         "paper_order_per_signal_rate":  0.05,
+                                                         "fill_rate":  1.0,
+                                                         "position_open_rate":  1.0,
+                                                         "exit_advisory_incidence_rate":  1.131
+                                                     }
+                                 },
+                        "quality":  {
+                                        "ranking_tier_distribution":  [
+                                                                          {
+                                                                              "label":  "REJECT",
+                                                                              "count":  160
+                                                                          }
+                                                                      ],
+                                        "ranking_gate_distribution":  [
+                                                                          {
+                                                                              "label":  "HARD_REJECT",
+                                                                              "count":  160
+                                                                          }
+                                                                      ],
+                                        "trade_classification_distribution":  [
+                                                                                  {
+                                                                                      "label":  "NO_TRADE",
+                                                                                      "count":  84
+                                                                                  }
+                                                                              ],
+                                        "bucket_allocation_distribution":  [
+                                                                               {
+                                                                                   "label":  "NO_BUCKET",
+                                                                                   "count":  160
+                                                                               }
+                                                                           ],
+                                        "invalidation_state_distribution":  [
+                                                                                {
+                                                                                    "label":  "WATCH",
+                                                                                    "count":  84
+                                                                                }
+                                                                            ],
+                                        "exit_policy_distribution":  [
+                                                                         {
+                                                                             "label":  "BLOCK_NEW_DEPLOYMENT",
+                                                                             "count":  84
+                                                                         }
+                                                                     ],
+                                        "advisory_action_distribution":  [
+                                                                             {
+                                                                                 "label":  "WATCH",
+                                                                                 "count":  95
+                                                                             }
+                                                                         ],
+                                        "command_intent_distribution":  [
+                                                                            {
+                                                                                "label":  "WATCH_ONLY",
+                                                                                "count":  95
+                                                                            }
+                                                                        ],
+                                        "paper_signal_distribution":  [
+                                                                          {
+                                                                              "label":  "WOULD_BLOCK",
+                                                                              "count":  87
+                                                                          },
+                                                                          {
+                                                                              "label":  "WOULD_SKIP",
+                                                                              "count":  65
+                                                                          },
+                                                                          {
+                                                                              "label":  "WOULD_ENTER",
+                                                                              "count":  8
+                                                                          }
+                                                                      ],
+                                        "paper_position_status_distribution":  [
+                                                                                   {
+                                                                                       "label":  "OPEN",
+                                                                                       "count":  16
+                                                                                   }
+                                                                               ],
+                                        "top_rejection_reasons":  [
+
+                                                                  ],
+                                        "top_paper_block_reasons":  [
+                                                                        {
+                                                                            "label":  "same_market_exposure_1_meets_exceeds_live_max_same_market_exposu",
+                                                                            "count":  87
+                                                                        }
+                                                                    ],
+                                        "top_rank_reasons":  [
+                                                                 {
+                                                                     "label":  "Candidate is hard rejected by ranking-policy guards at score 7.93.",
+                                                                     "count":  16
+                                                                 },
+                                                                 {
+                                                                     "label":  "Candidate is hard rejected by ranking-policy guards at score 5.95.",
+                                                                     "count":  8
+                                                                 },
+                                                                 {
+                                                                     "label":  "Candidate is hard rejected by ranking-policy guards at score 6.74.",
+                                                                     "count":  8
+                                                                 },
+                                                                 {
+                                                                     "label":  "Candidate is hard rejected by ranking-policy guards at score 7.35.",
+                                                                     "count":  8
+                                                                 },
+                                                                 {
+                                                                     "label":  "Candidate is hard rejected by ranking-policy guards at score 7.41.",
+                                                                     "count":  8
+                                                                 },
+                                                                 {
+                                                                     "label":  "Candidate is hard rejected by ranking-policy guards at score 7.45.",
+                                                                     "count":  8
+                                                                 },
+                                                                 {
+                                                                     "label":  "Candidate is hard rejected by ranking-policy guards at score 7.48.",
+                                                                     "count":  8
+                                                                 },
+                                                                 {
+                                                                     "label":  "Candidate is hard rejected by ranking-policy guards at score 7.62.",
+                                                                     "count":  8
+                                                                 }
+                                                             ],
+                                        "top_advisory_reasons":  [
+                                                                     {
+                                                                         "label":  "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+                                                                         "count":  95
+                                                                     }
+                                                                 ]
+                                    },
+                        "observations":  [
+                                             "Recent runtime window covers 8 canonical refresh cycles from 2026-04-22T14:06:53.771312+00:00 to 2026-04-22T14:17:01.952512+00:00.",
+                                             "Opportunity intake saw 20000 markets fetched, 80 runtime-ranked candidates, and 160 persisted paper signals.",
+                                             "Paper flow converted 8 paper orders into 8 fills and 8 opened positions in the measured window.",
+                                             "Paper flow is currently more selective than active: 87 blocked signals vs 8 would-enter signals, led by same_market_exposure_1_meets_exceeds_live_max_same_market_exposu.",
+                                             "Ranking policy produced no SELECTABLE candidates in the recent window while the paper signal layer still emitted WOULD_ENTER candidates, so policy and execution selection strictness are materially different."
+                                         ]
+                    },
+    "ranking":  {
+                    "latest_ranking_policy_run":  {
+                                                      "id":  "bd4e8352-b53f-4438-a069-4ee25c4115c0",
+                                                      "status":  "COMPLETED",
+                                                      "started_at":  "2026-04-22T14:17:16.765940+00:00",
+                                                      "ended_at":  "2026-04-22T14:17:17.050270+00:00"
+                                                  },
+                    "top_ranked":  [
+                                       {
+                                           "market_id":  "1731344",
+                                           "total_rank_score":  9.2456,
+                                           "rank_position":  1,
+                                           "rank_tier_class":  "REJECT",
+                                           "gate_decision_class":  "HARD_REJECT",
+                                           "gate_priority_class":  "NONE",
+                                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 9.25.",
+                                           "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                       },
+                                       {
+                                           "market_id":  "1929170",
+                                           "total_rank_score":  8.8944,
+                                           "rank_position":  2,
+                                           "rank_tier_class":  "REJECT",
+                                           "gate_decision_class":  "HARD_REJECT",
+                                           "gate_priority_class":  "NONE",
+                                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 8.89.",
+                                           "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                       },
+                                       {
+                                           "market_id":  "1517835",
+                                           "total_rank_score":  8.8622,
+                                           "rank_position":  3,
+                                           "rank_tier_class":  "REJECT",
+                                           "gate_decision_class":  "HARD_REJECT",
+                                           "gate_priority_class":  "NONE",
+                                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 8.86.",
+                                           "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                       },
+                                       {
+                                           "market_id":  "1543487",
+                                           "total_rank_score":  8.3748,
+                                           "rank_position":  4,
+                                           "rank_tier_class":  "REJECT",
+                                           "gate_decision_class":  "HARD_REJECT",
+                                           "gate_priority_class":  "NONE",
+                                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 8.37.",
+                                           "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                       },
+                                       {
+                                           "market_id":  "842015",
+                                           "total_rank_score":  8.0398,
+                                           "rank_position":  5,
+                                           "rank_tier_class":  "REJECT",
+                                           "gate_decision_class":  "HARD_REJECT",
+                                           "gate_priority_class":  "NONE",
+                                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 8.04.",
+                                           "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                       },
+                                       {
+                                           "market_id":  "558934",
+                                           "total_rank_score":  7.933,
+                                           "rank_position":  6,
+                                           "rank_tier_class":  "REJECT",
+                                           "gate_decision_class":  "HARD_REJECT",
+                                           "gate_priority_class":  "NONE",
+                                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.93.",
+                                           "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                       },
+                                       {
+                                           "market_id":  "558936",
+                                           "total_rank_score":  7.9308,
+                                           "rank_position":  7,
+                                           "rank_tier_class":  "REJECT",
+                                           "gate_decision_class":  "HARD_REJECT",
+                                           "gate_priority_class":  "NONE",
+                                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.93.",
+                                           "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                       },
+                                       {
+                                           "market_id":  "951182",
+                                           "total_rank_score":  7.907,
+                                           "rank_position":  8,
+                                           "rank_tier_class":  "REJECT",
+                                           "gate_decision_class":  "HARD_REJECT",
+                                           "gate_priority_class":  "NONE",
+                                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.91.",
+                                           "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                       }
+                                   ],
+                    "recent_candidates":  [
+                                              {
+                                                  "market_id":  "566140",
+                                                  "total_rank_score":  7.4786,
+                                                  "rank_position":  13,
+                                                  "rank_tier_class":  "REJECT",
+                                                  "gate_decision_class":  "HARD_REJECT",
+                                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.48.",
+                                                  "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                              },
+                                              {
+                                                  "market_id":  "1797301",
+                                                  "total_rank_score":  2.7506,
+                                                  "rank_position":  20,
+                                                  "rank_tier_class":  "REJECT",
+                                                  "gate_decision_class":  "HARD_REJECT",
+                                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 2.75.",
+                                                  "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                              },
+                                              {
+                                                  "market_id":  "1980863",
+                                                  "total_rank_score":  5.7652,
+                                                  "rank_position":  19,
+                                                  "rank_tier_class":  "REJECT",
+                                                  "gate_decision_class":  "HARD_REJECT",
+                                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 5.77.",
+                                                  "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                              },
+                                              {
+                                                  "market_id":  "1731344",
+                                                  "total_rank_score":  9.2456,
+                                                  "rank_position":  1,
+                                                  "rank_tier_class":  "REJECT",
+                                                  "gate_decision_class":  "HARD_REJECT",
+                                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 9.25.",
+                                                  "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                              },
+                                              {
+                                                  "market_id":  "703257",
+                                                  "total_rank_score":  7.4148,
+                                                  "rank_position":  15,
+                                                  "rank_tier_class":  "REJECT",
+                                                  "gate_decision_class":  "HARD_REJECT",
+                                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.41.",
+                                                  "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                              },
+                                              {
+                                                  "market_id":  "558934",
+                                                  "total_rank_score":  7.933,
+                                                  "rank_position":  6,
+                                                  "rank_tier_class":  "REJECT",
+                                                  "gate_decision_class":  "HARD_REJECT",
+                                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.93.",
+                                                  "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                              },
+                                              {
+                                                  "market_id":  "1708109",
+                                                  "total_rank_score":  7.3512,
+                                                  "rank_position":  16,
+                                                  "rank_tier_class":  "REJECT",
+                                                  "gate_decision_class":  "HARD_REJECT",
+                                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.35.",
+                                                  "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                              },
+                                              {
+                                                  "market_id":  "947289",
+                                                  "total_rank_score":  7.7046,
+                                                  "rank_position":  11,
+                                                  "rank_tier_class":  "REJECT",
+                                                  "gate_decision_class":  "HARD_REJECT",
+                                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.70.",
+                                                  "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                              }
+                                          ],
+                    "selected_candidate_count":  462,
+                    "rejected_candidates":  [
+                                                {
+                                                    "market_id":  "566140",
+                                                    "gate_decision_class":  "HARD_REJECT",
+                                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.48.",
+                                                    "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                                },
+                                                {
+                                                    "market_id":  "1797301",
+                                                    "gate_decision_class":  "HARD_REJECT",
+                                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 2.75.",
+                                                    "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                                },
+                                                {
+                                                    "market_id":  "1980863",
+                                                    "gate_decision_class":  "HARD_REJECT",
+                                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 5.77.",
+                                                    "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                                },
+                                                {
+                                                    "market_id":  "1731344",
+                                                    "gate_decision_class":  "HARD_REJECT",
+                                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 9.25.",
+                                                    "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                                },
+                                                {
+                                                    "market_id":  "703257",
+                                                    "gate_decision_class":  "HARD_REJECT",
+                                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.41.",
+                                                    "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                                },
+                                                {
+                                                    "market_id":  "558934",
+                                                    "gate_decision_class":  "HARD_REJECT",
+                                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.93.",
+                                                    "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                                },
+                                                {
+                                                    "market_id":  "1708109",
+                                                    "gate_decision_class":  "HARD_REJECT",
+                                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.35.",
+                                                    "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                                },
+                                                {
+                                                    "market_id":  "947289",
+                                                    "gate_decision_class":  "HARD_REJECT",
+                                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.70.",
+                                                    "created_at":  "2026-04-22T14:17:16.819364+00:00"
+                                                }
+                                            ],
+                    "rejection_ledger":  [
+                                             {
+                                                 "market_id":  "isolated-policy-a273213a",
+                                                 "stage":  "adaptive_selection",
+                                                 "reason_code":  "missing_yes_token",
+                                                 "reason_text":  "missing_yes_token",
+                                                 "created_at":  "2026-04-22T10:28:20.850272+00:00"
+                                             },
+                                             {
+                                                 "market_id":  "query-policy-942281a1",
+                                                 "stage":  "adaptive_selection",
+                                                 "reason_code":  "missing_yes_token",
+                                                 "reason_text":  "missing_yes_token",
+                                                 "created_at":  "2026-04-22T10:28:18.856635+00:00"
+                                             },
+                                             {
+                                                 "market_id":  "rank-block-af971ffa",
+                                                 "stage":  "adaptive_selection",
+                                                 "reason_code":  "missing_yes_token",
+                                                 "reason_text":  "missing_yes_token",
+                                                 "created_at":  "2026-04-22T10:28:16.804014+00:00"
+                                             },
+                                             {
+                                                 "market_id":  "real-enum-4c0cc5ec",
+                                                 "stage":  "adaptive_selection",
+                                                 "reason_code":  "missing_yes_token",
+                                                 "reason_text":  "missing_yes_token",
+                                                 "created_at":  "2026-04-22T10:28:14.923738+00:00"
+                                             },
+                                             {
+                                                 "market_id":  "sparse-policy-a0919705",
+                                                 "stage":  "adaptive_selection",
+                                                 "reason_code":  "missing_yes_token",
+                                                 "reason_text":  "missing_yes_token",
+                                                 "created_at":  "2026-04-22T10:28:14.511602+00:00"
+                                             },
+                                             {
+                                                 "market_id":  "exit-rec-3127427a",
+                                                 "stage":  "adaptive_selection",
+                                                 "reason_code":  "missing_yes_token",
+                                                 "reason_text":  "missing_yes_token",
+                                                 "created_at":  "2026-04-22T10:28:11.289985+00:00"
+                                             },
+                                             {
+                                                 "market_id":  "gate-hard-47064c",
+                                                 "stage":  "adaptive_selection",
+                                                 "reason_code":  "missing_yes_token",
+                                                 "reason_text":  "missing_yes_token",
+                                                 "created_at":  "2026-04-22T10:28:09.274462+00:00"
+                                             },
+                                             {
+                                                 "market_id":  "gate-soft-b6f2e7",
+                                                 "stage":  "adaptive_selection",
+                                                 "reason_code":  "missing_yes_token",
+                                                 "reason_text":  "missing_yes_token",
+                                                 "created_at":  "2026-04-22T10:28:07.595429+00:00"
+                                             }
+                                         ]
+                },
+    "positions_orders":  {
+                             "live_positions":  [
+
+                                                ],
+                             "paper_positions":  [
+                                                     {
+                                                         "market_id":  "1929111",
+                                                         "intended_outcome":  "YES",
+                                                         "size":  5.0,
+                                                         "avg_entry":  0.17,
+                                                         "current_status":  "OPEN",
+                                                         "unrealized":  -0.1,
+                                                         "realized":  0.0,
+                                                         "updated_at":  "2026-04-22T14:17:19.737373+00:00"
+                                                     },
+                                                     {
+                                                         "market_id":  "1797301",
+                                                         "intended_outcome":  "NO",
+                                                         "size":  5.0,
+                                                         "avg_entry":  0.21,
+                                                         "current_status":  "OPEN",
+                                                         "unrealized":  0.0,
+                                                         "realized":  0.0,
+                                                         "updated_at":  "2026-04-22T14:17:19.720822+00:00"
+                                                     },
+                                                     {
+                                                         "market_id":  "1910397",
+                                                         "intended_outcome":  "YES",
+                                                         "size":  5.0,
+                                                         "avg_entry":  0.2,
+                                                         "current_status":  "OPEN",
+                                                         "unrealized":  0.0,
+                                                         "realized":  0.0,
+                                                         "updated_at":  "2026-04-22T14:17:19.698742+00:00"
+                                                     },
+                                                     {
+                                                         "market_id":  "951182",
+                                                         "intended_outcome":  "NO",
+                                                         "size":  5.0,
+                                                         "avg_entry":  0.5065,
+                                                         "current_status":  "OPEN",
+                                                         "unrealized":  0.0175,
+                                                         "realized":  0.0,
+                                                         "updated_at":  "2026-04-22T14:17:19.686340+00:00"
+                                                     },
+                                                     {
+                                                         "market_id":  "1731344",
+                                                         "intended_outcome":  "YES",
+                                                         "size":  5.725,
+                                                         "avg_entry":  0.131,
+                                                         "current_status":  "OPEN",
+                                                         "unrealized":  -0.005725,
+                                                         "realized":  0.0,
+                                                         "updated_at":  "2026-04-22T14:17:19.668140+00:00"
+                                                     },
+                                                     {
+                                                         "market_id":  "566140",
+                                                         "intended_outcome":  "YES",
+                                                         "size":  5.0,
+                                                         "avg_entry":  0.28,
+                                                         "current_status":  "OPEN",
+                                                         "unrealized":  0.0,
+                                                         "realized":  0.0,
+                                                         "updated_at":  "2026-04-22T14:17:19.656180+00:00"
+                                                     },
+                                                     {
+                                                         "market_id":  "842016",
+                                                         "intended_outcome":  "YES",
+                                                         "size":  6.198,
+                                                         "avg_entry":  0.121,
+                                                         "current_status":  "OPEN",
+                                                         "unrealized":  0.0,
+                                                         "realized":  0.0,
+                                                         "updated_at":  "2026-04-22T14:17:19.641788+00:00"
+                                                     },
+                                                     {
+                                                         "market_id":  "566136",
+                                                         "intended_outcome":  "YES",
+                                                         "size":  5.0,
+                                                         "avg_entry":  0.25,
+                                                         "current_status":  "OPEN",
+                                                         "unrealized":  0.0,
+                                                         "realized":  0.0,
+                                                         "updated_at":  "2026-04-22T14:17:19.630259+00:00"
+                                                     }
+                                                 ],
+                             "shadow_positions":  [
+
+                                                  ],
+                             "live_orders":  [
+
+                                             ],
+                             "paper_orders":  [
+                                                  {
+                                                      "market_id":  "566140",
+                                                      "action":  "BUY",
+                                                      "intended_outcome":  "YES",
+                                                      "intended_price":  0.28,
+                                                      "intended_size":  5.0,
+                                                      "notional":  1.4,
+                                                      "status":  "FILLED",
+                                                      "updated_at":  "2026-04-22T14:17:14.893006+00:00"
+                                                  },
+                                                  {
+                                                      "market_id":  "842016",
+                                                      "action":  "BUY",
+                                                      "intended_outcome":  "YES",
+                                                      "intended_price":  0.121,
+                                                      "intended_size":  6.198,
+                                                      "notional":  0.75,
+                                                      "status":  "FILLED",
+                                                      "updated_at":  "2026-04-22T14:15:32.482359+00:00"
+                                                  },
+                                                  {
+                                                      "market_id":  "566136",
+                                                      "action":  "BUY",
+                                                      "intended_outcome":  "YES",
+                                                      "intended_price":  0.25,
+                                                      "intended_size":  5.0,
+                                                      "notional":  1.25,
+                                                      "status":  "FILLED",
+                                                      "updated_at":  "2026-04-22T14:13:50.833987+00:00"
+                                                  },
+                                                  {
+                                                      "market_id":  "558936",
+                                                      "action":  "BUY",
+                                                      "intended_outcome":  "YES",
+                                                      "intended_price":  0.161,
+                                                      "intended_size":  5.0,
+                                                      "notional":  0.805,
+                                                      "status":  "FILLED",
+                                                      "updated_at":  "2026-04-22T14:12:11.384480+00:00"
+                                                  },
+                                                  {
+                                                      "market_id":  "558934",
+                                                      "action":  "BUY",
+                                                      "intended_outcome":  "YES",
+                                                      "intended_price":  0.162,
+                                                      "intended_size":  5.0,
+                                                      "notional":  0.81,
+                                                      "status":  "FILLED",
+                                                      "updated_at":  "2026-04-22T14:10:35.273140+00:00"
+                                                  },
+                                                  {
+                                                      "market_id":  "947289",
+                                                      "action":  "BUY",
+                                                      "intended_outcome":  "YES",
+                                                      "intended_price":  0.246,
+                                                      "intended_size":  5.0,
+                                                      "notional":  1.23,
+                                                      "status":  "FILLED",
+                                                      "updated_at":  "2026-04-22T14:09:02.967848+00:00"
+                                                  },
+                                                  {
+                                                      "market_id":  "1797301",
+                                                      "action":  "BUY",
+                                                      "intended_outcome":  "NO",
+                                                      "intended_price":  0.21,
+                                                      "intended_size":  5.0,
+                                                      "notional":  1.05,
+                                                      "status":  "FILLED",
+                                                      "updated_at":  "2026-04-22T14:08:30.243673+00:00"
+                                                  },
+                                                  {
+                                                      "market_id":  "2034205",
+                                                      "action":  "BUY",
+                                                      "intended_outcome":  "NO",
+                                                      "intended_price":  0.22,
+                                                      "intended_size":  5.0,
+                                                      "notional":  1.1,
+                                                      "status":  "FILLED",
+                                                      "updated_at":  "2026-04-22T14:07:02.270002+00:00"
+                                                  }
+                                              ],
+                             "shadow_orders":  [
+
+                                               ],
+                             "pnl":  {
+                                         "live":  {
+                                                      "unrealized":  0.0,
+                                                      "realized":  0.0
+                                                  },
+                                         "paper":  {
+                                                       "unrealized":  0.166775,
+                                                       "realized":  0.0
+                                                   },
+                                         "shadow":  {
+                                                        "unrealized":  0.0,
+                                                        "realized":  0.0
+                                                    }
+                                     }
+                         },
+    "invalidation_exit":  {
+                              "invalidation_policy_records":  [
+                                                                  {
+                                                                      "market_id":  "947289",
+                                                                      "invalidation_state_class":  "WATCH",
+                                                                      "exit_policy_class":  "BLOCK_NEW_DEPLOYMENT",
+                                                                      "deployment_gate_effect":  "HARD_BLOCK",
+                                                                      "policy_reason_text":  "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+                                                                      "created_at":  "2026-04-22T14:17:17.141847+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "1929170",
+                                                                      "invalidation_state_class":  "WATCH",
+                                                                      "exit_policy_class":  "BLOCK_NEW_DEPLOYMENT",
+                                                                      "deployment_gate_effect":  "HARD_BLOCK",
+                                                                      "policy_reason_text":  "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+                                                                      "created_at":  "2026-04-22T14:17:17.141847+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "842016",
+                                                                      "invalidation_state_class":  "WATCH",
+                                                                      "exit_policy_class":  "BLOCK_NEW_DEPLOYMENT",
+                                                                      "deployment_gate_effect":  "HARD_BLOCK",
+                                                                      "policy_reason_text":  "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+                                                                      "created_at":  "2026-04-22T14:17:17.141847+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "1797301",
+                                                                      "invalidation_state_class":  "WATCH",
+                                                                      "exit_policy_class":  "BLOCK_NEW_DEPLOYMENT",
+                                                                      "deployment_gate_effect":  "HARD_BLOCK",
+                                                                      "policy_reason_text":  "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+                                                                      "created_at":  "2026-04-22T14:17:17.141847+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "951182",
+                                                                      "invalidation_state_class":  "WATCH",
+                                                                      "exit_policy_class":  "BLOCK_NEW_DEPLOYMENT",
+                                                                      "deployment_gate_effect":  "HARD_BLOCK",
+                                                                      "policy_reason_text":  "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+                                                                      "created_at":  "2026-04-22T14:17:17.141847+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "566140",
+                                                                      "invalidation_state_class":  "WATCH",
+                                                                      "exit_policy_class":  "BLOCK_NEW_DEPLOYMENT",
+                                                                      "deployment_gate_effect":  "HARD_BLOCK",
+                                                                      "policy_reason_text":  "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+                                                                      "created_at":  "2026-04-22T14:17:17.141847+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "842015",
+                                                                      "invalidation_state_class":  "WATCH",
+                                                                      "exit_policy_class":  "BLOCK_NEW_DEPLOYMENT",
+                                                                      "deployment_gate_effect":  "HARD_BLOCK",
+                                                                      "policy_reason_text":  "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+                                                                      "created_at":  "2026-04-22T14:17:17.141847+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "1543487",
+                                                                      "invalidation_state_class":  "WATCH",
+                                                                      "exit_policy_class":  "BLOCK_NEW_DEPLOYMENT",
+                                                                      "deployment_gate_effect":  "HARD_BLOCK",
+                                                                      "policy_reason_text":  "Policy set WATCH with BLOCK_NEW_DEPLOYMENT and HARD_BLOCK deployment gating based on persisted invalidation, cognition, ranking, and allocation context.",
+                                                                      "created_at":  "2026-04-22T14:17:17.141847+00:00"
+                                                                  }
+                                                              ],
+                              "exit_advisory_records":  [
+                                                            {
+                                                                "market_id":  "558934",
+                                                                "exposure_type":  "PAPER_POSITION",
+                                                                "advisory_action_class":  "WATCH",
+                                                                "advisory_priority_class":  "HIGH",
+                                                                "advisory_reason_text":  "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+                                                                "created_at":  "2026-04-22T14:17:17.872490+00:00"
+                                                            },
+                                                            {
+                                                                "market_id":  "1797301",
+                                                                "exposure_type":  "PAPER_POSITION",
+                                                                "advisory_action_class":  "WATCH",
+                                                                "advisory_priority_class":  "HIGH",
+                                                                "advisory_reason_text":  "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+                                                                "created_at":  "2026-04-22T14:17:17.872490+00:00"
+                                                            },
+                                                            {
+                                                                "market_id":  "566136",
+                                                                "exposure_type":  "PAPER_POSITION",
+                                                                "advisory_action_class":  "WATCH",
+                                                                "advisory_priority_class":  "HIGH",
+                                                                "advisory_reason_text":  "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+                                                                "created_at":  "2026-04-22T14:17:17.872490+00:00"
+                                                            },
+                                                            {
+                                                                "market_id":  "1910397",
+                                                                "exposure_type":  "PAPER_POSITION",
+                                                                "advisory_action_class":  "WATCH",
+                                                                "advisory_priority_class":  "HIGH",
+                                                                "advisory_reason_text":  "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+                                                                "created_at":  "2026-04-22T14:17:17.872490+00:00"
+                                                            },
+                                                            {
+                                                                "market_id":  "1980863",
+                                                                "exposure_type":  "PAPER_POSITION",
+                                                                "advisory_action_class":  "WATCH",
+                                                                "advisory_priority_class":  "HIGH",
+                                                                "advisory_reason_text":  "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+                                                                "created_at":  "2026-04-22T14:17:17.872490+00:00"
+                                                            },
+                                                            {
+                                                                "market_id":  "566140",
+                                                                "exposure_type":  "PAPER_POSITION",
+                                                                "advisory_action_class":  "WATCH",
+                                                                "advisory_priority_class":  "HIGH",
+                                                                "advisory_reason_text":  "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+                                                                "created_at":  "2026-04-22T14:17:17.872490+00:00"
+                                                            },
+                                                            {
+                                                                "market_id":  "558936",
+                                                                "exposure_type":  "PAPER_POSITION",
+                                                                "advisory_action_class":  "WATCH",
+                                                                "advisory_priority_class":  "HIGH",
+                                                                "advisory_reason_text":  "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+                                                                "created_at":  "2026-04-22T14:17:17.872490+00:00"
+                                                            },
+                                                            {
+                                                                "market_id":  "1517835",
+                                                                "exposure_type":  "PAPER_POSITION",
+                                                                "advisory_action_class":  "WATCH",
+                                                                "advisory_priority_class":  "HIGH",
+                                                                "advisory_reason_text":  "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+                                                                "created_at":  "2026-04-22T14:17:17.872490+00:00"
+                                                            }
+                                                        ],
+                              "advisory_resolution_records":  [
+                                                                  {
+                                                                      "market_id":  "1708086",
+                                                                      "primary_advisory_action_class":  "NO_ACTION",
+                                                                      "primary_priority_class":  "LOW",
+                                                                      "action_readiness_class":  "NOT_READY",
+                                                                      "conflict_status_class":  "NONE",
+                                                                      "created_at":  "2026-04-22T14:17:18.646296+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "1910397",
+                                                                      "primary_advisory_action_class":  "WATCH",
+                                                                      "primary_priority_class":  "MEDIUM",
+                                                                      "action_readiness_class":  "READY_FOR_REVIEW",
+                                                                      "conflict_status_class":  "NONE",
+                                                                      "created_at":  "2026-04-22T14:17:18.646296+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "1929170",
+                                                                      "primary_advisory_action_class":  "WATCH",
+                                                                      "primary_priority_class":  "MEDIUM",
+                                                                      "action_readiness_class":  "READY_FOR_REVIEW",
+                                                                      "conflict_status_class":  "NONE",
+                                                                      "created_at":  "2026-04-22T14:17:18.646296+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "558934",
+                                                                      "primary_advisory_action_class":  "WATCH",
+                                                                      "primary_priority_class":  "MEDIUM",
+                                                                      "action_readiness_class":  "READY_FOR_REVIEW",
+                                                                      "conflict_status_class":  "NONE",
+                                                                      "created_at":  "2026-04-22T14:17:18.646296+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "1797301",
+                                                                      "primary_advisory_action_class":  "WATCH",
+                                                                      "primary_priority_class":  "MEDIUM",
+                                                                      "action_readiness_class":  "READY_FOR_REVIEW",
+                                                                      "conflict_status_class":  "NONE",
+                                                                      "created_at":  "2026-04-22T14:17:18.646296+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "951182",
+                                                                      "primary_advisory_action_class":  "WATCH",
+                                                                      "primary_priority_class":  "MEDIUM",
+                                                                      "action_readiness_class":  "READY_FOR_REVIEW",
+                                                                      "conflict_status_class":  "NONE",
+                                                                      "created_at":  "2026-04-22T14:17:18.646296+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "1731344",
+                                                                      "primary_advisory_action_class":  "WATCH",
+                                                                      "primary_priority_class":  "MEDIUM",
+                                                                      "action_readiness_class":  "READY_FOR_REVIEW",
+                                                                      "conflict_status_class":  "NONE",
+                                                                      "created_at":  "2026-04-22T14:17:18.646296+00:00"
+                                                                  },
+                                                                  {
+                                                                      "market_id":  "1543487",
+                                                                      "primary_advisory_action_class":  "WATCH",
+                                                                      "primary_priority_class":  "MEDIUM",
+                                                                      "action_readiness_class":  "READY_FOR_REVIEW",
+                                                                      "conflict_status_class":  "NONE",
+                                                                      "created_at":  "2026-04-22T14:17:18.646296+00:00"
+                                                                  }
+                                                              ],
+                              "command_intent_records":  [
+                                                             {
+                                                                 "market_id":  "1543487",
+                                                                 "exposure_type":  "PAPER_POSITION",
+                                                                 "command_intent_class":  "WATCH_ONLY",
+                                                                 "command_priority_class":  "MEDIUM",
+                                                                 "command_status_class":  "NOT_ELIGIBLE",
+                                                                 "orchestration_eligibility_class":  "INELIGIBLE",
+                                                                 "created_at":  "2026-04-22T14:17:19.197778+00:00"
+                                                             },
+                                                             {
+                                                                 "market_id":  "1517835",
+                                                                 "exposure_type":  "PAPER_POSITION",
+                                                                 "command_intent_class":  "WATCH_ONLY",
+                                                                 "command_priority_class":  "MEDIUM",
+                                                                 "command_status_class":  "NOT_ELIGIBLE",
+                                                                 "orchestration_eligibility_class":  "INELIGIBLE",
+                                                                 "created_at":  "2026-04-22T14:17:19.197778+00:00"
+                                                             },
+                                                             {
+                                                                 "market_id":  "842016",
+                                                                 "exposure_type":  "PAPER_POSITION",
+                                                                 "command_intent_class":  "WATCH_ONLY",
+                                                                 "command_priority_class":  "MEDIUM",
+                                                                 "command_status_class":  "NOT_ELIGIBLE",
+                                                                 "orchestration_eligibility_class":  "INELIGIBLE",
+                                                                 "created_at":  "2026-04-22T14:17:19.197778+00:00"
+                                                             },
+                                                             {
+                                                                 "market_id":  "566140",
+                                                                 "exposure_type":  "PAPER_POSITION",
+                                                                 "command_intent_class":  "WATCH_ONLY",
+                                                                 "command_priority_class":  "MEDIUM",
+                                                                 "command_status_class":  "NOT_ELIGIBLE",
+                                                                 "orchestration_eligibility_class":  "INELIGIBLE",
+                                                                 "created_at":  "2026-04-22T14:17:19.197778+00:00"
+                                                             },
+                                                             {
+                                                                 "market_id":  "1929111",
+                                                                 "exposure_type":  "PAPER_POSITION",
+                                                                 "command_intent_class":  "WATCH_ONLY",
+                                                                 "command_priority_class":  "MEDIUM",
+                                                                 "command_status_class":  "NOT_ELIGIBLE",
+                                                                 "orchestration_eligibility_class":  "INELIGIBLE",
+                                                                 "created_at":  "2026-04-22T14:17:19.197778+00:00"
+                                                             },
+                                                             {
+                                                                 "market_id":  "947289",
+                                                                 "exposure_type":  "PAPER_POSITION",
+                                                                 "command_intent_class":  "WATCH_ONLY",
+                                                                 "command_priority_class":  "MEDIUM",
+                                                                 "command_status_class":  "NOT_ELIGIBLE",
+                                                                 "orchestration_eligibility_class":  "INELIGIBLE",
+                                                                 "created_at":  "2026-04-22T14:17:19.197778+00:00"
+                                                             },
+                                                             {
+                                                                 "market_id":  "566136",
+                                                                 "exposure_type":  "PAPER_POSITION",
+                                                                 "command_intent_class":  "WATCH_ONLY",
+                                                                 "command_priority_class":  "MEDIUM",
+                                                                 "command_status_class":  "NOT_ELIGIBLE",
+                                                                 "orchestration_eligibility_class":  "INELIGIBLE",
+                                                                 "created_at":  "2026-04-22T14:17:19.197778+00:00"
+                                                             },
+                                                             {
+                                                                 "market_id":  "1797301",
+                                                                 "exposure_type":  "PAPER_POSITION",
+                                                                 "command_intent_class":  "WATCH_ONLY",
+                                                                 "command_priority_class":  "MEDIUM",
+                                                                 "command_status_class":  "NOT_ELIGIBLE",
+                                                                 "orchestration_eligibility_class":  "INELIGIBLE",
+                                                                 "created_at":  "2026-04-22T14:17:19.197778+00:00"
+                                                             }
+                                                         ]
+                          },
+    "intelligence":  {
+                         "whales":  [
+                                        {
+                                            "market_id":  "rank-top-8c28a1",
+                                            "whale_presence_score":  0.66467,
+                                            "whale_conviction_score":  0.884,
+                                            "smart_whale_alignment_score":  0.2,
+                                            "whale_reversal_risk":  0.0,
+                                            "scoring_reason_text":  "Market rank-top-8c28a1 has 2 supporting whale wallet(s) across 2 event(s), presence=0.66, conviction=0.88, alignment=0.20, reversal_risk=0.00.",
+                                            "created_at":  "2026-04-22T10:27:11.454362+00:00"
+                                        },
+                                        {
+                                            "market_id":  "rank-strong-cb548d",
+                                            "whale_presence_score":  0.65267,
+                                            "whale_conviction_score":  0.873,
+                                            "smart_whale_alignment_score":  0.2,
+                                            "whale_reversal_risk":  0.0,
+                                            "scoring_reason_text":  "Market rank-strong-cb548d has 2 supporting whale wallet(s) across 2 event(s), presence=0.65, conviction=0.87, alignment=0.20, reversal_risk=0.00.",
+                                            "created_at":  "2026-04-22T10:27:08.535991+00:00"
+                                        },
+                                        {
+                                            "market_id":  "ba-whale-8fb85b",
+                                            "whale_presence_score":  0.7825,
+                                            "whale_conviction_score":  0.88375,
+                                            "smart_whale_alignment_score":  0.2,
+                                            "whale_reversal_risk":  0.0,
+                                            "scoring_reason_text":  "Market ba-whale-8fb85b has 3 supporting whale wallet(s) across 3 event(s), presence=0.78, conviction=0.88, alignment=0.20, reversal_risk=0.00.",
+                                            "created_at":  "2026-04-22T10:26:43.958293+00:00"
+                                        },
+                                        {
+                                            "market_id":  "sports-psg-whale-6c652b",
+                                            "whale_presence_score":  0.7825,
+                                            "whale_conviction_score":  0.88375,
+                                            "smart_whale_alignment_score":  0.2,
+                                            "whale_reversal_risk":  0.0,
+                                            "scoring_reason_text":  "Market sports-psg-whale-6c652b has 3 supporting whale wallet(s) across 3 event(s), presence=0.78, conviction=0.88, alignment=0.20, reversal_risk=0.00.",
+                                            "created_at":  "2026-04-22T10:26:18.829073+00:00"
+                                        },
+                                        {
+                                            "market_id":  "fast-market-c681dbc5",
+                                            "whale_presence_score":  0.60167,
+                                            "whale_conviction_score":  0.83975,
+                                            "smart_whale_alignment_score":  0.2,
+                                            "whale_reversal_risk":  0.0,
+                                            "scoring_reason_text":  "Market fast-market-c681dbc5 has 2 supporting whale wallet(s) across 2 event(s), presence=0.60, conviction=0.84, alignment=0.20, reversal_risk=0.00.",
+                                            "created_at":  "2026-04-22T10:26:16.555048+00:00"
+                                        },
+                                        {
+                                            "market_id":  "safe-whale-market-a12b830f",
+                                            "whale_presence_score":  0.46767,
+                                            "whale_conviction_score":  0.59825,
+                                            "smart_whale_alignment_score":  0.95,
+                                            "whale_reversal_risk":  0.1,
+                                            "scoring_reason_text":  "Market safe-whale-market-a12b830f has 1 supporting whale wallet(s) across 2 event(s), presence=0.47, conviction=0.60, alignment=0.95, reversal_risk=0.10.",
+                                            "created_at":  "2026-04-22T10:26:09.886555+00:00"
+                                        },
+                                        {
+                                            "market_id":  "sparse-honest-market-01a98fe9",
+                                            "whale_presence_score":  0.36683,
+                                            "whale_conviction_score":  0.77425,
+                                            "smart_whale_alignment_score":  0.2,
+                                            "whale_reversal_risk":  0.0,
+                                            "scoring_reason_text":  "Market sparse-honest-market-01a98fe9 has 1 supporting whale wallet(s) across 1 event(s), presence=0.37, conviction=0.77, alignment=0.20, reversal_risk=0.00.",
+                                            "created_at":  "2026-04-22T10:25:59.799273+00:00"
+                                        },
+                                        {
+                                            "market_id":  "reversal-market-a1607624",
+                                            "whale_presence_score":  0.49317,
+                                            "whale_conviction_score":  0.539,
+                                            "smart_whale_alignment_score":  0.95,
+                                            "whale_reversal_risk":  0.325,
+                                            "scoring_reason_text":  "Market reversal-market-a1607624 has 1 supporting whale wallet(s) across 2 event(s), presence=0.49, conviction=0.54, alignment=0.95, reversal_risk=0.33.",
+                                            "created_at":  "2026-04-22T10:25:59.277290+00:00"
+                                        }
+                                    ],
+                         "news":  [
+                                      {
+                                          "normalized_title":  "PSG striker ruled out for tonight",
+                                          "normalized_summary":  "Confirmed injury update before kickoff in Paris.",
+                                          "source_category":  "sports_news",
+                                          "canonical_url":  "https://example.com/story/1",
+                                          "published_at":  "2026-04-19T10:00:00+00:00",
+                                          "created_at":  "2026-04-21T19:05:12.514966+00:00"
+                                      }
+                                  ],
+                         "cognition":  [
+                                           {
+                                               "market_id":  "isolated-policy-a273213a",
+                                               "cognition_conclusion_class":  "SUPPORTIVE",
+                                               "overall_confidence_score":  0.78,
+                                               "caution_score":  0.24,
+                                               "usability_class":  "USABLE_NOW",
+                                               "summary_text":  "Seeded cognition summary.",
+                                               "created_at":  "2026-04-22T10:28:21.528641+00:00"
+                                           },
+                                           {
+                                               "market_id":  "query-policy-942281a1",
+                                               "cognition_conclusion_class":  "SUPPORTIVE",
+                                               "overall_confidence_score":  0.81,
+                                               "caution_score":  0.19,
+                                               "usability_class":  "USABLE_NOW",
+                                               "summary_text":  "Seeded cognition summary.",
+                                               "created_at":  "2026-04-22T10:28:19.539195+00:00"
+                                           },
+                                           {
+                                               "market_id":  "rank-block-af971ffa",
+                                               "cognition_conclusion_class":  "WATCHFUL",
+                                               "overall_confidence_score":  0.76,
+                                               "caution_score":  0.34,
+                                               "usability_class":  "USABLE_NOW",
+                                               "summary_text":  "Seeded cognition summary.",
+                                               "created_at":  "2026-04-22T10:28:17.616609+00:00"
+                                           },
+                                           {
+                                               "market_id":  "real-enum-4c0cc5ec",
+                                               "cognition_conclusion_class":  "WATCHFUL",
+                                               "overall_confidence_score":  0.7,
+                                               "caution_score":  0.5,
+                                               "usability_class":  "NEEDS_CONFIRMATION",
+                                               "summary_text":  "Seeded cognition summary.",
+                                               "created_at":  "2026-04-22T10:28:15.616655+00:00"
+                                           },
+                                           {
+                                               "market_id":  "exit-rec-3127427a",
+                                               "cognition_conclusion_class":  "CONTRADICTORY",
+                                               "overall_confidence_score":  0.18,
+                                               "caution_score":  0.96,
+                                               "usability_class":  "DO_NOT_USE",
+                                               "summary_text":  "Seeded cognition summary.",
+                                               "created_at":  "2026-04-22T10:28:12.123799+00:00"
+                                           },
+                                           {
+                                               "market_id":  "gate-hard-47064c",
+                                               "cognition_conclusion_class":  "SUPPORTIVE",
+                                               "overall_confidence_score":  0.79,
+                                               "caution_score":  0.92,
+                                               "usability_class":  "DO_NOT_USE",
+                                               "summary_text":  "Seeded cognition summary.",
+                                               "created_at":  "2026-04-22T10:28:09.926310+00:00"
+                                           },
+                                           {
+                                               "market_id":  "gate-soft-b6f2e7",
+                                               "cognition_conclusion_class":  "SUPPORTIVE",
+                                               "overall_confidence_score":  0.79,
+                                               "caution_score":  0.22,
+                                               "usability_class":  "USABLE_NOW",
+                                               "summary_text":  "Seeded cognition summary.",
+                                               "created_at":  "2026-04-22T10:28:08.261759+00:00"
+                                           },
+                                           {
+                                               "market_id":  "gate-none-2a76ec",
+                                               "cognition_conclusion_class":  "SUPPORTIVE",
+                                               "overall_confidence_score":  0.79,
+                                               "caution_score":  0.22,
+                                               "usability_class":  "USABLE_NOW",
+                                               "summary_text":  "Seeded cognition summary.",
+                                               "created_at":  "2026-04-22T10:28:06.761030+00:00"
+                                           }
+                                       ]
+                     },
+    "audit":  {
+                  "decision_ledger":  [
+                                          {
+                                              "cycle_id":  "a22e4dcf-5d5a-414e-943a-fbe01aefce64",
+                                              "market_id":  "isolated-policy-a273213a",
+                                              "decision_type":  "SKIP",
+                                              "selected":  false,
+                                              "reason":  "missing_yes_token",
+                                              "confidence":  0.78,
+                                              "trade_type":  null,
+                                              "bucket_type":  null,
+                                              "created_at":  "2026-04-22T10:28:20.850272+00:00"
+                                          },
+                                          {
+                                              "cycle_id":  "162311f2-47b3-4249-afdc-882c3610994a",
+                                              "market_id":  "query-policy-942281a1",
+                                              "decision_type":  "SKIP",
+                                              "selected":  false,
+                                              "reason":  "missing_yes_token",
+                                              "confidence":  0.78,
+                                              "trade_type":  null,
+                                              "bucket_type":  null,
+                                              "created_at":  "2026-04-22T10:28:18.856635+00:00"
+                                          },
+                                          {
+                                              "cycle_id":  "03acd18d-ba27-450c-bb72-4beb5f097ac7",
+                                              "market_id":  "rank-block-af971ffa",
+                                              "decision_type":  "SKIP",
+                                              "selected":  false,
+                                              "reason":  "missing_yes_token",
+                                              "confidence":  0.78,
+                                              "trade_type":  null,
+                                              "bucket_type":  null,
+                                              "created_at":  "2026-04-22T10:28:16.804014+00:00"
+                                          },
+                                          {
+                                              "cycle_id":  "0a59ac6e-0553-4736-862c-90d0326d0644",
+                                              "market_id":  "real-enum-4c0cc5ec",
+                                              "decision_type":  "SKIP",
+                                              "selected":  false,
+                                              "reason":  "missing_yes_token",
+                                              "confidence":  0.78,
+                                              "trade_type":  null,
+                                              "bucket_type":  null,
+                                              "created_at":  "2026-04-22T10:28:14.923738+00:00"
+                                          },
+                                          {
+                                              "cycle_id":  "57110780-369b-4c54-8a21-7bd8bbdc47e4",
+                                              "market_id":  "sparse-policy-a0919705",
+                                              "decision_type":  "SKIP",
+                                              "selected":  false,
+                                              "reason":  "missing_yes_token",
+                                              "confidence":  0.78,
+                                              "trade_type":  null,
+                                              "bucket_type":  null,
+                                              "created_at":  "2026-04-22T10:28:14.511602+00:00"
+                                          },
+                                          {
+                                              "cycle_id":  "da4a5977-8d7b-4b56-b1a9-375cafa2019c",
+                                              "market_id":  "exit-rec-3127427a",
+                                              "decision_type":  "SKIP",
+                                              "selected":  false,
+                                              "reason":  "missing_yes_token",
+                                              "confidence":  0.78,
+                                              "trade_type":  null,
+                                              "bucket_type":  null,
+                                              "created_at":  "2026-04-22T10:28:11.289985+00:00"
+                                          },
+                                          {
+                                              "cycle_id":  "9a87e626-57ba-40b9-8692-35ce9d17a805",
+                                              "market_id":  "gate-hard-47064c",
+                                              "decision_type":  "SKIP",
+                                              "selected":  false,
+                                              "reason":  "missing_yes_token",
+                                              "confidence":  0.78,
+                                              "trade_type":  null,
+                                              "bucket_type":  null,
+                                              "created_at":  "2026-04-22T10:28:09.274462+00:00"
+                                          },
+                                          {
+                                              "cycle_id":  "41b17109-6570-4dfe-86e8-7c6cb32b735a",
+                                              "market_id":  "gate-soft-b6f2e7",
+                                              "decision_type":  "SKIP",
+                                              "selected":  false,
+                                              "reason":  "missing_yes_token",
+                                              "confidence":  0.78,
+                                              "trade_type":  null,
+                                              "bucket_type":  null,
+                                              "created_at":  "2026-04-22T10:28:07.595429+00:00"
+                                          }
+                                      ],
+                  "rejection_ledger":  [
+                                           {
+                                               "cycle_id":  "a22e4dcf-5d5a-414e-943a-fbe01aefce64",
+                                               "market_id":  "isolated-policy-a273213a",
+                                               "stage":  "adaptive_selection",
+                                               "reason_code":  "missing_yes_token",
+                                               "reason_text":  "missing_yes_token",
+                                               "created_at":  "2026-04-22T10:28:20.850272+00:00"
+                                           },
+                                           {
+                                               "cycle_id":  "162311f2-47b3-4249-afdc-882c3610994a",
+                                               "market_id":  "query-policy-942281a1",
+                                               "stage":  "adaptive_selection",
+                                               "reason_code":  "missing_yes_token",
+                                               "reason_text":  "missing_yes_token",
+                                               "created_at":  "2026-04-22T10:28:18.856635+00:00"
+                                           },
+                                           {
+                                               "cycle_id":  "03acd18d-ba27-450c-bb72-4beb5f097ac7",
+                                               "market_id":  "rank-block-af971ffa",
+                                               "stage":  "adaptive_selection",
+                                               "reason_code":  "missing_yes_token",
+                                               "reason_text":  "missing_yes_token",
+                                               "created_at":  "2026-04-22T10:28:16.804014+00:00"
+                                           },
+                                           {
+                                               "cycle_id":  "0a59ac6e-0553-4736-862c-90d0326d0644",
+                                               "market_id":  "real-enum-4c0cc5ec",
+                                               "stage":  "adaptive_selection",
+                                               "reason_code":  "missing_yes_token",
+                                               "reason_text":  "missing_yes_token",
+                                               "created_at":  "2026-04-22T10:28:14.923738+00:00"
+                                           },
+                                           {
+                                               "cycle_id":  "57110780-369b-4c54-8a21-7bd8bbdc47e4",
+                                               "market_id":  "sparse-policy-a0919705",
+                                               "stage":  "adaptive_selection",
+                                               "reason_code":  "missing_yes_token",
+                                               "reason_text":  "missing_yes_token",
+                                               "created_at":  "2026-04-22T10:28:14.511602+00:00"
+                                           },
+                                           {
+                                               "cycle_id":  "da4a5977-8d7b-4b56-b1a9-375cafa2019c",
+                                               "market_id":  "exit-rec-3127427a",
+                                               "stage":  "adaptive_selection",
+                                               "reason_code":  "missing_yes_token",
+                                               "reason_text":  "missing_yes_token",
+                                               "created_at":  "2026-04-22T10:28:11.289985+00:00"
+                                           },
+                                           {
+                                               "cycle_id":  "9a87e626-57ba-40b9-8692-35ce9d17a805",
+                                               "market_id":  "gate-hard-47064c",
+                                               "stage":  "adaptive_selection",
+                                               "reason_code":  "missing_yes_token",
+                                               "reason_text":  "missing_yes_token",
+                                               "created_at":  "2026-04-22T10:28:09.274462+00:00"
+                                           },
+                                           {
+                                               "cycle_id":  "41b17109-6570-4dfe-86e8-7c6cb32b735a",
+                                               "market_id":  "gate-soft-b6f2e7",
+                                               "stage":  "adaptive_selection",
+                                               "reason_code":  "missing_yes_token",
+                                               "reason_text":  "missing_yes_token",
+                                               "created_at":  "2026-04-22T10:28:07.595429+00:00"
+                                           }
+                                       ],
+                  "operator_control_actions":  [
+                                                   {
+                                                       "action_class":  "PAUSE",
+                                                       "requested_via":  "TELEGRAM",
+                                                       "requested_by":  "manual_closeout",
+                                                       "status_class":  "PLACEHOLDER",
+                                                       "reason_text":  "PAUSE was recorded for audit only. No runtime control seam is wired yet, so no execution state was changed.",
+                                                       "created_at":  "2026-04-21T17:58:15.522498+00:00"
+                                                   },
+                                                   {
+                                                       "action_class":  "PAUSE",
+                                                       "requested_via":  "TELEGRAM",
+                                                       "requested_by":  "runtime-smoke",
+                                                       "status_class":  "PLACEHOLDER",
+                                                       "reason_text":  "PAUSE was recorded for audit only. No runtime control seam is wired yet, so no execution state was changed.",
+                                                       "created_at":  "2026-04-20T17:35:22.173166+00:00"
+                                                   }
+                                               ],
+                  "alert_events":  [
+                                       {
+                                           "event_class":  "CRITICAL_HEALTH_DEGRADATION",
+                                           "severity_class":  "CRITICAL",
+                                           "title":  "Runtime smoke alert",
+                                           "body_text":  "Closeout smoke emitted a critical alert event.",
+                                           "delivery_status_class":  "PENDING",
+                                           "created_at":  "2026-04-20T17:53:38.365239+00:00"
+                                       }
+                                   ],
+                  "paper_order_events":  [
+                                             {
+                                                 "paper_order_id":  "1cb8e6be-90c6-425b-b57c-a79fca4f40dd",
+                                                 "new_status":  "FILLED",
+                                                 "reason_code":  "filled_at_current_mark",
+                                                 "reason_text":  "order would fill at the current cycle mark",
+                                                 "event_at":  "2026-04-22T14:17:15.181185+00:00",
+                                                 "created_at":  "2026-04-22T14:17:14.893006+00:00"
+                                             },
+                                             {
+                                                 "paper_order_id":  "1cb8e6be-90c6-425b-b57c-a79fca4f40dd",
+                                                 "new_status":  "CREATED",
+                                                 "reason_code":  "order_created",
+                                                 "reason_text":  "paper order created from WOULD_ENTER signal",
+                                                 "event_at":  "2026-04-22T14:17:15.166052+00:00",
+                                                 "created_at":  "2026-04-22T14:17:14.893006+00:00"
+                                             },
+                                             {
+                                                 "paper_order_id":  "b3ace6e6-830f-48a2-847b-fe9f1ade46ef",
+                                                 "new_status":  "FILLED",
+                                                 "reason_code":  "filled_at_current_mark",
+                                                 "reason_text":  "order would fill at the current cycle mark",
+                                                 "event_at":  "2026-04-22T14:15:32.819343+00:00",
+                                                 "created_at":  "2026-04-22T14:15:32.482359+00:00"
+                                             },
+                                             {
+                                                 "paper_order_id":  "b3ace6e6-830f-48a2-847b-fe9f1ade46ef",
+                                                 "new_status":  "CREATED",
+                                                 "reason_code":  "order_created",
+                                                 "reason_text":  "paper order created from WOULD_ENTER signal",
+                                                 "event_at":  "2026-04-22T14:15:32.770435+00:00",
+                                                 "created_at":  "2026-04-22T14:15:32.482359+00:00"
+                                             },
+                                             {
+                                                 "paper_order_id":  "9917fd68-33b9-46a5-a9c0-01dfad65e92f",
+                                                 "new_status":  "FILLED",
+                                                 "reason_code":  "filled_at_current_mark",
+                                                 "reason_text":  "order would fill at the current cycle mark",
+                                                 "event_at":  "2026-04-22T14:13:51.091431+00:00",
+                                                 "created_at":  "2026-04-22T14:13:50.833987+00:00"
+                                             },
+                                             {
+                                                 "paper_order_id":  "9917fd68-33b9-46a5-a9c0-01dfad65e92f",
+                                                 "new_status":  "CREATED",
+                                                 "reason_code":  "order_created",
+                                                 "reason_text":  "paper order created from WOULD_ENTER signal",
+                                                 "event_at":  "2026-04-22T14:13:51.081550+00:00",
+                                                 "created_at":  "2026-04-22T14:13:50.833987+00:00"
+                                             },
+                                             {
+                                                 "paper_order_id":  "0b7e9501-c2e9-4bee-b2ac-efea0aa47397",
+                                                 "new_status":  "FILLED",
+                                                 "reason_code":  "filled_at_current_mark",
+                                                 "reason_text":  "order would fill at the current cycle mark",
+                                                 "event_at":  "2026-04-22T14:12:11.653292+00:00",
+                                                 "created_at":  "2026-04-22T14:12:11.384480+00:00"
+                                             },
+                                             {
+                                                 "paper_order_id":  "0b7e9501-c2e9-4bee-b2ac-efea0aa47397",
+                                                 "new_status":  "CREATED",
+                                                 "reason_code":  "order_created",
+                                                 "reason_text":  "paper order created from WOULD_ENTER signal",
+                                                 "event_at":  "2026-04-22T14:12:11.642864+00:00",
+                                                 "created_at":  "2026-04-22T14:12:11.384480+00:00"
+                                             }
+                                         ],
+                  "paper_position_events":  [
+                                                {
+                                                    "paper_position_id":  "233d950a-2e57-46e4-bbfa-7ef4de7fc027",
+                                                    "event_type":  "MARKED",
+                                                    "reason_code":  "runtime_mark_to_market",
+                                                    "reason_text":  "position marked from the latest runtime market snapshot",
+                                                    "event_at":  "2026-04-22T14:17:19.741322+00:00",
+                                                    "created_at":  "2026-04-22T14:17:19.507734+00:00"
+                                                },
+                                                {
+                                                    "paper_position_id":  "36704aa0-deef-4a77-9362-ad45c5727f9a",
+                                                    "event_type":  "MARKED",
+                                                    "reason_code":  "runtime_mark_to_market",
+                                                    "reason_text":  "position marked from the latest runtime market snapshot",
+                                                    "event_at":  "2026-04-22T14:17:19.724208+00:00",
+                                                    "created_at":  "2026-04-22T14:17:19.507734+00:00"
+                                                },
+                                                {
+                                                    "paper_position_id":  "dbb6e002-ac6d-4d1c-83d9-a4185453aa08",
+                                                    "event_type":  "MARKED",
+                                                    "reason_code":  "runtime_mark_to_market",
+                                                    "reason_text":  "position marked from the latest runtime market snapshot",
+                                                    "event_at":  "2026-04-22T14:17:19.702559+00:00",
+                                                    "created_at":  "2026-04-22T14:17:19.507734+00:00"
+                                                },
+                                                {
+                                                    "paper_position_id":  "07760ae1-b94e-4658-80a4-9b48b89be4fd",
+                                                    "event_type":  "MARKED",
+                                                    "reason_code":  "runtime_mark_to_market",
+                                                    "reason_text":  "position marked from the latest runtime market snapshot",
+                                                    "event_at":  "2026-04-22T14:17:19.689102+00:00",
+                                                    "created_at":  "2026-04-22T14:17:19.507734+00:00"
+                                                },
+                                                {
+                                                    "paper_position_id":  "a321d571-23b1-465f-99f2-97d6e44b9da2",
+                                                    "event_type":  "MARKED",
+                                                    "reason_code":  "runtime_mark_to_market",
+                                                    "reason_text":  "position marked from the latest runtime market snapshot",
+                                                    "event_at":  "2026-04-22T14:17:19.671980+00:00",
+                                                    "created_at":  "2026-04-22T14:17:19.507734+00:00"
+                                                },
+                                                {
+                                                    "paper_position_id":  "96994324-dd04-4432-8ff8-b996b8fc8b02",
+                                                    "event_type":  "MARKED",
+                                                    "reason_code":  "runtime_mark_to_market",
+                                                    "reason_text":  "position marked from the latest runtime market snapshot",
+                                                    "event_at":  "2026-04-22T14:17:19.659278+00:00",
+                                                    "created_at":  "2026-04-22T14:17:19.507734+00:00"
+                                                },
+                                                {
+                                                    "paper_position_id":  "b8459a09-8ae4-4c9b-93b2-f1cb49487ef3",
+                                                    "event_type":  "MARKED",
+                                                    "reason_code":  "runtime_mark_to_market",
+                                                    "reason_text":  "position marked from the latest runtime market snapshot",
+                                                    "event_at":  "2026-04-22T14:17:19.646057+00:00",
+                                                    "created_at":  "2026-04-22T14:17:19.507734+00:00"
+                                                },
+                                                {
+                                                    "paper_position_id":  "b8bc5c3c-5f38-4816-a4a4-7d61f83542df",
+                                                    "event_type":  "MARKED",
+                                                    "reason_code":  "runtime_mark_to_market",
+                                                    "reason_text":  "position marked from the latest runtime market snapshot",
+                                                    "event_at":  "2026-04-22T14:17:19.634448+00:00",
+                                                    "created_at":  "2026-04-22T14:17:19.507734+00:00"
+                                                }
+                                            ]
+              }
+}

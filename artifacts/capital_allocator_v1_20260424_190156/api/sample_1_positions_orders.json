@@ -1,0 +1,240 @@
+{
+  "live_positions": [],
+  "paper_positions": [
+    {
+      "market_id": "1910397",
+      "intended_outcome": "YES",
+      "size": 7.5,
+      "avg_entry": 0.2,
+      "current_status": "OPEN",
+      "unrealized": 0.0,
+      "realized": 0.0,
+      "updated_at": "2026-04-24T16:03:34.129731+00:00",
+      "closed_at": null
+    },
+    {
+      "market_id": "1980863",
+      "intended_outcome": "YES",
+      "size": 13.235,
+      "avg_entry": 0.17,
+      "current_status": "OPEN",
+      "unrealized": 0.0,
+      "realized": 0.0,
+      "updated_at": "2026-04-24T16:03:34.119802+00:00",
+      "closed_at": null
+    },
+    {
+      "market_id": "1929170",
+      "intended_outcome": "YES",
+      "size": 14.285,
+      "avg_entry": 0.21,
+      "current_status": "OPEN",
+      "unrealized": 0.0,
+      "realized": 0.0,
+      "updated_at": "2026-04-24T16:03:34.110538+00:00",
+      "closed_at": null
+    }
+  ],
+  "shadow_positions": [
+    {
+      "market_id": "1517835",
+      "intended_outcome": "YES",
+      "size": 5.0,
+      "avg_entry": 0.21,
+      "current_status": "PENDING_SUBMISSION",
+      "unrealized": null,
+      "realized": null,
+      "updated_at": "2026-04-22T18:06:24.837636+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "intended_outcome": "YES",
+      "size": 5.0,
+      "avg_entry": 0.21,
+      "current_status": "PENDING_SUBMISSION",
+      "unrealized": null,
+      "realized": null,
+      "updated_at": "2026-04-22T18:05:06.231964+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "intended_outcome": "YES",
+      "size": 5.0,
+      "avg_entry": 0.21,
+      "current_status": "PENDING_SUBMISSION",
+      "unrealized": null,
+      "realized": null,
+      "updated_at": "2026-04-22T18:03:53.116520+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "intended_outcome": "YES",
+      "size": 5.0,
+      "avg_entry": 0.21,
+      "current_status": "PENDING_SUBMISSION",
+      "unrealized": null,
+      "realized": null,
+      "updated_at": "2026-04-22T18:02:36.124757+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "intended_outcome": "YES",
+      "size": 5.0,
+      "avg_entry": 0.21,
+      "current_status": "PENDING_SUBMISSION",
+      "unrealized": null,
+      "realized": null,
+      "updated_at": "2026-04-22T18:01:21.691841+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "intended_outcome": "YES",
+      "size": 5.0,
+      "avg_entry": 0.21,
+      "current_status": "PENDING_SUBMISSION",
+      "unrealized": null,
+      "realized": null,
+      "updated_at": "2026-04-22T18:01:06.261969+00:00"
+    }
+  ],
+  "live_orders": [
+    {
+      "market_id": "1517835",
+      "action": "BUY_YES",
+      "side": "BUY",
+      "price": 0.16,
+      "size": 5.0,
+      "notional": 0.8,
+      "status": "REJECTED",
+      "updated_at": "2026-04-23T07:35:20.628476+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "action": "BUY_YES",
+      "side": "BUY",
+      "price": 0.16,
+      "size": 5.0,
+      "notional": 0.8,
+      "status": "REJECTED",
+      "updated_at": "2026-04-23T07:34:09.579599+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "action": "BUY_YES",
+      "side": "BUY",
+      "price": 0.16,
+      "size": 5.0,
+      "notional": 0.8,
+      "status": "REJECTED",
+      "updated_at": "2026-04-23T07:33:57.485203+00:00"
+    }
+  ],
+  "paper_orders": [
+    {
+      "market_id": "1929170",
+      "action": "BUY",
+      "intended_outcome": "YES",
+      "intended_price": 0.21,
+      "intended_size": 14.285,
+      "notional": 2.99985,
+      "status": "FILLED",
+      "updated_at": "2026-04-24T16:03:20.379226+00:00"
+    },
+    {
+      "market_id": "1910397",
+      "action": "BUY",
+      "intended_outcome": "YES",
+      "intended_price": 0.2,
+      "intended_size": 7.5,
+      "notional": 1.5,
+      "status": "FILLED",
+      "updated_at": "2026-04-24T16:03:20.379226+00:00"
+    },
+    {
+      "market_id": "1980863",
+      "action": "BUY",
+      "intended_outcome": "YES",
+      "intended_price": 0.17,
+      "intended_size": 13.235,
+      "notional": 2.24995,
+      "status": "FILLED",
+      "updated_at": "2026-04-24T16:03:20.379226+00:00"
+    }
+  ],
+  "shadow_orders": [
+    {
+      "market_id": "1517835",
+      "action": "BUY_YES",
+      "intended_outcome": "YES",
+      "intended_price": 0.21,
+      "intended_size": 5.0,
+      "notional": 1.05,
+      "status": "WOULD_SUBMIT",
+      "updated_at": "2026-04-22T18:06:24.545125+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "action": "BUY_YES",
+      "intended_outcome": "YES",
+      "intended_price": 0.21,
+      "intended_size": 5.0,
+      "notional": 1.05,
+      "status": "WOULD_SUBMIT",
+      "updated_at": "2026-04-22T18:05:05.959196+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "action": "BUY_YES",
+      "intended_outcome": "YES",
+      "intended_price": 0.21,
+      "intended_size": 5.0,
+      "notional": 1.05,
+      "status": "WOULD_SUBMIT",
+      "updated_at": "2026-04-22T18:03:52.650726+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "action": "BUY_YES",
+      "intended_outcome": "YES",
+      "intended_price": 0.21,
+      "intended_size": 5.0,
+      "notional": 1.05,
+      "status": "WOULD_SUBMIT",
+      "updated_at": "2026-04-22T18:02:35.694955+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "action": "BUY_YES",
+      "intended_outcome": "YES",
+      "intended_price": 0.21,
+      "intended_size": 5.0,
+      "notional": 1.05,
+      "status": "WOULD_SUBMIT",
+      "updated_at": "2026-04-22T18:01:21.235051+00:00"
+    },
+    {
+      "market_id": "1517835",
+      "action": "BUY_YES",
+      "intended_outcome": "YES",
+      "intended_price": 0.21,
+      "intended_size": 5.0,
+      "notional": 1.05,
+      "status": "WOULD_SUBMIT",
+      "updated_at": "2026-04-22T18:01:05.749889+00:00"
+    }
+  ],
+  "pnl": {
+    "live": {
+      "unrealized": 0.0,
+      "realized": 0.0
+    },
+    "paper": {
+      "unrealized": 0.0,
+      "realized": 0.0
+    },
+    "shadow": {
+      "unrealized": 0.0,
+      "realized": 0.0
+    }
+  }
+}

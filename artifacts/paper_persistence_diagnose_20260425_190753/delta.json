@@ -1,0 +1,11 @@
+{
+  "paper_runs": 0,
+  "paper_signals": 0,
+  "paper_orders": 0,
+  "paper_positions": 0,
+  "paper_position_events": 0,
+  "market_snapshots": 0,
+  "external_events_normalized": 0,
+  "whale_events": 0,
+  "whale_market_scores": 0
+}

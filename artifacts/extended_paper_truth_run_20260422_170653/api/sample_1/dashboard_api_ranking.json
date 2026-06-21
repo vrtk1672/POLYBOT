@@ -1,0 +1,337 @@
+{
+    "latest_ranking_policy_run":  {
+                                      "id":  "06502594-d63f-4948-9561-b2895f8c2cbb",
+                                      "status":  "COMPLETED",
+                                      "started_at":  "2026-04-22T14:09:06.456692+00:00",
+                                      "ended_at":  "2026-04-22T14:09:06.651041+00:00"
+                                  },
+    "top_ranked":  [
+                       {
+                           "market_id":  "1731344",
+                           "total_rank_score":  9.2456,
+                           "rank_position":  1,
+                           "rank_tier_class":  "REJECT",
+                           "gate_decision_class":  "HARD_REJECT",
+                           "gate_priority_class":  "NONE",
+                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 9.25.",
+                           "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                       },
+                       {
+                           "market_id":  "1517835",
+                           "total_rank_score":  8.8622,
+                           "rank_position":  2,
+                           "rank_tier_class":  "REJECT",
+                           "gate_decision_class":  "HARD_REJECT",
+                           "gate_priority_class":  "NONE",
+                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 8.86.",
+                           "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                       },
+                       {
+                           "market_id":  "1543487",
+                           "total_rank_score":  8.353,
+                           "rank_position":  3,
+                           "rank_tier_class":  "REJECT",
+                           "gate_decision_class":  "HARD_REJECT",
+                           "gate_priority_class":  "NONE",
+                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 8.35.",
+                           "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                       },
+                       {
+                           "market_id":  "1929170",
+                           "total_rank_score":  8.2746,
+                           "rank_position":  4,
+                           "rank_tier_class":  "REJECT",
+                           "gate_decision_class":  "HARD_REJECT",
+                           "gate_priority_class":  "NONE",
+                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 8.27.",
+                           "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                       },
+                       {
+                           "market_id":  "842015",
+                           "total_rank_score":  8.0398,
+                           "rank_position":  5,
+                           "rank_tier_class":  "REJECT",
+                           "gate_decision_class":  "HARD_REJECT",
+                           "gate_priority_class":  "NONE",
+                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 8.04.",
+                           "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                       },
+                       {
+                           "market_id":  "558934",
+                           "total_rank_score":  7.933,
+                           "rank_position":  6,
+                           "rank_tier_class":  "REJECT",
+                           "gate_decision_class":  "HARD_REJECT",
+                           "gate_priority_class":  "NONE",
+                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.93.",
+                           "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                       },
+                       {
+                           "market_id":  "558936",
+                           "total_rank_score":  7.9308,
+                           "rank_position":  7,
+                           "rank_tier_class":  "REJECT",
+                           "gate_decision_class":  "HARD_REJECT",
+                           "gate_priority_class":  "NONE",
+                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.93.",
+                           "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                       },
+                       {
+                           "market_id":  "951182",
+                           "total_rank_score":  7.907,
+                           "rank_position":  8,
+                           "rank_tier_class":  "REJECT",
+                           "gate_decision_class":  "HARD_REJECT",
+                           "gate_priority_class":  "NONE",
+                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.91.",
+                           "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                       },
+                       {
+                           "market_id":  "842016",
+                           "total_rank_score":  7.8868,
+                           "rank_position":  9,
+                           "rank_tier_class":  "REJECT",
+                           "gate_decision_class":  "HARD_REJECT",
+                           "gate_priority_class":  "NONE",
+                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.89.",
+                           "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                       },
+                       {
+                           "market_id":  "947289",
+                           "total_rank_score":  7.6418,
+                           "rank_position":  10,
+                           "rank_tier_class":  "REJECT",
+                           "gate_decision_class":  "HARD_REJECT",
+                           "gate_priority_class":  "NONE",
+                           "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.64.",
+                           "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                       }
+                   ],
+    "recent_candidates":  [
+                              {
+                                  "market_id":  "951182",
+                                  "total_rank_score":  7.907,
+                                  "rank_position":  8,
+                                  "rank_tier_class":  "REJECT",
+                                  "gate_decision_class":  "HARD_REJECT",
+                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.91.",
+                                  "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                              },
+                              {
+                                  "market_id":  "1797301",
+                                  "total_rank_score":  2.7506,
+                                  "rank_position":  20,
+                                  "rank_tier_class":  "REJECT",
+                                  "gate_decision_class":  "HARD_REJECT",
+                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 2.75.",
+                                  "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                              },
+                              {
+                                  "market_id":  "703257",
+                                  "total_rank_score":  7.4148,
+                                  "rank_position":  14,
+                                  "rank_tier_class":  "REJECT",
+                                  "gate_decision_class":  "HARD_REJECT",
+                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.41.",
+                                  "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                              },
+                              {
+                                  "market_id":  "1929111",
+                                  "total_rank_score":  7.6236,
+                                  "rank_position":  11,
+                                  "rank_tier_class":  "REJECT",
+                                  "gate_decision_class":  "HARD_REJECT",
+                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.62.",
+                                  "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                              },
+                              {
+                                  "market_id":  "1543487",
+                                  "total_rank_score":  8.353,
+                                  "rank_position":  3,
+                                  "rank_tier_class":  "REJECT",
+                                  "gate_decision_class":  "HARD_REJECT",
+                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 8.35.",
+                                  "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                              },
+                              {
+                                  "market_id":  "558934",
+                                  "total_rank_score":  7.933,
+                                  "rank_position":  6,
+                                  "rank_tier_class":  "REJECT",
+                                  "gate_decision_class":  "HARD_REJECT",
+                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.93.",
+                                  "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                              },
+                              {
+                                  "market_id":  "1731344",
+                                  "total_rank_score":  9.2456,
+                                  "rank_position":  1,
+                                  "rank_tier_class":  "REJECT",
+                                  "gate_decision_class":  "HARD_REJECT",
+                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 9.25.",
+                                  "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                              },
+                              {
+                                  "market_id":  "2034205",
+                                  "total_rank_score":  4.0598,
+                                  "rank_position":  19,
+                                  "rank_tier_class":  "REJECT",
+                                  "gate_decision_class":  "HARD_REJECT",
+                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 4.06.",
+                                  "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                              },
+                              {
+                                  "market_id":  "1517835",
+                                  "total_rank_score":  8.8622,
+                                  "rank_position":  2,
+                                  "rank_tier_class":  "REJECT",
+                                  "gate_decision_class":  "HARD_REJECT",
+                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 8.86.",
+                                  "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                              },
+                              {
+                                  "market_id":  "947289",
+                                  "total_rank_score":  7.6418,
+                                  "rank_position":  10,
+                                  "rank_tier_class":  "REJECT",
+                                  "gate_decision_class":  "HARD_REJECT",
+                                  "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.64.",
+                                  "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                              }
+                          ],
+    "selected_candidate_count":  462,
+    "rejected_candidates":  [
+                                {
+                                    "market_id":  "951182",
+                                    "gate_decision_class":  "HARD_REJECT",
+                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.91.",
+                                    "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                                },
+                                {
+                                    "market_id":  "1797301",
+                                    "gate_decision_class":  "HARD_REJECT",
+                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 2.75.",
+                                    "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                                },
+                                {
+                                    "market_id":  "703257",
+                                    "gate_decision_class":  "HARD_REJECT",
+                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.41.",
+                                    "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                                },
+                                {
+                                    "market_id":  "1929111",
+                                    "gate_decision_class":  "HARD_REJECT",
+                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.62.",
+                                    "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                                },
+                                {
+                                    "market_id":  "1543487",
+                                    "gate_decision_class":  "HARD_REJECT",
+                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 8.35.",
+                                    "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                                },
+                                {
+                                    "market_id":  "558934",
+                                    "gate_decision_class":  "HARD_REJECT",
+                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.93.",
+                                    "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                                },
+                                {
+                                    "market_id":  "1731344",
+                                    "gate_decision_class":  "HARD_REJECT",
+                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 9.25.",
+                                    "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                                },
+                                {
+                                    "market_id":  "2034205",
+                                    "gate_decision_class":  "HARD_REJECT",
+                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 4.06.",
+                                    "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                                },
+                                {
+                                    "market_id":  "1517835",
+                                    "gate_decision_class":  "HARD_REJECT",
+                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 8.86.",
+                                    "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                                },
+                                {
+                                    "market_id":  "947289",
+                                    "gate_decision_class":  "HARD_REJECT",
+                                    "selection_reason_text":  "Candidate is hard rejected by ranking-policy guards at score 7.64.",
+                                    "created_at":  "2026-04-22T14:09:06.496490+00:00"
+                                }
+                            ],
+    "rejection_ledger":  [
+                             {
+                                 "market_id":  "isolated-policy-a273213a",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:20.850272+00:00"
+                             },
+                             {
+                                 "market_id":  "query-policy-942281a1",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:18.856635+00:00"
+                             },
+                             {
+                                 "market_id":  "rank-block-af971ffa",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:16.804014+00:00"
+                             },
+                             {
+                                 "market_id":  "real-enum-4c0cc5ec",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:14.923738+00:00"
+                             },
+                             {
+                                 "market_id":  "sparse-policy-a0919705",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:14.511602+00:00"
+                             },
+                             {
+                                 "market_id":  "exit-rec-3127427a",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:11.289985+00:00"
+                             },
+                             {
+                                 "market_id":  "gate-hard-47064c",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:09.274462+00:00"
+                             },
+                             {
+                                 "market_id":  "gate-soft-b6f2e7",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:07.595429+00:00"
+                             },
+                             {
+                                 "market_id":  "gate-none-2a76ec",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:06.020401+00:00"
+                             },
+                             {
+                                 "market_id":  "exit-block-cb9746",
+                                 "stage":  "adaptive_selection",
+                                 "reason_code":  "missing_yes_token",
+                                 "reason_text":  "missing_yes_token",
+                                 "created_at":  "2026-04-22T10:28:02.748608+00:00"
+                             }
+                         ]
+}

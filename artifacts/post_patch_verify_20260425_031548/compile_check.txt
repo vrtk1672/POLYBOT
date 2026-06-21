@@ -1,0 +1,6 @@
+COMMAND: .venv\Scripts\python.exe -m py_compile app\services\runtime_intelligence.py app\services\whale_scoring.py tests\test_runtime_intelligence.py tests\test_phase5d_whale_scoring.py
+EXIT_CODE: 0
+
+--- STDOUT ---
+
+--- STDERR ---

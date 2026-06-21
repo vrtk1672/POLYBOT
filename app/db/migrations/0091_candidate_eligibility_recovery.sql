@@ -1,0 +1,52 @@
+CREATE TABLE IF NOT EXISTS candidate_eligibility_recovery_runs (
+    id BIGSERIAL PRIMARY KEY,
+    run_id TEXT NOT NULL UNIQUE,
+    cycle_id TEXT NULL UNIQUE,
+    system_power TEXT NOT NULL DEFAULT 'ON',
+    started_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    finished_at TIMESTAMPTZ NULL,
+    status TEXT NOT NULL,
+    candidates_checked INTEGER NOT NULL DEFAULT 0 CHECK (candidates_checked >= 0),
+    sides_recovered INTEGER NOT NULL DEFAULT 0 CHECK (sides_recovered >= 0),
+    risk_checked INTEGER NOT NULL DEFAULT 0 CHECK (risk_checked >= 0),
+    risk_updated INTEGER NOT NULL DEFAULT 0 CHECK (risk_updated >= 0),
+    risk_approved_before INTEGER NOT NULL DEFAULT 0 CHECK (risk_approved_before >= 0),
+    risk_approved_after INTEGER NOT NULL DEFAULT 0 CHECK (risk_approved_after >= 0),
+    risk_blocked_before INTEGER NOT NULL DEFAULT 0 CHECK (risk_blocked_before >= 0),
+    risk_blocked_after INTEGER NOT NULL DEFAULT 0 CHECK (risk_blocked_after >= 0),
+    exit_checked INTEGER NOT NULL DEFAULT 0 CHECK (exit_checked >= 0),
+    exit_updated INTEGER NOT NULL DEFAULT 0 CHECK (exit_updated >= 0),
+    exit_ready_before INTEGER NOT NULL DEFAULT 0 CHECK (exit_ready_before >= 0),
+    exit_ready_after INTEGER NOT NULL DEFAULT 0 CHECK (exit_ready_after >= 0),
+    exit_blocked_before INTEGER NOT NULL DEFAULT 0 CHECK (exit_blocked_before >= 0),
+    exit_blocked_after INTEGER NOT NULL DEFAULT 0 CHECK (exit_blocked_after >= 0),
+    eligible_before INTEGER NOT NULL DEFAULT 0 CHECK (eligible_before >= 0),
+    eligible_after INTEGER NOT NULL DEFAULT 0 CHECK (eligible_after >= 0),
+    blocked_before INTEGER NOT NULL DEFAULT 0 CHECK (blocked_before >= 0),
+    blocked_after INTEGER NOT NULL DEFAULT 0 CHECK (blocked_after >= 0),
+    missing_side_before INTEGER NOT NULL DEFAULT 0 CHECK (missing_side_before >= 0),
+    missing_side_after INTEGER NOT NULL DEFAULT 0 CHECK (missing_side_after >= 0),
+    missing_binding_before INTEGER NOT NULL DEFAULT 0 CHECK (missing_binding_before >= 0),
+    missing_binding_after INTEGER NOT NULL DEFAULT 0 CHECK (missing_binding_after >= 0),
+    missing_orderbook_before INTEGER NOT NULL DEFAULT 0 CHECK (missing_orderbook_before >= 0),
+    missing_orderbook_after INTEGER NOT NULL DEFAULT 0 CHECK (missing_orderbook_after >= 0),
+    paper_intents_before INTEGER NOT NULL DEFAULT 0 CHECK (paper_intents_before >= 0),
+    paper_intents_after INTEGER NOT NULL DEFAULT 0 CHECK (paper_intents_after >= 0),
+    paper_orders_delta INTEGER NOT NULL DEFAULT 0 CHECK (paper_orders_delta >= 0),
+    paper_fills_delta INTEGER NOT NULL DEFAULT 0 CHECK (paper_fills_delta >= 0),
+    paper_positions_delta INTEGER NOT NULL DEFAULT 0 CHECK (paper_positions_delta >= 0),
+    live_orders_delta INTEGER NOT NULL DEFAULT 0 CHECK (live_orders_delta >= 0),
+    real_orders_delta INTEGER NOT NULL DEFAULT 0 CHECK (real_orders_delta >= 0),
+    top_blockers_json JSONB NOT NULL DEFAULT '[]'::jsonb,
+    error_message TEXT NULL,
+    metadata_json JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    CONSTRAINT candidate_eligibility_recovery_power_check CHECK (system_power IN ('ON', 'OFF')),
+    CONSTRAINT candidate_eligibility_recovery_status_check CHECK (status IN ('OK', 'DEGRADED', 'FAILED', 'BLOCKED', 'SKIPPED'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_candidate_eligibility_recovery_runs_created
+    ON candidate_eligibility_recovery_runs (created_at DESC);
+
+CREATE INDEX IF NOT EXISTS idx_candidate_eligibility_recovery_runs_status
+    ON candidate_eligibility_recovery_runs (status, created_at DESC);

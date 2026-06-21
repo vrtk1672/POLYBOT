@@ -1,0 +1,53 @@
+CREATE TABLE IF NOT EXISTS downstream_evidence_recompute_runs (
+    id BIGSERIAL PRIMARY KEY,
+    run_id TEXT NOT NULL UNIQUE,
+    cycle_id TEXT NULL UNIQUE,
+    system_power TEXT NOT NULL DEFAULT 'ON',
+    started_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    finished_at TIMESTAMPTZ NULL,
+    status TEXT NOT NULL,
+    thesis_checked INTEGER NOT NULL DEFAULT 0,
+    thesis_updated INTEGER NOT NULL DEFAULT 0,
+    risk_checked INTEGER NOT NULL DEFAULT 0,
+    risk_updated INTEGER NOT NULL DEFAULT 0,
+    exit_checked INTEGER NOT NULL DEFAULT 0,
+    exit_updated INTEGER NOT NULL DEFAULT 0,
+    eligibility_checked INTEGER NOT NULL DEFAULT 0,
+    eligibility_updated INTEGER NOT NULL DEFAULT 0,
+    no_trade_checked INTEGER NOT NULL DEFAULT 0,
+    no_trade_updated INTEGER NOT NULL DEFAULT 0,
+    missing_fresh_orderbook_before INTEGER NOT NULL DEFAULT 0,
+    missing_fresh_orderbook_after INTEGER NOT NULL DEFAULT 0,
+    missing_signal_market_binding_before INTEGER NOT NULL DEFAULT 0,
+    missing_signal_market_binding_after INTEGER NOT NULL DEFAULT 0,
+    missing_side_before INTEGER NOT NULL DEFAULT 0,
+    missing_side_after INTEGER NOT NULL DEFAULT 0,
+    missing_market_link_before INTEGER NOT NULL DEFAULT 0,
+    missing_market_link_after INTEGER NOT NULL DEFAULT 0,
+    missing_mid_price_before INTEGER NOT NULL DEFAULT 0,
+    missing_mid_price_after INTEGER NOT NULL DEFAULT 0,
+    thesis_blocked_before INTEGER NOT NULL DEFAULT 0,
+    thesis_blocked_after INTEGER NOT NULL DEFAULT 0,
+    risk_not_approved_before INTEGER NOT NULL DEFAULT 0,
+    risk_not_approved_after INTEGER NOT NULL DEFAULT 0,
+    exit_not_ready_before INTEGER NOT NULL DEFAULT 0,
+    exit_not_ready_after INTEGER NOT NULL DEFAULT 0,
+    eligible_before INTEGER NOT NULL DEFAULT 0,
+    eligible_after INTEGER NOT NULL DEFAULT 0,
+    orders_delta INTEGER NOT NULL DEFAULT 0,
+    order_intents_delta INTEGER NOT NULL DEFAULT 0,
+    fills_delta INTEGER NOT NULL DEFAULT 0,
+    positions_delta INTEGER NOT NULL DEFAULT 0,
+    live_actions_delta INTEGER NOT NULL DEFAULT 0,
+    error_message TEXT NULL,
+    metadata_json JSONB NOT NULL DEFAULT '{}'::jsonb,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+    CONSTRAINT downstream_evidence_recompute_power_check CHECK (system_power IN ('ON', 'OFF')),
+    CONSTRAINT downstream_evidence_recompute_status_check CHECK (status IN ('OK', 'DEGRADED', 'FAILED', 'BLOCKED', 'SKIPPED'))
+);
+
+CREATE INDEX IF NOT EXISTS idx_downstream_evidence_recompute_runs_created_at
+    ON downstream_evidence_recompute_runs (created_at DESC);
+
+CREATE INDEX IF NOT EXISTS idx_downstream_evidence_recompute_runs_status
+    ON downstream_evidence_recompute_runs (status);

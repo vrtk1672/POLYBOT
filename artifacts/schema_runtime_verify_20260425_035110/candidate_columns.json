@@ -1,0 +1,2120 @@
+{
+  "public.alert_events": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "event_class",
+      "type": "text"
+    },
+    {
+      "column": "severity_class",
+      "type": "text"
+    },
+    {
+      "column": "title",
+      "type": "text"
+    },
+    {
+      "column": "body_text",
+      "type": "text"
+    },
+    {
+      "column": "dedupe_key",
+      "type": "text"
+    },
+    {
+      "column": "source_ref",
+      "type": "text"
+    },
+    {
+      "column": "delivery_status_class",
+      "type": "text"
+    },
+    {
+      "column": "payload_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "delivered_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.event_interpretation_runs": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "source_type",
+      "type": "text"
+    },
+    {
+      "column": "source_ref",
+      "type": "text"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "prompt_version",
+      "type": "text"
+    },
+    {
+      "column": "model_name",
+      "type": "text"
+    },
+    {
+      "column": "started_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "ended_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "input_count",
+      "type": "integer"
+    },
+    {
+      "column": "success_count",
+      "type": "integer"
+    },
+    {
+      "column": "failure_count",
+      "type": "integer"
+    },
+    {
+      "column": "metadata_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.event_interpretations": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "interpretation_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "source_type",
+      "type": "text"
+    },
+    {
+      "column": "source_ref",
+      "type": "text"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "error_text",
+      "type": "text"
+    },
+    {
+      "column": "raw_event_text",
+      "type": "text"
+    },
+    {
+      "column": "raw_event_payload_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "normalized_event_title",
+      "type": "text"
+    },
+    {
+      "column": "event_type",
+      "type": "text"
+    },
+    {
+      "column": "event_summary",
+      "type": "text"
+    },
+    {
+      "column": "certainty_score",
+      "type": "numeric"
+    },
+    {
+      "column": "ambiguity_score",
+      "type": "numeric"
+    },
+    {
+      "column": "novelty_score",
+      "type": "numeric"
+    },
+    {
+      "column": "directness_class",
+      "type": "text"
+    },
+    {
+      "column": "directness_score",
+      "type": "numeric"
+    },
+    {
+      "column": "contradiction_risk",
+      "type": "numeric"
+    },
+    {
+      "column": "affected_market_candidates_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "affected_outcomes_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "recommended_action_class",
+      "type": "text"
+    },
+    {
+      "column": "explanation_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "prompt_version",
+      "type": "text"
+    },
+    {
+      "column": "model_name",
+      "type": "text"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.external_event_enrichment_runs": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "intelligence_ingestion_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "source_type",
+      "type": "text"
+    },
+    {
+      "column": "source_ref",
+      "type": "text"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "enrichment_version",
+      "type": "text"
+    },
+    {
+      "column": "started_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "ended_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "input_count",
+      "type": "integer"
+    },
+    {
+      "column": "success_count",
+      "type": "integer"
+    },
+    {
+      "column": "failure_count",
+      "type": "integer"
+    },
+    {
+      "column": "metadata_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.external_event_enrichments": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "external_event_enrichment_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "external_event_id",
+      "type": "uuid"
+    },
+    {
+      "column": "intelligence_source_id",
+      "type": "uuid"
+    },
+    {
+      "column": "normalized_title_snapshot",
+      "type": "text"
+    },
+    {
+      "column": "normalized_summary_snapshot",
+      "type": "text"
+    },
+    {
+      "column": "entities_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "topic_class",
+      "type": "text"
+    },
+    {
+      "column": "subtopic_class",
+      "type": "text"
+    },
+    {
+      "column": "contradiction_hint_class",
+      "type": "text"
+    },
+    {
+      "column": "novelty_hint_class",
+      "type": "text"
+    },
+    {
+      "column": "usability_hint_class",
+      "type": "text"
+    },
+    {
+      "column": "trust_weight_snapshot",
+      "type": "numeric"
+    },
+    {
+      "column": "enrichment_version",
+      "type": "text"
+    },
+    {
+      "column": "explanation_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "error_text",
+      "type": "text"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.external_events_normalized": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "external_raw_event_id",
+      "type": "uuid"
+    },
+    {
+      "column": "intelligence_source_id",
+      "type": "uuid"
+    },
+    {
+      "column": "normalized_title",
+      "type": "text"
+    },
+    {
+      "column": "normalized_summary",
+      "type": "text"
+    },
+    {
+      "column": "published_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "canonical_url",
+      "type": "text"
+    },
+    {
+      "column": "canonical_hash",
+      "type": "text"
+    },
+    {
+      "column": "event_language",
+      "type": "text"
+    },
+    {
+      "column": "source_category",
+      "type": "text"
+    },
+    {
+      "column": "trust_weight_snapshot",
+      "type": "numeric"
+    },
+    {
+      "column": "dedupe_key",
+      "type": "text"
+    },
+    {
+      "column": "normalization_version",
+      "type": "text"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "metadata_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.external_raw_events": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "intelligence_ingestion_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "intelligence_source_id",
+      "type": "uuid"
+    },
+    {
+      "column": "source_event_id",
+      "type": "text"
+    },
+    {
+      "column": "source_url",
+      "type": "text"
+    },
+    {
+      "column": "source_published_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "source_title",
+      "type": "text"
+    },
+    {
+      "column": "raw_content_text",
+      "type": "text"
+    },
+    {
+      "column": "raw_payload_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "raw_hash",
+      "type": "text"
+    },
+    {
+      "column": "fetched_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.intelligence_ingestion_runs": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "intelligence_source_id",
+      "type": "uuid"
+    },
+    {
+      "column": "run_type",
+      "type": "text"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "started_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "ended_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "fetched_count",
+      "type": "integer"
+    },
+    {
+      "column": "normalized_count",
+      "type": "integer"
+    },
+    {
+      "column": "deduped_count",
+      "type": "integer"
+    },
+    {
+      "column": "failed_count",
+      "type": "integer"
+    },
+    {
+      "column": "metadata_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.intelligence_sources": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "source_key",
+      "type": "text"
+    },
+    {
+      "column": "source_name",
+      "type": "text"
+    },
+    {
+      "column": "source_type",
+      "type": "text"
+    },
+    {
+      "column": "base_url",
+      "type": "text"
+    },
+    {
+      "column": "category",
+      "type": "text"
+    },
+    {
+      "column": "trust_weight",
+      "type": "numeric"
+    },
+    {
+      "column": "latency_score",
+      "type": "numeric"
+    },
+    {
+      "column": "noise_score",
+      "type": "numeric"
+    },
+    {
+      "column": "relevance_scope",
+      "type": "text"
+    },
+    {
+      "column": "is_enabled",
+      "type": "boolean"
+    },
+    {
+      "column": "metadata_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.live_orders": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "client_order_id",
+      "type": "text"
+    },
+    {
+      "column": "cycle_id",
+      "type": "uuid"
+    },
+    {
+      "column": "decision_id",
+      "type": "uuid"
+    },
+    {
+      "column": "market_id",
+      "type": "text"
+    },
+    {
+      "column": "token_id",
+      "type": "text"
+    },
+    {
+      "column": "side",
+      "type": "text"
+    },
+    {
+      "column": "action",
+      "type": "text"
+    },
+    {
+      "column": "price",
+      "type": "numeric"
+    },
+    {
+      "column": "size",
+      "type": "numeric"
+    },
+    {
+      "column": "notional",
+      "type": "numeric"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "exchange_status",
+      "type": "text"
+    },
+    {
+      "column": "exchange_order_id",
+      "type": "text"
+    },
+    {
+      "column": "raw_request",
+      "type": "jsonb"
+    },
+    {
+      "column": "raw_response",
+      "type": "jsonb"
+    },
+    {
+      "column": "error_text",
+      "type": "text"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.market_link_candidates": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "market_link_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "interpretation_id",
+      "type": "uuid"
+    },
+    {
+      "column": "market_id",
+      "type": "text"
+    },
+    {
+      "column": "candidate_source",
+      "type": "text"
+    },
+    {
+      "column": "link_status",
+      "type": "text"
+    },
+    {
+      "column": "relevance_score",
+      "type": "numeric"
+    },
+    {
+      "column": "directness_class",
+      "type": "text"
+    },
+    {
+      "column": "directness_score",
+      "type": "numeric"
+    },
+    {
+      "column": "contradiction_risk",
+      "type": "numeric"
+    },
+    {
+      "column": "affected_outcome",
+      "type": "text"
+    },
+    {
+      "column": "usability_class",
+      "type": "text"
+    },
+    {
+      "column": "explanation_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "linker_version",
+      "type": "text"
+    },
+    {
+      "column": "prompt_version",
+      "type": "text"
+    },
+    {
+      "column": "model_name",
+      "type": "text"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.market_link_runs": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "interpretation_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "source_type",
+      "type": "text"
+    },
+    {
+      "column": "source_ref",
+      "type": "text"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "linker_version",
+      "type": "text"
+    },
+    {
+      "column": "started_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "ended_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "input_count",
+      "type": "integer"
+    },
+    {
+      "column": "success_count",
+      "type": "integer"
+    },
+    {
+      "column": "failure_count",
+      "type": "integer"
+    },
+    {
+      "column": "metadata_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.market_snapshots": [
+    {
+      "column": "id",
+      "type": "bigint"
+    },
+    {
+      "column": "cycle_id",
+      "type": "uuid"
+    },
+    {
+      "column": "market_id",
+      "type": "text"
+    },
+    {
+      "column": "event_id",
+      "type": "text"
+    },
+    {
+      "column": "question",
+      "type": "text"
+    },
+    {
+      "column": "slug",
+      "type": "text"
+    },
+    {
+      "column": "captured_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "yes_price",
+      "type": "numeric"
+    },
+    {
+      "column": "no_price",
+      "type": "numeric"
+    },
+    {
+      "column": "last_trade_price",
+      "type": "numeric"
+    },
+    {
+      "column": "best_bid",
+      "type": "numeric"
+    },
+    {
+      "column": "best_ask",
+      "type": "numeric"
+    },
+    {
+      "column": "spread",
+      "type": "numeric"
+    },
+    {
+      "column": "tick_size",
+      "type": "numeric"
+    },
+    {
+      "column": "liquidity",
+      "type": "numeric"
+    },
+    {
+      "column": "volume",
+      "type": "numeric"
+    },
+    {
+      "column": "volume_24h",
+      "type": "numeric"
+    },
+    {
+      "column": "open_interest",
+      "type": "numeric"
+    },
+    {
+      "column": "comment_count",
+      "type": "integer"
+    },
+    {
+      "column": "competitive",
+      "type": "numeric"
+    },
+    {
+      "column": "neg_risk",
+      "type": "boolean"
+    },
+    {
+      "column": "orderbook_enabled",
+      "type": "boolean"
+    },
+    {
+      "column": "accepting_orders",
+      "type": "boolean"
+    },
+    {
+      "column": "time_to_close_seconds",
+      "type": "integer"
+    },
+    {
+      "column": "raw_payload",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.order_status_history": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "order_id",
+      "type": "uuid"
+    },
+    {
+      "column": "event_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "old_status",
+      "type": "text"
+    },
+    {
+      "column": "new_status",
+      "type": "text"
+    },
+    {
+      "column": "source",
+      "type": "text"
+    },
+    {
+      "column": "reason",
+      "type": "text"
+    },
+    {
+      "column": "exchange_status",
+      "type": "text"
+    },
+    {
+      "column": "raw_payload",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.paper_order_events": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "paper_order_id",
+      "type": "uuid"
+    },
+    {
+      "column": "event_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "old_status",
+      "type": "text"
+    },
+    {
+      "column": "new_status",
+      "type": "text"
+    },
+    {
+      "column": "reason_code",
+      "type": "text"
+    },
+    {
+      "column": "reason_text",
+      "type": "text"
+    },
+    {
+      "column": "payload_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.paper_orders": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "paper_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "paper_signal_id",
+      "type": "uuid"
+    },
+    {
+      "column": "cycle_id",
+      "type": "uuid"
+    },
+    {
+      "column": "market_id",
+      "type": "text"
+    },
+    {
+      "column": "intended_outcome",
+      "type": "text"
+    },
+    {
+      "column": "action",
+      "type": "text"
+    },
+    {
+      "column": "intended_price",
+      "type": "numeric"
+    },
+    {
+      "column": "intended_size",
+      "type": "numeric"
+    },
+    {
+      "column": "notional",
+      "type": "numeric"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "fill_ratio",
+      "type": "numeric"
+    },
+    {
+      "column": "filled_size",
+      "type": "numeric"
+    },
+    {
+      "column": "remaining_size",
+      "type": "numeric"
+    },
+    {
+      "column": "avg_fill_price",
+      "type": "numeric"
+    },
+    {
+      "column": "min_size_check_passed",
+      "type": "boolean"
+    },
+    {
+      "column": "stale_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "payload_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.paper_position_events": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "paper_position_id",
+      "type": "uuid"
+    },
+    {
+      "column": "event_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "event_type",
+      "type": "text"
+    },
+    {
+      "column": "reason_code",
+      "type": "text"
+    },
+    {
+      "column": "reason_text",
+      "type": "text"
+    },
+    {
+      "column": "payload_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.paper_positions": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "paper_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "market_id",
+      "type": "text"
+    },
+    {
+      "column": "intended_outcome",
+      "type": "text"
+    },
+    {
+      "column": "size",
+      "type": "numeric"
+    },
+    {
+      "column": "avg_entry",
+      "type": "numeric"
+    },
+    {
+      "column": "mark_price",
+      "type": "numeric"
+    },
+    {
+      "column": "unrealized",
+      "type": "numeric"
+    },
+    {
+      "column": "realized",
+      "type": "numeric"
+    },
+    {
+      "column": "current_status",
+      "type": "text"
+    },
+    {
+      "column": "thesis_state",
+      "type": "text"
+    },
+    {
+      "column": "invalidation_state",
+      "type": "text"
+    },
+    {
+      "column": "opened_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "closed_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "payload_json",
+      "type": "jsonb"
+    }
+  ],
+  "public.paper_runs": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "cycle_id",
+      "type": "uuid"
+    },
+    {
+      "column": "mode",
+      "type": "text"
+    },
+    {
+      "column": "started_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "ended_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "markets_seen_count",
+      "type": "integer"
+    },
+    {
+      "column": "markets_ranked_count",
+      "type": "integer"
+    },
+    {
+      "column": "candidates_selected_count",
+      "type": "integer"
+    },
+    {
+      "column": "signals_emitted_count",
+      "type": "integer"
+    },
+    {
+      "column": "metadata_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.paper_signals": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "paper_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "cycle_id",
+      "type": "uuid"
+    },
+    {
+      "column": "market_id",
+      "type": "text"
+    },
+    {
+      "column": "decision_id",
+      "type": "uuid"
+    },
+    {
+      "column": "signal_type",
+      "type": "text"
+    },
+    {
+      "column": "intended_outcome",
+      "type": "text"
+    },
+    {
+      "column": "trade_type",
+      "type": "text"
+    },
+    {
+      "column": "bucket_type",
+      "type": "text"
+    },
+    {
+      "column": "confidence",
+      "type": "numeric"
+    },
+    {
+      "column": "expected_edge_proxy",
+      "type": "numeric"
+    },
+    {
+      "column": "intended_price",
+      "type": "numeric"
+    },
+    {
+      "column": "intended_size",
+      "type": "numeric"
+    },
+    {
+      "column": "guard_result",
+      "type": "text"
+    },
+    {
+      "column": "reason_code",
+      "type": "text"
+    },
+    {
+      "column": "reason_text",
+      "type": "text"
+    },
+    {
+      "column": "payload_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.position_events": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "position_id",
+      "type": "uuid"
+    },
+    {
+      "column": "event_type",
+      "type": "text"
+    },
+    {
+      "column": "event_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "reason",
+      "type": "text"
+    },
+    {
+      "column": "details",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.positions": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "market_id",
+      "type": "text"
+    },
+    {
+      "column": "side",
+      "type": "text"
+    },
+    {
+      "column": "size",
+      "type": "numeric"
+    },
+    {
+      "column": "avg_entry",
+      "type": "numeric"
+    },
+    {
+      "column": "current_status",
+      "type": "text"
+    },
+    {
+      "column": "unrealized",
+      "type": "numeric"
+    },
+    {
+      "column": "realized",
+      "type": "numeric"
+    },
+    {
+      "column": "thesis_state",
+      "type": "text"
+    },
+    {
+      "column": "invalidation_state",
+      "type": "text"
+    },
+    {
+      "column": "opened_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "closed_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.shadow_order_events": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "shadow_order_id",
+      "type": "uuid"
+    },
+    {
+      "column": "event_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "old_status",
+      "type": "text"
+    },
+    {
+      "column": "new_status",
+      "type": "text"
+    },
+    {
+      "column": "reason_code",
+      "type": "text"
+    },
+    {
+      "column": "reason_text",
+      "type": "text"
+    },
+    {
+      "column": "payload_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.shadow_orders": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "shadow_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "cycle_id",
+      "type": "uuid"
+    },
+    {
+      "column": "decision_id",
+      "type": "uuid"
+    },
+    {
+      "column": "market_id",
+      "type": "text"
+    },
+    {
+      "column": "token_id",
+      "type": "text"
+    },
+    {
+      "column": "intended_outcome",
+      "type": "text"
+    },
+    {
+      "column": "action",
+      "type": "text"
+    },
+    {
+      "column": "intended_price",
+      "type": "numeric"
+    },
+    {
+      "column": "intended_size",
+      "type": "numeric"
+    },
+    {
+      "column": "notional",
+      "type": "numeric"
+    },
+    {
+      "column": "guard_result",
+      "type": "text"
+    },
+    {
+      "column": "execution_policy_result",
+      "type": "text"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "raw_intent_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "raw_guard_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "raw_policy_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.shadow_position_events": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "shadow_position_id",
+      "type": "uuid"
+    },
+    {
+      "column": "event_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "event_type",
+      "type": "text"
+    },
+    {
+      "column": "reason_code",
+      "type": "text"
+    },
+    {
+      "column": "reason_text",
+      "type": "text"
+    },
+    {
+      "column": "payload_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.shadow_positions": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "shadow_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "shadow_order_id",
+      "type": "uuid"
+    },
+    {
+      "column": "market_id",
+      "type": "text"
+    },
+    {
+      "column": "intended_outcome",
+      "type": "text"
+    },
+    {
+      "column": "size",
+      "type": "numeric"
+    },
+    {
+      "column": "avg_entry",
+      "type": "numeric"
+    },
+    {
+      "column": "current_status",
+      "type": "text"
+    },
+    {
+      "column": "mark_price",
+      "type": "numeric"
+    },
+    {
+      "column": "unrealized",
+      "type": "numeric"
+    },
+    {
+      "column": "realized",
+      "type": "numeric"
+    },
+    {
+      "column": "thesis_state",
+      "type": "text"
+    },
+    {
+      "column": "invalidation_state",
+      "type": "text"
+    },
+    {
+      "column": "opened_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "closed_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "payload_json",
+      "type": "jsonb"
+    }
+  ],
+  "public.whale_categories": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "wallet_address",
+      "type": "text"
+    },
+    {
+      "column": "whale_profile_id",
+      "type": "uuid"
+    },
+    {
+      "column": "whale_category_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "primary_category",
+      "type": "text"
+    },
+    {
+      "column": "secondary_categories_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "category_confidence",
+      "type": "numeric"
+    },
+    {
+      "column": "specialization_context_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "category_reason_codes_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "category_reason_text",
+      "type": "text"
+    },
+    {
+      "column": "explanation_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "categorizer_version",
+      "type": "text"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.whale_category_runs": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "source_type",
+      "type": "text"
+    },
+    {
+      "column": "source_ref",
+      "type": "text"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "categorizer_version",
+      "type": "text"
+    },
+    {
+      "column": "started_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "ended_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "input_count",
+      "type": "integer"
+    },
+    {
+      "column": "success_count",
+      "type": "integer"
+    },
+    {
+      "column": "failure_count",
+      "type": "integer"
+    },
+    {
+      "column": "metadata_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.whale_events": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "whale_scan_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "wallet_address",
+      "type": "text"
+    },
+    {
+      "column": "market_id",
+      "type": "text"
+    },
+    {
+      "column": "event_timestamp",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "event_direction_class",
+      "type": "text"
+    },
+    {
+      "column": "side_or_outcome",
+      "type": "text"
+    },
+    {
+      "column": "size",
+      "type": "numeric"
+    },
+    {
+      "column": "notional",
+      "type": "numeric"
+    },
+    {
+      "column": "price",
+      "type": "numeric"
+    },
+    {
+      "column": "transaction_ref",
+      "type": "text"
+    },
+    {
+      "column": "source_type",
+      "type": "text"
+    },
+    {
+      "column": "source_payload_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "detection_reason_code",
+      "type": "text"
+    },
+    {
+      "column": "detection_reason_text",
+      "type": "text"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.whale_market_scores": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "whale_scoring_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "market_id",
+      "type": "text"
+    },
+    {
+      "column": "scoring_window_start",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "scoring_window_end",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "whale_presence_score",
+      "type": "numeric"
+    },
+    {
+      "column": "whale_conviction_score",
+      "type": "numeric"
+    },
+    {
+      "column": "smart_whale_alignment_score",
+      "type": "numeric"
+    },
+    {
+      "column": "whale_reversal_risk",
+      "type": "numeric"
+    },
+    {
+      "column": "supporting_wallet_count",
+      "type": "integer"
+    },
+    {
+      "column": "top_supporting_wallets_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "category_mix_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "scoring_reason_codes_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "scoring_reason_text",
+      "type": "text"
+    },
+    {
+      "column": "explanation_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "scorer_version",
+      "type": "text"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.whale_profile_runs": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "source_type",
+      "type": "text"
+    },
+    {
+      "column": "source_ref",
+      "type": "text"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "profiler_version",
+      "type": "text"
+    },
+    {
+      "column": "started_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "ended_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "input_count",
+      "type": "integer"
+    },
+    {
+      "column": "success_count",
+      "type": "integer"
+    },
+    {
+      "column": "failure_count",
+      "type": "integer"
+    },
+    {
+      "column": "metadata_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.whale_profiles": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "wallet_address",
+      "type": "text"
+    },
+    {
+      "column": "whale_profile_run_id",
+      "type": "uuid"
+    },
+    {
+      "column": "total_events",
+      "type": "integer"
+    },
+    {
+      "column": "entry_count",
+      "type": "integer"
+    },
+    {
+      "column": "exit_count",
+      "type": "integer"
+    },
+    {
+      "column": "reversal_candidate_count",
+      "type": "integer"
+    },
+    {
+      "column": "unknown_count",
+      "type": "integer"
+    },
+    {
+      "column": "average_size",
+      "type": "numeric"
+    },
+    {
+      "column": "average_notional",
+      "type": "numeric"
+    },
+    {
+      "column": "largest_size",
+      "type": "numeric"
+    },
+    {
+      "column": "largest_notional",
+      "type": "numeric"
+    },
+    {
+      "column": "active_markets_count",
+      "type": "integer"
+    },
+    {
+      "column": "market_specialties_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "timing_consistency_score",
+      "type": "numeric"
+    },
+    {
+      "column": "noise_score",
+      "type": "numeric"
+    },
+    {
+      "column": "average_hold_time",
+      "type": "numeric"
+    },
+    {
+      "column": "follow_value_baseline",
+      "type": "numeric"
+    },
+    {
+      "column": "profile_status",
+      "type": "text"
+    },
+    {
+      "column": "explanation_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "profiler_version",
+      "type": "text"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.whale_registry": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "wallet_address",
+      "type": "text"
+    },
+    {
+      "column": "first_seen_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "last_seen_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "total_events",
+      "type": "integer"
+    },
+    {
+      "column": "last_market_id",
+      "type": "text"
+    },
+    {
+      "column": "last_event_direction_class",
+      "type": "text"
+    },
+    {
+      "column": "registry_status",
+      "type": "text"
+    },
+    {
+      "column": "metadata_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.whale_scan_runs": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "source_type",
+      "type": "text"
+    },
+    {
+      "column": "source_ref",
+      "type": "text"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "scanner_version",
+      "type": "text"
+    },
+    {
+      "column": "started_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "ended_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "input_count",
+      "type": "integer"
+    },
+    {
+      "column": "success_count",
+      "type": "integer"
+    },
+    {
+      "column": "failure_count",
+      "type": "integer"
+    },
+    {
+      "column": "metadata_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ],
+  "public.whale_scoring_runs": [
+    {
+      "column": "id",
+      "type": "uuid"
+    },
+    {
+      "column": "source_type",
+      "type": "text"
+    },
+    {
+      "column": "source_ref",
+      "type": "text"
+    },
+    {
+      "column": "status",
+      "type": "text"
+    },
+    {
+      "column": "scorer_version",
+      "type": "text"
+    },
+    {
+      "column": "started_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "ended_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "input_count",
+      "type": "integer"
+    },
+    {
+      "column": "success_count",
+      "type": "integer"
+    },
+    {
+      "column": "failure_count",
+      "type": "integer"
+    },
+    {
+      "column": "metadata_json",
+      "type": "jsonb"
+    },
+    {
+      "column": "created_at",
+      "type": "timestamp with time zone"
+    },
+    {
+      "column": "updated_at",
+      "type": "timestamp with time zone"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "gate-hard-cb712e"
+  ],
+  "cycle_id": "20a20b6c-5258-4132-b80f-44ca939bea37",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "gate-hard-cb712e",
+      "reason": "missing_yes_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

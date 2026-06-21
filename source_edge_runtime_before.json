@@ -1,0 +1,750 @@
+{
+    "overall_status":  "SAFE_STOPPED",
+    "source":  "runtime_state + runtime_cycles_v2 + service_health",
+    "freshness_state":  "STALE",
+    "truth_state":  "LAST_KNOWN",
+    "readiness_state":  "BLOCKED",
+    "runtime_state":  "STOPPED",
+    "current_mode":  "DATA_ONLY",
+    "system_power":  "OFF",
+    "runtime_work_allowed":  false,
+    "kill_switch_active":  false,
+    "cooldown_active":  false,
+    "attack_mode_active":  false,
+    "active_cycle":  {
+                         "id":  11718,
+                         "cycle_id":  "v2-20260615T082020-9b26e06107",
+                         "mode":  "DATA_ONLY",
+                         "status":  "RUNNING",
+                         "started_at":  "2026-06-15T08:20:20.488059+00:00",
+                         "finished_at":  null,
+                         "duration_ms":  null,
+                         "scanner_started":  true,
+                         "scanner_finished":  true,
+                         "intelligence_started":  true,
+                         "intelligence_finished":  false,
+                         "paper_started":  false,
+                         "paper_finished":  false,
+                         "shadow_started":  false,
+                         "shadow_finished":  false,
+                         "live_started":  false,
+                         "live_finished":  false,
+                         "blocked_by_mode":  false,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "metadata_json":  {
+                                               "source":  "market_service.refresh"
+                                           }
+                     },
+    "active_cycle_truth":  {
+                               "source":  "runtime_cycles_v2",
+                               "cycle_id":  "v2-20260615T082020-9b26e06107",
+                               "cycle_status":  "RUNNING",
+                               "last_updated":  "2026-06-15T08:20:20.488059+00:00",
+                               "age_seconds":  15173.481706,
+                               "freshness_state":  "STALE",
+                               "truth_state":  "LAST_KNOWN",
+                               "runtime_state":  "STALE",
+                               "readiness_state":  "NOT_READY",
+                               "warnings":  [
+                                                "Runtime cycle evidence is stale."
+                                            ]
+                           },
+    "services":  [
+                     {
+                         "id":  14,
+                         "service_name":  "ai_brain",
+                         "service_type":  "intelligence",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.754466+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.303273+00:00"
+                     },
+                     {
+                         "id":  29,
+                         "service_name":  "capital_allocator",
+                         "service_type":  "capital",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.984933+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.526253+00:00"
+                     },
+                     {
+                         "id":  26,
+                         "service_name":  "context_capital_brains",
+                         "service_type":  "brains",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.945136+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.486389+00:00"
+                     },
+                     {
+                         "id":  7,
+                         "service_name":  "dashboard",
+                         "service_type":  "api",
+                         "status":  "STOPPED",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.658918+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.119779+00:00"
+                     },
+                     {
+                         "id":  13,
+                         "service_name":  "data_foundation",
+                         "service_type":  "data",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  "2026-06-15T11:43:56.125981+00:00",
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.739094+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.286772+00:00"
+                     },
+                     {
+                         "id":  10,
+                         "service_name":  "event_bus",
+                         "service_type":  "event_mesh",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.705316+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.232265+00:00"
+                     },
+                     {
+                         "id":  12,
+                         "service_name":  "event_dispatcher",
+                         "service_type":  "event_mesh",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.727903+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.270345+00:00"
+                     },
+                     {
+                         "id":  11,
+                         "service_name":  "event_store",
+                         "service_type":  "event_mesh",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.716652+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.250069+00:00"
+                     },
+                     {
+                         "id":  31,
+                         "service_name":  "execution_cortex_v2",
+                         "service_type":  "execution",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:30.009851+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.549718+00:00"
+                     },
+                     {
+                         "id":  32,
+                         "service_name":  "exit_cortex_v2",
+                         "service_type":  "exits",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:30.029034+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.565304+00:00"
+                     },
+                     {
+                         "id":  1,
+                         "service_name":  "fastapi",
+                         "service_type":  "api",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  "2026-06-15T12:33:13.959482+00:00",
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+                                              "health_source":  "runtime_health_request"
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.574688+00:00",
+                         "updated_at":  "2026-06-15T12:33:13.959482+00:00"
+                     },
+                     {
+                         "id":  34,
+                         "service_name":  "feedback_learning_loop",
+                         "service_type":  "learning",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:30.052400+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.588588+00:00"
+                     },
+                     {
+                         "id":  5,
+                         "service_name":  "intelligence_runtime",
+                         "service_type":  "runtime",
+                         "status":  "STOPPED",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.631520+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.099088+00:00"
+                     },
+                     {
+                         "id":  25,
+                         "service_name":  "market_memory",
+                         "service_type":  "memory",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.932573+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.463736+00:00"
+                     },
+                     {
+                         "id":  24,
+                         "service_name":  "market_neuron",
+                         "service_type":  "technical_truth",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.918857+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.406262+00:00"
+                     },
+                     {
+                         "id":  3,
+                         "service_name":  "market_service",
+                         "service_type":  "runtime",
+                         "status":  "STOPPED",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  "2026-06-15T11:43:56.113808+00:00",
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.600102+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.078441+00:00"
+                     },
+                     {
+                         "id":  20,
+                         "service_name":  "news_neuron",
+                         "service_type":  "intelligence",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.864891+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.317804+00:00"
+                     },
+                     {
+                         "id":  33,
+                         "service_name":  "no_trade_intelligence",
+                         "service_type":  "no_trade",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:30.042236+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.576900+00:00"
+                     },
+                     {
+                         "id":  27,
+                         "service_name":  "opportunity_cortex",
+                         "service_type":  "opportunity",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.961997+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.501269+00:00"
+                     },
+                     {
+                         "id":  6,
+                         "service_name":  "paper_runtime",
+                         "service_type":  "runtime",
+                         "status":  "STOPPED",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.646410+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.109079+00:00"
+                     },
+                     {
+                         "id":  4,
+                         "service_name":  "postgres",
+                         "service_type":  "persistence",
+                         "status":  "HEALTHY",
+                         "last_heartbeat_at":  "2026-06-15T12:33:13.959482+00:00",
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+                                              "health_source":  "runtime_health_request"
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.613039+00:00",
+                         "updated_at":  "2026-06-15T12:33:13.959482+00:00"
+                     },
+                     {
+                         "id":  71,
+                         "service_name":  "redis",
+                         "service_type":  "cache",
+                         "status":  "HEALTHY",
+                         "last_heartbeat_at":  "2026-06-15T12:33:13.959482+00:00",
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+                                              "host":  "redis",
+                                              "port":  6379,
+                                              "error":  null,
+                                              "configured":  true,
+                                              "health_source":  "runtime_health_request"
+                                          },
+                         "created_at":  "2026-05-20T23:41:03.037893+00:00",
+                         "updated_at":  "2026-06-15T12:33:13.959482+00:00"
+                     },
+                     {
+                         "id":  30,
+                         "service_name":  "risk_gate_governor",
+                         "service_type":  "risk",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.997564+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.537141+00:00"
+                     },
+                     {
+                         "id":  21,
+                         "service_name":  "rules_neuron",
+                         "service_type":  "intelligence",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.876637+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.335401+00:00"
+                     },
+                     {
+                         "id":  2,
+                         "service_name":  "scheduler",
+                         "service_type":  "runtime",
+                         "status":  "STOPPED",
+                         "last_heartbeat_at":  "2026-06-15T12:32:00.481861+00:00",
+                         "last_success_at":  "2026-06-15T11:43:56.148472+00:00",
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.586357+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.068015+00:00"
+                     },
+                     {
+                         "id":  22,
+                         "service_name":  "social_neuron",
+                         "service_type":  "intelligence",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.894659+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.355615+00:00"
+                     },
+                     {
+                         "id":  9,
+                         "service_name":  "stage4_guard",
+                         "service_type":  "safety",
+                         "status":  "STOPPED",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.686696+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.140837+00:00"
+                     },
+                     {
+                         "id":  28,
+                         "service_name":  "strategy_router",
+                         "service_type":  "strategy",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.974646+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.514239+00:00"
+                     },
+                     {
+                         "id":  8,
+                         "service_name":  "telegram",
+                         "service_type":  "control",
+                         "status":  "STOPPED",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.671826+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.130174+00:00"
+                     },
+                     {
+                         "id":  23,
+                         "service_name":  "whale_neuron",
+                         "service_type":  "intelligence",
+                         "status":  "RUNNING",
+                         "last_heartbeat_at":  null,
+                         "last_success_at":  null,
+                         "last_error_at":  null,
+                         "error_count":  0,
+                         "warning_count":  0,
+                         "lag_seconds":  null,
+                         "details_json":  {
+
+                                          },
+                         "created_at":  "2026-05-20T23:20:29.908212+00:00",
+                         "updated_at":  "2026-06-15T12:32:37.383882+00:00"
+                     }
+                 ],
+    "stale_services":  [
+
+                       ],
+    "critical_incidents":  [
+
+                           ],
+    "last_mode_transition":  {
+                                 "id":  239,
+                                 "from_mode":  "DATA_ONLY",
+                                 "to_mode":  "DATA_ONLY",
+                                 "action":  "SYSTEM_OFF",
+                                 "reason":  "Risk lineage and exit refresh decision run cleanup; Paper Simulation remained OFF",
+                                 "actor":  "codex_risk_lineage_exit_refresh",
+                                 "allowed":  true,
+                                 "blocked_reason":  null,
+                                 "correlation_id":  "control_center_system-off_7820164a66594c90a83893b1f84c2eb9",
+                                 "created_at":  "2026-06-15T11:43:15.201007+00:00",
+                                 "metadata_json":  {
+                                                       "new_power":  "OFF",
+                                                       "old_power":  "ON",
+                                                       "power_only_transition":  true,
+                                                       "system_power_transition_id":  "system_power_transition_7314504042d14a25be3904cef79284c0"
+                                                   }
+                             },
+    "last_successful_cycle":  {
+                                  "id":  11777,
+                                  "cycle_id":  "v2-20260615T114225-7876920c4f",
+                                  "mode":  "DATA_ONLY",
+                                  "status":  "COMPLETED",
+                                  "started_at":  "2026-06-15T11:42:25.333879+00:00",
+                                  "finished_at":  "2026-06-15T11:43:56.074706+00:00",
+                                  "duration_ms":  90741,
+                                  "scanner_started":  true,
+                                  "scanner_finished":  true,
+                                  "intelligence_started":  true,
+                                  "intelligence_finished":  true,
+                                  "paper_started":  false,
+                                  "paper_finished":  false,
+                                  "shadow_started":  false,
+                                  "shadow_finished":  false,
+                                  "live_started":  false,
+                                  "live_finished":  false,
+                                  "blocked_by_mode":  false,
+                                  "error_count":  0,
+                                  "warning_count":  0,
+                                  "metadata_json":  {
+                                                        "source":  "market_service.refresh",
+                                                        "phase1_cycle_id":  "3a4a68ee-7d9c-4899-89d4-7e4cc45c8de8"
+                                                    }
+                              },
+    "last_successful_cycle_truth":  {
+                                        "source":  "runtime_cycles_v2",
+                                        "cycle_id":  "v2-20260615T114225-7876920c4f",
+                                        "cycle_status":  "COMPLETED",
+                                        "last_updated":  "2026-06-15T11:43:56.074706+00:00",
+                                        "age_seconds":  2957.895079,
+                                        "freshness_state":  "STALE",
+                                        "truth_state":  "LAST_KNOWN",
+                                        "runtime_state":  "STALE",
+                                        "readiness_state":  "NOT_READY",
+                                        "warnings":  [
+                                                         "Runtime cycle evidence is stale."
+                                                     ]
+                                    },
+    "warnings":  [
+                     "system power is OFF; autonomous runtime work is blocked",
+                     "active runtime cycle row is stale; treating it as last-known runtime truth"
+                 ],
+    "runtime_life_state":  "STOPPED",
+    "system_power_state":  "OFF",
+    "scheduler_state":  "STOPPED",
+    "scheduler_blocked_reason":  null,
+    "supervisor_state":  "REGISTERED_NOT_RUNNING",
+    "full_monitor_run_state":  "DIAGNOSTIC_IDLE",
+    "readiness_blockers":  [
+                               "SYSTEM_POWER_OFF",
+                               "GOVERNOR_DENIED_COLLECT_DATA",
+                               "ACTIVE_CYCLE_STALE",
+                               "LAST_SUCCESSFUL_CYCLE_STALE"
+                           ],
+    "runtime_readiness":  {
+                              "runtime_life_state":  "STOPPED",
+                              "system_power_state":  "OFF",
+                              "governor_allows_collect_data":  false,
+                              "scheduler_state":  "STOPPED",
+                              "scheduler_blocked_reason":  null,
+                              "supervisor_state":  "REGISTERED_NOT_RUNNING",
+                              "active_cycle_state":  "RUNNING_STALE",
+                              "last_successful_cycle_state":  "STALE",
+                              "full_monitor_run_state":  "DIAGNOSTIC_IDLE",
+                              "full_monitor_run_label":  "DIAGNOSTIC_ONLY",
+                              "full_monitor_truth_scope":  "PROCESS_LOCAL",
+                              "runtime_supervisor_truth_scope":  "PROCESS_LOCAL",
+                              "source_map":  {
+                                                 "system_power":  "system_state.system_power",
+                                                 "state_governor":  "StateGovernor.can_execute(COLLECT_DATA)",
+                                                 "scheduler":  "service_health.scheduler",
+                                                 "runtime_supervisor":  "PROCESS_LOCAL runtime_supervisor store",
+                                                 "runtime_cycles":  "runtime_cycles_v2",
+                                                 "full_monitor_run":  "PROCESS_LOCAL full_monitor_run store"
+                                             },
+                              "generated_at":  "2026-06-15T12:33:13.970201+00:00",
+                              "blockers":  [
+                                               "SYSTEM_POWER_OFF",
+                                               "GOVERNOR_DENIED_COLLECT_DATA",
+                                               "ACTIVE_CYCLE_STALE",
+                                               "LAST_SUCCESSFUL_CYCLE_STALE"
+                                           ],
+                              "warnings":  [
+                                               "Scheduler state is STOPPED.",
+                                               "Runtime supervisor state is REGISTERED_NOT_RUNNING.",
+                                               "FULL_MONITOR_RUN_DIAGNOSTIC_ONLY"
+                                           ],
+                              "errors":  [
+
+                                         ],
+                              "scheduler":  {
+                                                "scheduler_state":  "STOPPED",
+                                                "scheduler_blocked_reason":  null,
+                                                "scheduler_last_heartbeat":  "2026-06-15T12:32:00.481861+00:00",
+                                                "scheduler_age_seconds":  73.48834,
+                                                "freshness_state":  "FRESH",
+                                                "raw_status":  "STOPPED",
+                                                "source":  "service_health.scheduler"
+                                            },
+                              "runtime_supervisor":  {
+                                                         "supervisor_state":  "REGISTERED_NOT_RUNNING",
+                                                         "supervisor_status":  "IDLE",
+                                                         "supervisor_last_heartbeat":  null,
+                                                         "supervisor_age_seconds":  null,
+                                                         "truth_scope":  "PROCESS_LOCAL",
+                                                         "source":  "PROCESS_LOCAL runtime_supervisor store"
+                                                     },
+                              "active_cycle":  {
+                                                   "active_cycle_state":  "RUNNING_STALE",
+                                                   "cycle_id":  "v2-20260615T082020-9b26e06107",
+                                                   "cycle_status":  "RUNNING",
+                                                   "last_updated":  "2026-06-15T08:20:20.488059+00:00",
+                                                   "age_seconds":  15173.482142,
+                                                   "freshness_state":  "STALE",
+                                                   "truth_state":  "LAST_KNOWN",
+                                                   "source":  "runtime_cycles_v2"
+                                               },
+                              "last_successful_cycle":  {
+                                                            "last_successful_cycle_state":  "STALE",
+                                                            "cycle_id":  "v2-20260615T114225-7876920c4f",
+                                                            "cycle_status":  "COMPLETED",
+                                                            "last_updated":  "2026-06-15T11:43:56.074706+00:00",
+                                                            "age_seconds":  2957.895495,
+                                                            "freshness_state":  "STALE",
+                                                            "truth_state":  "LAST_KNOWN",
+                                                            "source":  "runtime_cycles_v2"
+                                                        },
+                              "full_monitor_run":  {
+                                                       "full_monitor_run_state":  "DIAGNOSTIC_IDLE",
+                                                       "status":  "IDLE",
+                                                       "run_id":  null,
+                                                       "last_updated":  null,
+                                                       "age_seconds":  null,
+                                                       "label":  "DIAGNOSTIC_ONLY",
+                                                       "truth_scope":  "PROCESS_LOCAL",
+                                                       "source":  "PROCESS_LOCAL full_monitor_run store"
+                                                   },
+                              "candidate_producer_state":  "STALE",
+                              "candidates_updated_since_system_on":  0,
+                              "candidate_update_warning":  "SYSTEM_ON_TIMESTAMP_MISSING",
+                              "candidate_update":  {
+                                                       "candidate_producer_state":  "STALE",
+                                                       "candidate_freshness_state":  "STALE",
+                                                       "candidates_updated_since_system_on":  0,
+                                                       "last_candidate_updated_at":  "2026-06-15T11:42:36.532728+00:00",
+                                                       "candidate_update_warning":  "SYSTEM_ON_TIMESTAMP_MISSING"
+                                                   },
+                              "state":  {
+                                            "current_mode":  "DATA_ONLY",
+                                            "system_power":  "OFF",
+                                            "kill_switch_active":  false,
+                                            "cooldown_active":  false,
+                                            "attack_mode_active":  false
+                                        }
+                          }
+}

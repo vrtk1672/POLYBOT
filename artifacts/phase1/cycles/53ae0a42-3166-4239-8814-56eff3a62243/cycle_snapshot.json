@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "no-trade-82afdc"
+  ],
+  "cycle_id": "53ae0a42-3166-4239-8814-56eff3a62243",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "no-trade-82afdc",
+      "reason": "missing_yes_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

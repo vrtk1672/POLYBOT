@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "ba-whale-dcbd14"
+  ],
+  "cycle_id": "93be484d-17c5-44f5-8093-5dac95df81ed",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "ba-whale-dcbd14",
+      "reason": "missing_yes_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

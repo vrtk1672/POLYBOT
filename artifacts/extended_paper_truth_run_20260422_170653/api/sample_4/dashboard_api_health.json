@@ -1,0 +1,50 @@
+{
+    "db_connected":  true,
+    "last_cycle":  {
+                       "id":  "0f2de380-b06b-48db-9b9e-6e32553e9349",
+                       "started_at":  "2026-04-22T14:17:01.818481+00:00",
+                       "completed_at":  "2026-04-22T14:17:01.952512+00:00",
+                       "status":  "COMPLETED",
+                       "mode":  "SCAN_ONLY",
+                       "trigger_source":  "runtime.market_service",
+                       "session_id":  null,
+                       "top_n":  10,
+                       "pages_requested":  25,
+                       "markets_fetched_count":  2500,
+                       "markets_scored_count":  11822,
+                       "markets_ranked_count":  10,
+                       "decisions_count":  0,
+                       "selected_market_id":  "1517835",
+                       "last_error":  null,
+                       "runtime_ms":  134,
+                       "metadata":  {
+                                        "runtime_surface":  "canonical_local_runtime",
+                                        "refresh_interval_seconds":  60
+                                    },
+                       "created_at":  "2026-04-22T14:17:01.819222+00:00",
+                       "updated_at":  "2026-04-22T14:17:01.819222+00:00"
+                   },
+    "last_market_snapshot":  {
+                                 "market_id":  "1929170",
+                                 "captured_at":  "2026-04-22T14:17:01.658118+00:00",
+                                 "created_at":  "2026-04-22T14:17:01.819222+00:00"
+                             },
+    "last_ranking_policy_run":  {
+                                    "id":  "bd4e8352-b53f-4438-a069-4ee25c4115c0",
+                                    "status":  "COMPLETED",
+                                    "started_at":  "2026-04-22T14:17:16.765940+00:00",
+                                    "ended_at":  "2026-04-22T14:17:17.050270+00:00"
+                                },
+    "last_invalidation_policy_run":  {
+                                         "id":  "fd8a64e0-89be-441f-9fa5-899e9884bc0e",
+                                         "status":  "COMPLETED",
+                                         "started_at":  "2026-04-22T14:17:17.075366+00:00",
+                                         "ended_at":  "2026-04-22T14:17:17.704835+00:00"
+                                     },
+    "last_orchestration_gate_run":  null,
+    "pending_eligible_command_intents":  0,
+    "critical_alert_count_24h":  0,
+    "warnings":  [
+
+                 ]
+}

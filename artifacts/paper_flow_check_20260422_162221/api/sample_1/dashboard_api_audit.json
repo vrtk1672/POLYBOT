@@ -1,0 +1,276 @@
+{
+  "decision_ledger": [
+    {
+      "cycle_id": "a22e4dcf-5d5a-414e-943a-fbe01aefce64",
+      "market_id": "isolated-policy-a273213a",
+      "decision_type": "SKIP",
+      "selected": false,
+      "reason": "missing_yes_token",
+      "confidence": 0.78,
+      "trade_type": null,
+      "bucket_type": null,
+      "created_at": "2026-04-22T10:28:20.850272+00:00"
+    },
+    {
+      "cycle_id": "162311f2-47b3-4249-afdc-882c3610994a",
+      "market_id": "query-policy-942281a1",
+      "decision_type": "SKIP",
+      "selected": false,
+      "reason": "missing_yes_token",
+      "confidence": 0.78,
+      "trade_type": null,
+      "bucket_type": null,
+      "created_at": "2026-04-22T10:28:18.856635+00:00"
+    },
+    {
+      "cycle_id": "03acd18d-ba27-450c-bb72-4beb5f097ac7",
+      "market_id": "rank-block-af971ffa",
+      "decision_type": "SKIP",
+      "selected": false,
+      "reason": "missing_yes_token",
+      "confidence": 0.78,
+      "trade_type": null,
+      "bucket_type": null,
+      "created_at": "2026-04-22T10:28:16.804014+00:00"
+    },
+    {
+      "cycle_id": "0a59ac6e-0553-4736-862c-90d0326d0644",
+      "market_id": "real-enum-4c0cc5ec",
+      "decision_type": "SKIP",
+      "selected": false,
+      "reason": "missing_yes_token",
+      "confidence": 0.78,
+      "trade_type": null,
+      "bucket_type": null,
+      "created_at": "2026-04-22T10:28:14.923738+00:00"
+    },
+    {
+      "cycle_id": "57110780-369b-4c54-8a21-7bd8bbdc47e4",
+      "market_id": "sparse-policy-a0919705",
+      "decision_type": "SKIP",
+      "selected": false,
+      "reason": "missing_yes_token",
+      "confidence": 0.78,
+      "trade_type": null,
+      "bucket_type": null,
+      "created_at": "2026-04-22T10:28:14.511602+00:00"
+    },
+    {
+      "cycle_id": "da4a5977-8d7b-4b56-b1a9-375cafa2019c",
+      "market_id": "exit-rec-3127427a",
+      "decision_type": "SKIP",
+      "selected": false,
+      "reason": "missing_yes_token",
+      "confidence": 0.78,
+      "trade_type": null,
+      "bucket_type": null,
+      "created_at": "2026-04-22T10:28:11.289985+00:00"
+    },
+    {
+      "cycle_id": "9a87e626-57ba-40b9-8692-35ce9d17a805",
+      "market_id": "gate-hard-47064c",
+      "decision_type": "SKIP",
+      "selected": false,
+      "reason": "missing_yes_token",
+      "confidence": 0.78,
+      "trade_type": null,
+      "bucket_type": null,
+      "created_at": "2026-04-22T10:28:09.274462+00:00"
+    },
+    {
+      "cycle_id": "41b17109-6570-4dfe-86e8-7c6cb32b735a",
+      "market_id": "gate-soft-b6f2e7",
+      "decision_type": "SKIP",
+      "selected": false,
+      "reason": "missing_yes_token",
+      "confidence": 0.78,
+      "trade_type": null,
+      "bucket_type": null,
+      "created_at": "2026-04-22T10:28:07.595429+00:00"
+    },
+    {
+      "cycle_id": "46256944-c908-4859-9268-ee4604e80578",
+      "market_id": "gate-none-2a76ec",
+      "decision_type": "SKIP",
+      "selected": false,
+      "reason": "missing_yes_token",
+      "confidence": 0.78,
+      "trade_type": null,
+      "bucket_type": null,
+      "created_at": "2026-04-22T10:28:06.020401+00:00"
+    },
+    {
+      "cycle_id": "321f65ea-8266-4928-abfe-45865fc8419b",
+      "market_id": "exit-block-cb9746",
+      "decision_type": "SKIP",
+      "selected": false,
+      "reason": "missing_yes_token",
+      "confidence": 0.78,
+      "trade_type": null,
+      "bucket_type": null,
+      "created_at": "2026-04-22T10:28:02.748608+00:00"
+    }
+  ],
+  "rejection_ledger": [
+    {
+      "cycle_id": "a22e4dcf-5d5a-414e-943a-fbe01aefce64",
+      "market_id": "isolated-policy-a273213a",
+      "stage": "adaptive_selection",
+      "reason_code": "missing_yes_token",
+      "reason_text": "missing_yes_token",
+      "created_at": "2026-04-22T10:28:20.850272+00:00"
+    },
+    {
+      "cycle_id": "162311f2-47b3-4249-afdc-882c3610994a",
+      "market_id": "query-policy-942281a1",
+      "stage": "adaptive_selection",
+      "reason_code": "missing_yes_token",
+      "reason_text": "missing_yes_token",
+      "created_at": "2026-04-22T10:28:18.856635+00:00"
+    },
+    {
+      "cycle_id": "03acd18d-ba27-450c-bb72-4beb5f097ac7",
+      "market_id": "rank-block-af971ffa",
+      "stage": "adaptive_selection",
+      "reason_code": "missing_yes_token",
+      "reason_text": "missing_yes_token",
+      "created_at": "2026-04-22T10:28:16.804014+00:00"
+    },
+    {
+      "cycle_id": "0a59ac6e-0553-4736-862c-90d0326d0644",
+      "market_id": "real-enum-4c0cc5ec",
+      "stage": "adaptive_selection",
+      "reason_code": "missing_yes_token",
+      "reason_text": "missing_yes_token",
+      "created_at": "2026-04-22T10:28:14.923738+00:00"
+    },
+    {
+      "cycle_id": "57110780-369b-4c54-8a21-7bd8bbdc47e4",
+      "market_id": "sparse-policy-a0919705",
+      "stage": "adaptive_selection",
+      "reason_code": "missing_yes_token",
+      "reason_text": "missing_yes_token",
+      "created_at": "2026-04-22T10:28:14.511602+00:00"
+    },
+    {
+      "cycle_id": "da4a5977-8d7b-4b56-b1a9-375cafa2019c",
+      "market_id": "exit-rec-3127427a",
+      "stage": "adaptive_selection",
+      "reason_code": "missing_yes_token",
+      "reason_text": "missing_yes_token",
+      "created_at": "2026-04-22T10:28:11.289985+00:00"
+    },
+    {
+      "cycle_id": "9a87e626-57ba-40b9-8692-35ce9d17a805",
+      "market_id": "gate-hard-47064c",
+      "stage": "adaptive_selection",
+      "reason_code": "missing_yes_token",
+      "reason_text": "missing_yes_token",
+      "created_at": "2026-04-22T10:28:09.274462+00:00"
+    },
+    {
+      "cycle_id": "41b17109-6570-4dfe-86e8-7c6cb32b735a",
+      "market_id": "gate-soft-b6f2e7",
+      "stage": "adaptive_selection",
+      "reason_code": "missing_yes_token",
+      "reason_text": "missing_yes_token",
+      "created_at": "2026-04-22T10:28:07.595429+00:00"
+    },
+    {
+      "cycle_id": "46256944-c908-4859-9268-ee4604e80578",
+      "market_id": "gate-none-2a76ec",
+      "stage": "adaptive_selection",
+      "reason_code": "missing_yes_token",
+      "reason_text": "missing_yes_token",
+      "created_at": "2026-04-22T10:28:06.020401+00:00"
+    },
+    {
+      "cycle_id": "321f65ea-8266-4928-abfe-45865fc8419b",
+      "market_id": "exit-block-cb9746",
+      "stage": "adaptive_selection",
+      "reason_code": "missing_yes_token",
+      "reason_text": "missing_yes_token",
+      "created_at": "2026-04-22T10:28:02.748608+00:00"
+    }
+  ],
+  "operator_control_actions": [
+    {
+      "action_class": "PAUSE",
+      "requested_via": "TELEGRAM",
+      "requested_by": "manual_closeout",
+      "status_class": "PLACEHOLDER",
+      "reason_text": "PAUSE was recorded for audit only. No runtime control seam is wired yet, so no execution state was changed.",
+      "created_at": "2026-04-21T17:58:15.522498+00:00"
+    },
+    {
+      "action_class": "PAUSE",
+      "requested_via": "TELEGRAM",
+      "requested_by": "runtime-smoke",
+      "status_class": "PLACEHOLDER",
+      "reason_text": "PAUSE was recorded for audit only. No runtime control seam is wired yet, so no execution state was changed.",
+      "created_at": "2026-04-20T17:35:22.173166+00:00"
+    }
+  ],
+  "alert_events": [
+    {
+      "event_class": "CRITICAL_HEALTH_DEGRADATION",
+      "severity_class": "CRITICAL",
+      "title": "Runtime smoke alert",
+      "body_text": "Closeout smoke emitted a critical alert event.",
+      "delivery_status_class": "PENDING",
+      "created_at": "2026-04-20T17:53:38.365239+00:00"
+    }
+  ],
+  "paper_order_events": [
+    {
+      "paper_order_id": "662de698-0ddd-4b1b-9d98-8f4ce4e0a45e",
+      "new_status": "FILLED",
+      "reason_code": "filled_at_current_mark",
+      "reason_text": "order would fill at the current cycle mark",
+      "event_at": "2026-04-22T13:23:30.990472+00:00",
+      "created_at": "2026-04-22T13:23:30.809414+00:00"
+    },
+    {
+      "paper_order_id": "662de698-0ddd-4b1b-9d98-8f4ce4e0a45e",
+      "new_status": "CREATED",
+      "reason_code": "order_created",
+      "reason_text": "paper order created from WOULD_ENTER signal",
+      "event_at": "2026-04-22T13:23:30.976869+00:00",
+      "created_at": "2026-04-22T13:23:30.809414+00:00"
+    }
+  ],
+  "paper_position_events": [
+    {
+      "paper_position_id": "35407965-229e-49f2-a4cd-55438e2562e1",
+      "event_type": "MARKED",
+      "reason_code": "runtime_mark_to_market",
+      "reason_text": "position marked from the latest runtime market snapshot",
+      "event_at": "2026-04-22T13:23:59.170963+00:00",
+      "created_at": "2026-04-22T13:23:59.151577+00:00"
+    },
+    {
+      "paper_position_id": "35407965-229e-49f2-a4cd-55438e2562e1",
+      "event_type": "MARKED",
+      "reason_code": "runtime_mark_to_market",
+      "reason_text": "position marked from the latest runtime market snapshot",
+      "event_at": "2026-04-22T13:23:33.518042+00:00",
+      "created_at": "2026-04-22T13:23:33.498322+00:00"
+    },
+    {
+      "paper_position_id": "35407965-229e-49f2-a4cd-55438e2562e1",
+      "event_type": "OPENED",
+      "reason_code": "simulated_fill",
+      "reason_text": "paper order 662de698-0ddd-4b1b-9d98-8f4ce4e0a45e contributed simulated fill",
+      "event_at": "2026-04-22T13:23:30.994277+00:00",
+      "created_at": "2026-04-22T13:23:30.809414+00:00"
+    },
+    {
+      "paper_position_id": "35407965-229e-49f2-a4cd-55438e2562e1",
+      "event_type": "MARKED",
+      "reason_code": "mark_to_market",
+      "reason_text": "position marked using current cycle market price",
+      "event_at": "2026-04-22T13:23:30.994277+00:00",
+      "created_at": "2026-04-22T13:23:30.809414+00:00"
+    }
+  ]
+}

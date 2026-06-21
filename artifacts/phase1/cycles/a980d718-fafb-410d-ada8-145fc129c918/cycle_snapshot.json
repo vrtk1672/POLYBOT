@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "gate-hard-4df700"
+  ],
+  "cycle_id": "a980d718-fafb-410d-ada8-145fc129c918",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "gate-hard-4df700",
+      "reason": "missing_yes_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

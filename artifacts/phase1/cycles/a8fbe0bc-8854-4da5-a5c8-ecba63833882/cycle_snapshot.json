@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "inv-intact-fbec05"
+  ],
+  "cycle_id": "a8fbe0bc-8854-4da5-a5c8-ecba63833882",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "inv-intact-fbec05",
+      "reason": "missing_yes_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

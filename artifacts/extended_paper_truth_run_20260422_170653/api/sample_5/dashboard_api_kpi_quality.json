@@ -1,0 +1,163 @@
+{
+    "window":  {
+                   "recent_cycle_count":  5,
+                   "window_started_at":  "2026-04-22T14:12:01.780999+00:00",
+                   "window_completed_at":  "2026-04-22T14:18:38.234104+00:00",
+                   "cycle_ids":  [
+                                     "3dc7d058-7055-47d8-aaa7-234c014f8c3e",
+                                     "0f2de380-b06b-48db-9b9e-6e32553e9349",
+                                     "526d172e-50a6-42c9-880b-2e7171dac96c",
+                                     "f9d84834-93c2-473d-8f5b-63dd19708cf4",
+                                     "ca16d85a-7134-4113-85ae-5cd7312c1c23"
+                                 ]
+               },
+    "kpis":  {
+                 "opportunity_intake":  {
+                                            "opportunities_seen":  12500,
+                                            "opportunities_scored":  59086,
+                                            "candidates_ranked":  50,
+                                            "ranking_policy_candidates":  100,
+                                            "ranking_policy_selectable":  0,
+                                            "ranking_policy_rejected":  100,
+                                            "paper_candidates_selected":  5
+                                        },
+                 "paper_activity":  {
+                                        "paper_signals_created":  100,
+                                        "paper_would_enter":  5,
+                                        "paper_would_block":  60,
+                                        "paper_orders_created":  5,
+                                        "paper_orders_filled":  5,
+                                        "paper_positions_opened":  5,
+                                        "paper_positions_closed":  0,
+                                        "paper_position_events_count":  79
+                                    },
+                 "invalidation_advisory_activity":  {
+                                                        "invalidation_policy_records_count":  50,
+                                                        "exit_advisory_records_count":  69,
+                                                        "advisory_resolution_records_count":  50,
+                                                        "command_intent_records_count":  69
+                                                    },
+                 "flow_ratios":  {
+                                     "selection_rate":  0.1,
+                                     "reject_rate":  1.0,
+                                     "paper_order_per_signal_rate":  0.05,
+                                     "fill_rate":  1.0,
+                                     "position_open_rate":  1.0,
+                                     "exit_advisory_incidence_rate":  1.38
+                                 }
+             },
+    "quality":  {
+                    "ranking_tier_distribution":  [
+                                                      {
+                                                          "label":  "REJECT",
+                                                          "count":  100
+                                                      }
+                                                  ],
+                    "ranking_gate_distribution":  [
+                                                      {
+                                                          "label":  "HARD_REJECT",
+                                                          "count":  100
+                                                      }
+                                                  ],
+                    "trade_classification_distribution":  [
+                                                              {
+                                                                  "label":  "NO_TRADE",
+                                                                  "count":  50
+                                                              }
+                                                          ],
+                    "bucket_allocation_distribution":  [
+                                                           {
+                                                               "label":  "NO_BUCKET",
+                                                               "count":  100
+                                                           }
+                                                       ],
+                    "invalidation_state_distribution":  [
+                                                            {
+                                                                "label":  "WATCH",
+                                                                "count":  50
+                                                            }
+                                                        ],
+                    "exit_policy_distribution":  [
+                                                     {
+                                                         "label":  "BLOCK_NEW_DEPLOYMENT",
+                                                         "count":  50
+                                                     }
+                                                 ],
+                    "advisory_action_distribution":  [
+                                                         {
+                                                             "label":  "WATCH",
+                                                             "count":  69
+                                                         }
+                                                     ],
+                    "command_intent_distribution":  [
+                                                        {
+                                                            "label":  "WATCH_ONLY",
+                                                            "count":  69
+                                                        }
+                                                    ],
+                    "paper_signal_distribution":  [
+                                                      {
+                                                          "label":  "WOULD_BLOCK",
+                                                          "count":  60
+                                                      },
+                                                      {
+                                                          "label":  "WOULD_SKIP",
+                                                          "count":  35
+                                                      },
+                                                      {
+                                                          "label":  "WOULD_ENTER",
+                                                          "count":  5
+                                                      }
+                                                  ],
+                    "paper_position_status_distribution":  [
+                                                               {
+                                                                   "label":  "OPEN",
+                                                                   "count":  16
+                                                               }
+                                                           ],
+                    "top_rejection_reasons":  [
+
+                                              ],
+                    "top_paper_block_reasons":  [
+                                                    {
+                                                        "label":  "same_market_exposure_1_meets_exceeds_live_max_same_market_exposu",
+                                                        "count":  60
+                                                    }
+                                                ],
+                    "top_rank_reasons":  [
+                                             {
+                                                 "label":  "Candidate is hard rejected by ranking-policy guards at score 7.93.",
+                                                 "count":  10
+                                             },
+                                             {
+                                                 "label":  "Candidate is hard rejected by ranking-policy guards at score 5.95.",
+                                                 "count":  5
+                                             },
+                                             {
+                                                 "label":  "Candidate is hard rejected by ranking-policy guards at score 6.74.",
+                                                 "count":  5
+                                             },
+                                             {
+                                                 "label":  "Candidate is hard rejected by ranking-policy guards at score 7.35.",
+                                                 "count":  5
+                                             },
+                                             {
+                                                 "label":  "Candidate is hard rejected by ranking-policy guards at score 7.41.",
+                                                 "count":  5
+                                             }
+                                         ],
+                    "top_advisory_reasons":  [
+                                                 {
+                                                     "label":  "Advisory set WATCH for PAPER_POSITION based on persisted invalidation policy and exposure context.",
+                                                     "count":  69
+                                                 }
+                                             ]
+                },
+    "observations":  [
+                         "Recent runtime window covers 5 canonical refresh cycles from 2026-04-22T14:12:01.780999+00:00 to 2026-04-22T14:18:38.234104+00:00.",
+                         "Opportunity intake saw 12500 markets fetched, 50 runtime-ranked candidates, and 100 persisted paper signals.",
+                         "Paper flow converted 5 paper orders into 5 fills and 5 opened positions in the measured window.",
+                         "Paper flow is currently more selective than active: 60 blocked signals vs 5 would-enter signals, led by same_market_exposure_1_meets_exceeds_live_max_same_market_exposu.",
+                         "Ranking policy produced no SELECTABLE candidates in the recent window while the paper signal layer still emitted WOULD_ENTER candidates, so policy and execution selection strictness are materially different."
+                     ]
+}

@@ -1,0 +1,48 @@
+{
+  "db_connected": true,
+  "last_cycle": {
+    "id": "80e6db1b-b81f-400e-ab12-bc4571e7ad53",
+    "started_at": "2026-04-22T13:58:37.989335+00:00",
+    "completed_at": "2026-04-22T13:58:38.086769+00:00",
+    "status": "COMPLETED",
+    "mode": "SCAN_ONLY",
+    "trigger_source": "runtime.market_service",
+    "session_id": null,
+    "top_n": 10,
+    "pages_requested": 25,
+    "markets_fetched_count": 2500,
+    "markets_scored_count": 11812,
+    "markets_ranked_count": 10,
+    "decisions_count": 0,
+    "selected_market_id": "1517835",
+    "last_error": null,
+    "runtime_ms": 97,
+    "metadata": {
+      "runtime_surface": "canonical_local_runtime",
+      "refresh_interval_seconds": 60
+    },
+    "created_at": "2026-04-22T13:58:37.987304+00:00",
+    "updated_at": "2026-04-22T13:58:37.987304+00:00"
+  },
+  "last_market_snapshot": {
+    "market_id": "1929170",
+    "captured_at": "2026-04-22T13:58:37.819077+00:00",
+    "created_at": "2026-04-22T13:58:37.987304+00:00"
+  },
+  "last_ranking_policy_run": {
+    "id": "2a34eafb-9762-4c6b-a12b-c8f12ca30dc7",
+    "status": "COMPLETED",
+    "started_at": "2026-04-22T13:58:43.675814+00:00",
+    "ended_at": "2026-04-22T13:58:44.072319+00:00"
+  },
+  "last_invalidation_policy_run": {
+    "id": "6a27c2f5-c7f7-4e4a-8d37-b409ba24640a",
+    "status": "COMPLETED",
+    "started_at": "2026-04-22T13:58:44.100697+00:00",
+    "ended_at": "2026-04-22T13:58:44.669980+00:00"
+  },
+  "last_orchestration_gate_run": null,
+  "pending_eligible_command_intents": 0,
+  "critical_alert_count_24h": 0,
+  "warnings": []
+}

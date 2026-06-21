@@ -1,0 +1,16 @@
+{
+  "captured_market_ids": [
+    "rank-reject-6f992c"
+  ],
+  "cycle_id": "830bf1ac-d357-47ca-bb7e-1e62546aa1c3",
+  "decisions": [
+    {
+      "decision_type": "SKIP",
+      "market_id": "rank-reject-6f992c",
+      "reason": "missing_yes_token",
+      "selected": false
+    }
+  ],
+  "ranked_market_ids": [],
+  "selected_market_id": null
+}

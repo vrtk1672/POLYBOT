@@ -1,0 +1,1 @@
+﻿{"command":"/health","supported":true,"response_text":"Health: OK\nLast cycle: COMPLETED\nCritical alerts (24h): 0\nWarnings: Last persisted cycle is older than 20 minutes., Market snapshot freshness is older than 20 minutes.","sent":false,"control_action_id":null}

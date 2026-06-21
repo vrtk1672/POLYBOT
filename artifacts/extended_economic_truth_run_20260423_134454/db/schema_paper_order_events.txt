@@ -1,0 +1,13 @@
+  column_name   |        data_type         
+----------------+--------------------------
+ id             | uuid
+ paper_order_id | uuid
+ event_at       | timestamp with time zone
+ old_status     | text
+ new_status     | text
+ reason_code    | text
+ reason_text    | text
+ payload_json   | jsonb
+ created_at     | timestamp with time zone
+(9 rows)
+

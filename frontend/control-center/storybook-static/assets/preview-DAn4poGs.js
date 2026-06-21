@@ -1,0 +1,1 @@
+/* empty css              */const a={parameters:{actions:{disable:!0},controls:{disable:!0},backgrounds:{default:"POLYBOT panel",values:[{name:"POLYBOT panel",value:"#07111f"}]},layout:"fullscreen"}};export{a as default};

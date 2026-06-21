@@ -1,0 +1,11 @@
+{
+  "markets": "ERROR: UndefinedTable: relation \"markets\" does not exist\nLINE 1: select count(*) from markets\n                             ^",
+  "paper_signals": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+  "paper_orders": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+  "paper_positions": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+  "paper_position_events": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+  "intelligence_ingestion_runs": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+  "external_events_normalized": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+  "whale_events": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block",
+  "whale_market_scores": "ERROR: InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block"
+}
